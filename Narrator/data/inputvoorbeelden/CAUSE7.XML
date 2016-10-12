@@ -1,0 +1,25 @@
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="cause-involuntary">
+		<nucleus>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="gil" morph="3.singular.present" />
+					<node rel="su" pos="nom" root="Amalia" />
+				</node>
+			</dt>
+		</nucleus>
+		<satellite>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="word" morph="3.singular.present" />
+					<node rel="su" pos="nom" root="Amalia" index="A" />
+					<node rel="vc" cat="ppart">
+						<node rel="obj1" index="A" />
+						<node rel="hd" pos="verb" root="mishandel" morph="present perfect" />
+					</node>
+				</node>
+			</dt>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

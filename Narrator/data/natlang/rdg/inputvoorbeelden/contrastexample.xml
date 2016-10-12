@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<rhetdepgraph>
+	<rhetrelation cat="contrast-causal">
+		<nucleus>
+			<dt index="d1">
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="wil" morph="3.sing.present" />
+					<node rel="vc" pos="verb" root="dood" morph="inf" />
+					<node index="B" rel="obj1" pos="nom" root="Brutus" />
+					<node index="A" rel="su" pos="nom" root="Amalia" />
+				</node>
+			</dt>	
+		</nucleus>
+		<satellite>
+			<dt index="d2" >
+				<node rel="top" cat="smain" >
+					<node rel="hd" pos="verb" root="ben" morph="3.sing.present" />
+					<node rel="su" pos="nom" root="Amalia" index="A" />
+					<node rel="predc" pos="adv" root="bang" />
+				</node>
+			</dt>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

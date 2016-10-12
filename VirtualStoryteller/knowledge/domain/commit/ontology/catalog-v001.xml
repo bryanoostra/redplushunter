@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.owl-ontologies.com/StoryWorldCore.owl" uri="file:/D:/Profiles/LinssenJM/Eclipse/workspace/VirtualStoryteller/knowledge/ontology/StoryWorldCore.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.owl-ontologies.com/FabulaKnowledge.owl" uri="file:/D:/Profiles/LinssenJM/Eclipse/workspace/VirtualStoryteller/knowledge/ontology/FabulaKnowledge.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.owl-ontologies.com/FabulaKnowledge.owl" uri="file:/C:/Users/thomasdg/workspace/VirtualStoryteller/knowledge/ontology/FabulaKnowledge.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.owl-ontologies.com/StoryWorldCore.owl" uri="file:/C:/Users/thomasdg/workspace/VirtualStoryteller/knowledge/ontology/StoryWorldCore.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1344515427248" name="http://www.ontology.com/commit.owl" uri="commit.owl"/>
+    </group>
+</catalog>

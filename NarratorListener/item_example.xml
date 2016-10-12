@@ -1,0 +1,13 @@
+<item id="schoen1">
+	<at>
+		<location id="main_street" />
+	</at>
+	<presentation>
+		<narration>
+			<sense>shoe</sense>
+			<descriptive lang="NL">
+				de schoen
+			</descriptive>
+		</narration>
+	</presentation>
+</item>

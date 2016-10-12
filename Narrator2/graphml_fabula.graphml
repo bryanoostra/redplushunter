@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns 
+        http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+	<link rel="Setting" href="OntologyYouth.owl" />
+  <key id="RelType" for="edge" attr.type="String"/>
+  <key id="EventType" for="node" attr.type="String"/>
+  <key id="Type" for="node" attr.type="String"/>
+  <key id="Agens" for="node" attr.type="String"/>
+  <key id="Patiens" for="node" attr.type="String"/>
+  <key id="Target" for="node" attr.type="String"/>
+  <key id="Instrument" for="node" attr.type="String"/>
+  
+  <graph id="Fabula" edgedefault="directed">
+	<node id="Insult01">
+	  <data key="EventType">Action</data>
+	  <data key="Type">Insult</data>
+	  <data key="Agens">Henk</data>
+	  <data key="Patiens">Harry</data>
+	</node>
+	
+	<node id="BecomeAngry01">
+	  <data key="EventType">Internal Element</data>
+	  <data key="Type">BecomeAngry</data>
+	  <data key="Agens">Harry</data>
+	</node>
+	
+	<node id="Kick01">
+	  <data key="EventType">Action</data>
+	  <data key="Type">Kick</data>
+	  <data key="Agens">Harry</data>
+	  <data key="Patiens">Henk</data>
+	</node>
+	
+	<edge id="Psychological01" source="Insult01" target="BecomeAngry01">
+      <data key="RelType">Psychological</data>
+    </edge>
+	
+    <edge id="Motivation01" source="BecomeAngry01" target="Kick01">
+      <data key="RelType">Motivation</data>
+    </edge>
+		
+  </graph>
+</graphml>
+

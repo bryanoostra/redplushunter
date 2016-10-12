@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="additive">
+		<nucleus>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="schop" morph="3.sing.present" />
+					<node rel="su" pos="nom" root="Brutus" />
+					<node rel="obj1" pos="nom" root="Amalia" />
+				</node>
+			</dt>
+		</nucleus>
+		<satellite>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="schop" morph="3.sing.present" />
+					<node rel="obj1" pos="nom" root="Brutus" />
+					<node rel="su" pos="nom" root="Amalia" />
+				</node>
+			</dt>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

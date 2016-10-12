@@ -1,0 +1,380 @@
+@prefix ns1:     <http://www.owl-ontologies.com/StoryWorldSettings/Lollipop.owl#> .
+@prefix ns0:     <http://www.owl-ontologies.com/FabulaKnowledge.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<#defaultGraph> {
+    <#iperception_plot_16_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iOutcome_linda_9>
+          a       ns0:Success ;
+          ns0:character ns1:linda ;
+          ns0:resolves <#iEpisodicGoal_linda_5> ;
+          ns0:time <"7"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iEpisodicGoal_linda_5>
+          a       ns1:HaveIce ;
+          ns0:character ns1:linda ;
+          ns0:motivates <#iAction_linda_1> , <#iAction_linda_4> ;
+          ns0:time <"2"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_10_contents>
+          a       ns0:TruthGraph .
+
+    <#iOutcome_linda_12>
+          a       ns0:Success ;
+          ns0:character ns1:linda ;
+          ns0:resolves <#iEpisodicGoal_linda_5> ;
+          ns0:time <"10"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_linda_11>
+          a       ns0:Success ;
+          ns0:character ns1:linda ;
+          ns0:resolves <#iEpisodicGoal_linda_5> ;
+          ns0:time <"9"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_linda_8_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iOutcome_linda_10>
+          a       ns0:Success ;
+          ns0:character ns1:linda ;
+          ns0:resolves <#iEpisodicGoal_linda_5> ;
+          ns0:time <"8"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_linda_8>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iBelief_linda_8_contents> ;
+          ns0:time <"6"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_linda_7>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iBelief_linda_7_contents> ;
+          ns0:time <"6"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_linda_6>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iBelief_linda_6_contents> ;
+          ns0:time <"6"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_linda_5>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iBelief_linda_5_contents> ;
+          ns0:time <"6"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_14_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_linda_3>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iBelief_linda_3_contents> ;
+          ns0:time <"4"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_linda_2>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iBelief_linda_2_contents> ;
+          ns0:time <"4"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iAction_linda_1>
+          a       ns1:ToddleOffTo ;
+          ns0:agens ns1:linda ;
+          ns0:character ns1:linda ;
+          ns0:endtime <"3"^^http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:phi_causes <#iperception_plot_13> , <#iperception_plot_11> , <#iperception_plot_6> , <#iperception_plot_7> , <#iperception_plot_8> , <#iperception_plot_9> ;
+          ns0:starttime <"2"^^http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns1:oIceCreamTruck ;
+          ns0:time <"2"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_linda_2_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_otto_1>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iBelief_otto_1_contents> ;
+          ns0:time <"4"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_otto_2>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iBelief_otto_2_contents> ;
+          ns0:time <"4"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_otto_5>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iBelief_otto_5_contents> ;
+          ns0:time <"6"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_otto_6>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iBelief_otto_6_contents> ;
+          ns0:time <"6"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_linda_7_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_8_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_otto_3>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iBelief_otto_3_contents> ;
+          ns0:time <"6"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_otto_4>
+          a       ns0:BeliefElement ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iBelief_otto_4_contents> ;
+          ns0:time <"6"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_6_contents>
+          a       ns0:TruthGraph .
+
+    <#iAction_linda_4>
+          a       ns1:Buy ;
+          ns0:agens ns1:linda ;
+          ns0:character ns1:linda ;
+          ns0:endtime <"5"^^http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:instrument ns1:money_1 ;
+          ns0:patiens ns1:vanilla_ice_1 ;
+          ns0:phi_causes <#iperception_plot_14> , <#iperception_plot_15> , <#iperception_plot_16> , <#iperception_plot_10> , <#iperception_plot_12> , <#iperception_plot_17> ;
+          ns0:starttime <"4"^^http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns1:otto ;
+          ns0:time <"4"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_4>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:hasContent <#iSetting_plotagent_4_contents> ;
+          ns0:time <"1"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_7_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_otto_1_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_6>
+          a       ns0:Perception ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iperception_plot_6_contents> ;
+          ns0:psi_causes <#iBelief_linda_2> ;
+          ns0:time <"3"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_7>
+          a       ns0:Perception ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iperception_plot_7_contents> ;
+          ns0:psi_causes <#iBelief_otto_1> ;
+          ns0:time <"3"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_8>
+          a       ns0:Perception ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iperception_plot_8_contents> ;
+          ns0:psi_causes <#iBelief_linda_3> ;
+          ns0:time <"3"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_9>
+          a       ns0:Perception ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iperception_plot_9_contents> ;
+          ns0:psi_causes <#iBelief_otto_2> ;
+          ns0:time <"3"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_13>
+          a       ns0:Perception ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iperception_plot_13_contents> ;
+          ns0:psi_causes <#iBelief_otto_4> ;
+          ns0:time <"5"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_14>
+          a       ns0:Perception ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iperception_plot_14_contents> ;
+          ns0:psi_causes <#iBelief_linda_7> ;
+          ns0:time <"5"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_15>
+          a       ns0:Perception ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iperception_plot_15_contents> ;
+          ns0:psi_causes <#iBelief_otto_5> ;
+          ns0:time <"5"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_16>
+          a       ns0:Perception ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iperception_plot_16_contents> ;
+          ns0:psi_causes <#iBelief_linda_8> ;
+          ns0:time <"5"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_otto_3_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_10>
+          a       ns0:Perception ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iperception_plot_10_contents> ;
+          ns0:psi_causes <#iBelief_linda_5> ;
+          ns0:time <"5"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_11>
+          a       ns0:Perception ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iperception_plot_11_contents> ;
+          ns0:psi_causes <#iBelief_linda_6> ;
+          ns0:time <"5"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_12>
+          a       ns0:Perception ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iperception_plot_12_contents> ;
+          ns0:psi_causes <#iBelief_otto_3> ;
+          ns0:time <"5"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_linda_5_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_linda_3_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_12_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_17_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_otto_2_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_9_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_15_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_otto_6_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_17>
+          a       ns0:Perception ;
+          ns0:character ns1:otto ;
+          ns0:hasContent <#iperception_plot_17_contents> ;
+          ns0:psi_causes <#iBelief_otto_6> ;
+          ns0:time <"5"^^http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_otto_5_contents>
+          a       ns0:FalsehoodGraph .
+}
+
+<#iBelief_linda_2_contents> {
+    ns1:linda
+          ns1:at  ns1:oIceCreamTruck .
+}
+
+<#iBelief_linda_3_contents> {
+    ns1:linda
+          ns1:at  ns1:park_1 .
+}
+
+<#iBelief_linda_5_contents> {
+    ns1:linda
+          ns1:has ns1:vanilla_ice_1 .
+}
+
+<#iBelief_linda_7_contents> {
+    ns1:linda
+          ns1:has ns1:money_1 .
+}
+
+<#iBelief_linda_8_contents> {
+    ns1:otto
+          ns1:has ns1:vanilla_ice_1 .
+}
+
+<#iBelief_otto_1_contents> {
+    ns1:linda
+          ns1:at  ns1:oIceCreamTruck .
+}
+
+<#iBelief_otto_2_contents> {
+    ns1:linda
+          ns1:at  ns1:park_1 .
+}
+
+<#iBelief_otto_3_contents> {
+    ns1:linda
+          ns1:has ns1:vanilla_ice_1 .
+}
+
+<#iBelief_otto_5_contents> {
+    ns1:linda
+          ns1:has ns1:money_1 .
+}
+
+<#iBelief_otto_6_contents> {
+    ns1:otto
+          ns1:has ns1:vanilla_ice_1 .
+}
+
+<#iperception_plot_10_contents> {
+    ns1:linda
+          ns1:has ns1:vanilla_ice_1 .
+}
+
+<#iperception_plot_12_contents> {
+    ns1:linda
+          ns1:has ns1:vanilla_ice_1 .
+}
+
+<#iperception_plot_14_contents> {
+    ns1:linda
+          ns1:has ns1:money_1 .
+}
+
+<#iperception_plot_15_contents> {
+    ns1:linda
+          ns1:has ns1:money_1 .
+}
+
+<#iperception_plot_16_contents> {
+    ns1:otto
+          ns1:has ns1:vanilla_ice_1 .
+}
+
+<#iperception_plot_17_contents> {
+    ns1:otto
+          ns1:has ns1:vanilla_ice_1 .
+}
+
+<#iperception_plot_6_contents> {
+    ns1:linda
+          ns1:at  ns1:oIceCreamTruck .
+}
+
+<#iperception_plot_7_contents> {
+    ns1:linda
+          ns1:at  ns1:oIceCreamTruck .
+}
+
+<#iperception_plot_8_contents> {
+    ns1:linda
+          ns1:at  ns1:park_1 .
+}
+
+<#iperception_plot_9_contents> {
+    ns1:linda
+          ns1:at  ns1:park_1 .
+}
+

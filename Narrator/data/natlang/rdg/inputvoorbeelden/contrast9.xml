@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation index="r1" cat="contrast">
+		<nucleus>
+			<dt>
+	        	<node rel="top" cat="smain" >
+	        		<node rel="su" cat="np">
+		        		<node rel="det" pos="det" root="de" morph="sing" />
+	    	 			<node rel="hd" pos="noun" root="prins" morph="sing" />
+	        		</node>
+	        		<node rel="hd" pos="verb" root="zit" morph="3.sing.present" />
+	        		<node rel="ld" cat="pp">
+	        			<node rel="hd" pos="prep" root="op" />
+	        			<node rel="obj1" cat="np">
+	        				<node rel="det" pos="det" root="een" morph="sing" />
+	    	 				<node rel="hd" pos="noun" root="terrasje" morph="sing" />
+	        			</node> 
+	        		</node>
+	        		<node rel="mod" cat="pp">
+	        			<node rel="hd" pos="prep" root="in" />
+	        			<node rel="obj1" cat="np">
+		        			<node rel="det" pos="det" root="de" morph="sing" />
+	    	 				<node rel="hd" pos="noun" root="zon" morph="sing" />
+	        			</node>
+	        		</node>
+	        	</node>
+        	</dt>       
+		</nucleus>
+    	<satellite>
+    		<dt>
+     			<node rel="top" cat="smain" >
+     				<node rel="su" index="A" pos="nom" root="Amalia" />
+	        		<node rel="hd" pos="verb" root="word" morph="3.sing.present" />
+	        		<node rel="vc" cat="ppart">
+	        			<node rel="su" index="A" />
+	        			<node rel="predc" pos="adj" root="gevangen" />
+	        			<node rel="hd" pos="verb" root="houd" morph="present perfect" />
+	        			<node rel="mod" cat="pp">
+	        				<node rel="hd" pos="prep" root="door" />
+	        				<node rel="obj1" pos="nom" root="Brutus" />
+	        			</node>
+	        		</node>
+     			</node>
+     		</dt>
+	    </satellite>
+	</rhetrelation>
+</rhetdepgraph>

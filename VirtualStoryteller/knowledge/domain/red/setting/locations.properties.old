@@ -1,0 +1,20 @@
+# Properties file with the coordinates of locations on the map (in pixels)
+# domain = red
+# filename = locations.red.properties
+
+# FOR MAP OF THIJS
+	#reds_house=820,539
+	#grandmas_house=151,228
+	#forest=544,215
+
+	##additional locations:
+	#beach=1166,466
+	#lake=1125,275
+
+
+reds_house=452,952
+grandmas_house=1486,214
+forest=744,234
+
+beach=1326,775
+lake=1675,823

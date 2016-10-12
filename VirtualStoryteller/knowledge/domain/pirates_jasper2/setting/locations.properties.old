@@ -1,0 +1,8 @@
+# Properties file with the coordinates of locations on the map (in pixels)
+# domain = pirates_jasper2
+# filename = locations.properties
+
+Bridge=385,325
+
+oHold_1=880,415
+oDeck_1=1080,440

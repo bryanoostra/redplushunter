@@ -1,0 +1,531 @@
+@prefix ns2:     <http://www.owl-ontologies.com/StoryWorldSettings/Pirates#> .
+@prefix ns1:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+@prefix ns0:     <http://www.owl-ontologies.com/FabulaKnowledge.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<#defaultGraph> {
+    <#iBelief_rapier_roy_3_contents>
+          a       ns0:TruthGraph .
+
+    <#iOutcome_anne_bonney_31>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_30> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_16_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iOutcome_anne_bonney_33>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_32> ;
+          ns0:time "13"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_anne_bonney_22>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_1> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_anne_bonney_35>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_34> ;
+          ns0:time "14"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_anne_bonney_25>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_23> ;
+          ns0:time "9"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_anne_bonney_37>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_36> ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_anne_bonney_27>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_26> ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_anne_bonney_39>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_38> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_anne_bonney_29>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_28> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_5>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_5_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_7_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_16_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_anne_bonney_8_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_8>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_8_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_19_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_rapier_roy_2_contents>
+          a       ns0:TruthGraph .
+
+    <#iOutcome_anne_bonney_41>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_40> ;
+          ns0:time "17"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iFraming_anne_bonney_3>
+          ns0:phi_causes <#iperception_plot_13> , <#iperception_plot_10> .
+
+    <#iBelief_anne_bonney_5_contents>
+          a       ns0:TruthGraph .
+
+    <#iAction_anne_bonney_11>
+          a       ns2:DrawWeapon ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:character ns2:anne_bonney ;
+          ns0:endtime "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:patiens ns2:annesRapier ;
+          ns0:phi_causes <#iperception_plot_15> , <#iperception_plot_16> , <#iperception_plot_20> , <#iperception_plot_12> , <#iperception_plot_18> , <#iperception_plot_9> ;
+          ns0:starttime "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_44>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:time "18"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_anne_bonney_43>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_42> ;
+          ns0:time "18"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_40>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iAction_anne_bonney_17>
+          a       ns2:Stab ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:character ns2:anne_bonney ;
+          ns0:endtime "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:instrument ns2:annesRapier ;
+          ns0:patiens ns2:rapier_roy ;
+          ns0:phi_causes <#iperception_plot_17> , <#iperception_plot_19> ;
+          ns0:starttime "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_42>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:time "17"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_20_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_13_contents>
+          a       ns0:TruthGraph .
+
+    <#iFraming_anne_bonney_7>
+          ns0:phi_causes <#iperception_plot_14> , <#iperception_plot_11> .
+
+    <#iBelief_rapier_roy_6>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iBelief_rapier_roy_6_contents> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_rapier_roy_5>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iBelief_rapier_roy_5_contents> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_rapier_roy_8>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iBelief_rapier_roy_8_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_rapier_roy_7>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iBelief_rapier_roy_7_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_6_contents>
+          a       ns0:TruthGraph .
+
+    <#iSetting_plotagent_8>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_rapier_roy_2> ;
+          ns0:hasContent <#iSetting_plotagent_8_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_30>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_1>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:patiens ns2:rapier_roy ;
+          ns0:motivates <#iAction_anne_bonney_11> , <#iAction_anne_bonney_17> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_rapier_roy_1_contents>
+          a       ns0:TruthGraph .
+
+    <#iSetting_plotagent_5_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_20>
+          a       ns0:Perception ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iperception_plot_20_contents> ;
+          ns0:psi_causes <#iBelief_rapier_roy_8> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_34>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:time "13"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_rapier_roy_3>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iBelief_rapier_roy_3_contents> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_rapier_roy_4>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iBelief_rapier_roy_4_contents> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_32>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_rapier_roy_1>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iBelief_rapier_roy_1_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_rapier_roy_2>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iBelief_rapier_roy_2_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_38>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_6>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_rapier_roy_1> ;
+          ns0:hasContent <#iSetting_plotagent_6_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_7>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_anne_bonney_8> ;
+          ns0:hasContent <#iSetting_plotagent_7_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_36>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:time "14"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_5>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_anne_bonney_5> ;
+          ns0:hasContent <#iSetting_plotagent_5_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_13>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_13_contents> ;
+          ns0:time "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_14>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_14_contents> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_8_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_15>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_15_contents> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_9>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_9_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_13> ;
+          ns0:time "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_13>
+          a       ns0:Perception ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iperception_plot_13_contents> ;
+          ns0:psi_causes <#iBelief_rapier_roy_4> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_14>
+          a       ns0:Perception ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iperception_plot_14_contents> ;
+          ns0:psi_causes <#iBelief_rapier_roy_5> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_rapier_roy_6_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_15>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_15_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_16> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_16>
+          a       ns0:Perception ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iperception_plot_16_contents> ;
+          ns0:psi_causes <#iBelief_rapier_roy_6> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_10>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_10_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_14> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_11>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_11_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_15> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_16>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_16_contents> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_12>
+          a       ns0:Perception ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iperception_plot_12_contents> ;
+          ns0:psi_causes <#iBelief_rapier_roy_3> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_23>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_26>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:time "9"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_28>
+          a       ns2:WoundEnemy ;
+          ns0:character ns2:anne_bonney ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_12_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_17_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_9_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_rapier_roy_7_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_15_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_18>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_18_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_21> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_21>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_21_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_17>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_17_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_20> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_19>
+          a       ns0:Perception ;
+          ns0:character ns2:rapier_roy ;
+          ns0:hasContent <#iperception_plot_19_contents> ;
+          ns0:psi_causes <#iBelief_rapier_roy_7> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_20>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_20_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+}
+
+<#iBelief_anne_bonney_13_contents> {
+    ns2:annesRapier
+          ns1:heldBy ns2:anne_bonney .
+}
+
+<#iBelief_anne_bonney_16_contents> {
+    ns2:annesRapier
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_anne_bonney_20_contents> {
+    ns2:rapier_roy
+          ns2:health ns2:wounded .
+}
+
+<#iBelief_anne_bonney_5_contents> {
+    ns2:annesBelt
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_anne_bonney_8_contents> {
+    ns2:annesRapier
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_rapier_roy_1_contents> {
+    ns2:annesBelt
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_rapier_roy_2_contents> {
+    ns2:annesRapier
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_rapier_roy_3_contents> {
+    ns2:annesRapier
+          ns1:heldBy ns2:anne_bonney .
+}
+
+<#iBelief_rapier_roy_6_contents> {
+    ns2:annesRapier
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_rapier_roy_7_contents> {
+    ns2:rapier_roy
+          ns2:health ns2:wounded .
+}
+
+<#iSetting_plotagent_5_contents> {
+    ns2:annesBelt
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iSetting_plotagent_6_contents> {
+    ns2:annesBelt
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iSetting_plotagent_7_contents> {
+    ns2:annesRapier
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iSetting_plotagent_8_contents> {
+    ns2:annesRapier
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iperception_plot_12_contents> {
+    ns2:annesRapier
+          ns1:heldBy ns2:anne_bonney .
+}
+
+<#iperception_plot_15_contents> {
+    ns2:annesRapier
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iperception_plot_16_contents> {
+    ns2:annesRapier
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iperception_plot_17_contents> {
+    ns2:rapier_roy
+          ns2:health ns2:wounded .
+}
+
+<#iperception_plot_19_contents> {
+    ns2:rapier_roy
+          ns2:health ns2:wounded .
+}
+
+<#iperception_plot_9_contents> {
+    ns2:annesRapier
+          ns1:heldBy ns2:anne_bonney .
+}
+

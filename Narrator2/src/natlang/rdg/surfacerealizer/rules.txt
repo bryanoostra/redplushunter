@@ -1,0 +1,20 @@
+(forall (?x) (=> (type princess ?x) (type girl ?x)))
+(forall (?x) (=> (type girl ?x) (type person ?x)))
+(forall (?x) (=> (type knight ?x) (type man ?x)))
+(forall (?x) (=> (type man ?x) (type person ?x)))
+(forall (?x) (=> (type castle ?x) (type building ?x)))
+(forall (?x) (=> (type horse ?x) (type animal ?x)))
+(forall (?x) (=> (type prince ?x) (type man ?x)))
+(forall (?x) (=> (type man ?x) (type person ?x)))
+			
+(forall (?x) (=> (type person ?x) (exists ?y (and (type leg ?y) (has ?x ?y)))))
+(forall (?x) (=> (type person ?x) (exists ?y (and (type bedroom ?y) (has ?x ?y)))))
+(forall (?x) (=> (type book ?x) (exists ?y (and (type page ?y) (has ?x ?y)))))
+(forall (?x) (=> (type castle ?x) (exists ?y (and (type gate ?y) (has ?x ?y)))))
+(forall (?x) (=> (type knight ?x) (exists ?y (and (type horse ?y) (has ?x ?y)))))
+
+(forall (?x) (=> (type castle ?x) (one ?x gate)))
+(forall (?x) (=> (type person ?x) (one ?x bedroom)))
+(forall (?x) (=> (type knight ?x) (one ?x horse)))
+		
+(one sun)	

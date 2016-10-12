@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="cause-involuntary">
+		<nucleus>
+			<dt>
+	        		<node rel="top" cat="smain" >
+	        			<node rel="su" cat="np">
+    	 					<node rel="det" pos="det" root="de" morph="sing" />
+     						<node rel="hd" pos="noun" root="poes" morph="sing" />
+     					</node>
+	        			<node rel="hd" pos="verb" root="spin" morph="3.sing.present" />
+	        		</node>
+        		</dt>       
+		</nucleus>
+    		<satellite>
+    			<rhetrelation cat="additive">
+    				<nucleus>
+    					<dt>
+    						<node rel="top" cat="smain" >
+    							<node rel="hd" pos="verb" root="aai" morph="3.sing.present" />
+	        					<node rel="su" pos="nom" root="Amalia" />
+     							<node rel="obj1" cat="np">
+    	 							<node rel="det" pos="det" root="de" morph="sing" />
+     								<node rel="hd" pos="noun" root="poes" morph="sing" />
+     							</node>
+     							<node rel="mod" cat="pp">
+     								<node rel="hd" pos="prep" root="over" />
+     								<node rel="obj1" cat="np">
+     									<node rel="hd" pos="noun" root="rug" morph="sing" />
+     									<node rel="det" pos="det" root="haar" morph="sing" />
+     								</node>
+       							</node>
+     						</node>
+    					</dt>
+    				</nucleus>
+    				<satellite>
+		    			<dt>
+     						<node rel="top" cat="smain" >
+    							<node rel="hd" pos="verb" root="aai" morph="3.sing.present" />
+	        					<node rel="su" pos="nom" root="Amalia" />
+	        					<node rel="obj1" cat="np">
+    	 							<node rel="det" pos="det" root="de" morph="sing" />
+     								<node rel="hd" pos="noun" root="poes" morph="sing" />
+     							</node>
+     							<node rel="mod" cat="pp">
+     								<node rel="hd" pos="prep" root="over" />
+     								<node rel="obj1" cat="np">
+     									<node rel="hd" pos="noun" root="buik" morph="sing" />
+     									<node rel="det" pos="det" root="haar" morph="sing" />
+     								</node>     					
+     							</node>
+     						</node>
+      					</dt>
+	    			</satellite>
+			</rhetrelation>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

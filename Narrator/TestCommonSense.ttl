@@ -1,0 +1,39 @@
+@prefix :        <http://www.owl-ontologies.com/TestCommonSense.owl#> .
+@prefix cs:		<http://www.owl-ontologies.com/CommonSense.owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix protege:  <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ps:		<http://www.owl-ontologies.com/StoryWorldSettings/Pirates#> .
+
+<http://www.owl-ontologies.com/TestCommonSense.owl>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.owl-ontologies.com/CommonSense.owl> , <http://www.owl-ontologies.com/Pirates_Ivo.owl> .
+
+:shipHasDeck
+      rdf:type cs:RelationShip ;
+      cs:child
+              ps:Deck ;
+      cs:parent
+              ps:Ship ;
+      cs:relationtype
+              cs:has.
+
+:shipHasHold
+      rdf:type cs:RelationShip ;
+      cs:child
+              ps:Hold ;
+      cs:parent
+              ps:Ship ;
+      cs:relationtype
+              cs:has.
+              
+:shipHasWaterSupply
+      rdf:type cs:RelationShip ;
+      cs:child
+              ps:WaterSupply ;
+      cs:parent
+              ps:Ship ;
+      cs:relationtype
+              cs:has.

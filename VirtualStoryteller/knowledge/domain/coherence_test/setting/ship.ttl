@@ -1,0 +1,87 @@
+@prefix swc:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix ps:      <http://www.owl-ontologies.com/StoryWorldSettings/Pirates#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix :        <http://www.owl-ontologies.com/StoryWorldSettings/Pirates#> .
+
+# Description of the ship.
+# Author: Ivo Swartjes
+# Date:   27 nov 2007
+
+# A ship
+:oShip_1
+    a   ps:Ship ;
+    ps:hasWaterSupply   :oWaterSupply_1 ;
+    #ps:mooredAt :oTreasureIsland_1 ;
+    rdfs:label "the Jolly Roberts" ;
+    .
+    
+# A sea
+:oSea_1
+    a   ps:Sea ;
+    .
+    
+# Path for jumping into sea
+:oSeaJump_1
+    a   ps:JumpablePath ;    
+    swc:from :oDeck_1 ;
+    swc:to :oSea_1 ;
+    .
+
+# The deck
+:oDeck_1
+    a   ps:Deck ;
+    rdfs:label "the deck" ;
+    swc:partOf  :oShip_1 ;
+    .
+
+
+# ------------------------------------------------------------------------------------------------    
+# Below are some useable objects that MIGHT occur in the simulation, if used by framing operators.
+# ------------------------------------------------------------------------------------------------
+    
+# A bottle of rum
+:oRumBottle_1
+    a   ps:Bottle ;
+    swc:contains :oRum_1 ;
+    swc:at :oDeck_1 ;
+    rdfs:label "the bottle of rum" ;
+    .
+    
+# A bottle of rum
+#:oRumBottle_2
+#    a   ps:Bottle ;
+#    swc:contains :oRum_2 ;
+#    swc:at :oDeck_1 ;
+#    rdfs:label "a bottle of rum" ;
+#    .    
+
+# Rum
+:oRum_1
+    a   ps:Rum ;
+    .    
+    
+# Rum
+:oRum_2
+    a   ps:Rum ;
+    .       
+
+# A full water supply
+:oWaterSupply_1
+    a   ps:WaterSupply ;
+    swc:hasAttribute ps:full ;
+    rdfs:label "the ship's water supply"	
+    .
+
+:rapier_1
+    a   :Rapier ;
+    rdfs:label "a rapier" ;
+    .
+    
+   
+:rapier_2
+    a   :Rapier ;
+    rdfs:label "a rapier" ;    
+    .

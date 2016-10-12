@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="temp-before-gap">
+		<nucleus>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="su" pos="nom" root="Brutus" />
+					<node rel="hd" pos="verb" root="ben" morph="3.singular.present" />
+					<node rel="predc" cat="np">
+						<node rel="det" pos="det" root="een" morph="singular" />
+						<node rel="hd" pos="noun" root="jongetje" morph="singular" />
+						<node rel="mod" pos="adj" root="lief" />
+					</node>
+				</node>
+			</dt>
+		</nucleus>
+		<satellite>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="su" pos="nom" root="Brutus" />
+					<node rel="hd" pos="verb" root="ben" morph="3.singular.present" />
+					<node rel="predc" cat="np">
+						<node rel="det" pos="det" root="een" morph="singular" />
+						<node rel="hd" pos="noun" root="schurk" morph="singular" />
+						<node rel="mod" pos="adj" root="gemene" />
+					</node>
+				</node>
+			</dt>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

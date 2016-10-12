@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:j.0="http://www.owl-ontologies.com/CommonSense.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://www.owl-ontologies.com/TestCommonSense.owl#"
+  xml:base="http://www.owl-ontologies.com/TestCommonSense.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.owl-ontologies.com/Pirates_Ivo.owl"/>
+    <owl:imports rdf:resource="http://www.owl-ontologies.com/CommonSense.owl"/>
+  </owl:Ontology>
+  <j.0:RelationShip rdf:ID="shipHasHold">
+    <j.0:child rdf:resource="http://www.owl-ontologies.com/Pirates_Ivo.owl#Hold"/>
+    <j.0:parent rdf:resource="http://www.owl-ontologies.com/Pirates_Ivo.owl#Ship"/>
+    <j.0:relationtype rdf:resource="http://www.owl-ontologies.com/CommonSense.owl#has"/>
+  </j.0:RelationShip>
+  <j.0:RelationShip rdf:ID="shipHasDeck">
+    <j.0:relationtype rdf:resource="http://www.owl-ontologies.com/CommonSense.owl#has"/>
+    <j.0:child rdf:resource="http://www.owl-ontologies.com/Pirates_Ivo.owl#Deck"/>
+    <j.0:parent rdf:resource="http://www.owl-ontologies.com/Pirates_Ivo.owl#Ship"/>
+  </j.0:RelationShip>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->

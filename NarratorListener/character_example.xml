@@ -1,0 +1,22 @@
+<character id="bystander1" control="AI" perception="relion">
+  <ic>
+    <name>Barry</name>
+    <gender>male</gender>
+    <at>
+      <location id="alley"></location>
+    </at>
+    <role>loiteringyouth</role>
+    <personality>melancholic</personality>
+    <emotion>angry</emotion>
+    <stances></stances>
+    <goal>windowshopping</goal>
+    <!-- Actions-->
+  </ic>
+  <ooc></ooc>
+  <presentation>
+    <narration>
+      <adjective>tough</adjective>
+      <descriptive lang="NL">een schoffie</descriptive>
+    </narration>
+  </presentation>
+</character>

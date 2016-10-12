@@ -1,0 +1,293 @@
+<world>
+	<!-- LOCATIONS -->
+	<locations>
+		<location id="main_street">
+			<name>Hoofdstraat</name>
+			<path_to>
+				<location id="alley" />
+				<location id="square" />
+			</path_to>
+			<presentation>
+                <narration>
+					<sense>main_street</sense>
+                    <descriptive lang="NL">
+						de hoofdstraat
+                    </descriptive>
+                </narration>
+			</presentation>
+		</location>
+			
+		<location id="alley">
+			<name>Steegje</name>
+			<path_to>
+				<location id="main_street" />
+			</path_to>
+			<presentation>
+                <narration>
+					<sense>alley</sense>
+                    <descriptive lang="NL">
+                        het steegje
+                    </descriptive>
+                </narration>
+			</presentation>
+		</location>
+		
+		<location id="square1">
+			<name>Plein</name>
+			<path_to>
+				<location id="main_street" />
+			</path_to>
+			<presentation>
+                <narration>
+					<sense>square</sense>
+                    <descriptive lang="NL">
+                        het plein
+                    </descriptive>
+                </narration>
+			</presentation>
+		</location>
+	</locations>
+	
+	<!-- WORLDOBJECTS -->
+	<world_objects>
+			
+		<!-- ITEMS -->
+		<items>
+			<item id="wastebin1">
+				<at>
+					<location id="alley" />
+				</at>
+				<presentation>
+                    <narration>
+                        <descriptive lang="NL">
+                            de prullenbak
+                        </descriptive>
+                    </narration>
+				</presentation>
+			</item>
+			
+			<item id="gun1">
+				<owned_by>
+					<character id="policeofficer" />
+				</owned_by>
+				<carried_by>
+					<character id="policeofficer" />
+				</carried_by>
+				<presentation>
+                    <narration>
+                        <descriptive lang="NL">
+                            het pistool
+                        </descriptive>
+                    </narration>
+				</presentation>
+			</item>
+					
+			<item id="shopwindow1">
+				<at>
+					<location id="main_street" />
+				</at>
+				
+				<presentation>
+                    <narration>
+						<sense>shopwindow</sense>
+                        <descriptive lang="NL">
+                            de winkelruit
+                        </descriptive>
+                    </narration>
+				</presentation>
+			</item>
+			
+			<item id="schoen1">
+				<at>
+					<location id="main_street" />
+				</at>
+				<presentation>
+                    <narration>
+						<sense>shoe</sense>
+                        <descriptive lang="NL">
+							de schoen
+                        </descriptive>
+                    </narration>
+				</presentation>
+			</item>
+			
+		</items>
+		
+		<!-- ENTITIES -->
+		<!-- "Henk de politieagent" -->
+		<characters>
+			<character id="policeofficer" control="human" perception="relion">
+				<!-- In-character data -->
+				<ic>
+					<name>Adrie</name>
+					<gender>male</gender>
+					<at>
+						<location id="main_street" />
+					</at>
+					<role>policeofficer</role>
+					<!-- Mental state of agent consists of personality, emotion and stances -->
+					<personality>choleric</personality>
+					<emotion>happy</emotion>
+					<!-- Stance w.r.t. roles or specific characters (entities) -->
+					<stances>
+					</stances>
+				</ic>
+				
+				<!-- Out-of-character data -->
+				<ooc>
+				</ooc>
+				
+				<!-- Presentation data -->
+				<presentation>
+                    <narration>
+                        <descriptive lang="NL">
+							een politieman
+                        </descriptive>
+                    </narration>
+				</presentation>
+			</character>
+
+			<!-- "Barry de omstaander" -->
+			<character id="bystander1" control="AI" perception="relion">
+				<!-- In-character data -->
+				<ic>
+					<name>Barry</name>
+					<gender>male</gender>
+					<at>
+						<location id="main_street" />
+					</at>
+					<role>loiteringyouth</role>
+					<!-- Mental state of agent consists of personality, emotion and stances -->
+					<personality>melancholic</personality>
+					<emotion>angry</emotion>
+					<!-- Stance w.r.t. roles or specific characters (entities) -->
+					<stances>
+					</stances>
+					<!-- In-character goal -->
+					<goal>windowshopping</goal>
+				</ic>
+				
+				<!-- Out-of-character data -->
+				<ooc>
+				</ooc>
+				
+				<!-- Presentation data -->
+				<presentation>
+                    <narration>
+						<!-- One or more adjectives that apply to this character. -->
+						<adjective>tough</adjective>
+						
+                        <descriptive lang="NL">
+                            een omstaander
+                        </descriptive>
+                    </narration>
+				</presentation>
+			</character>
+			
+			<!-- "Barry de omstaander" -->
+			<character id="bystander2" control="AI" perception="relion">
+				<!-- In-character data -->
+				<ic>
+					<name>Richard</name>
+					<gender>Male</gender>
+					<at>
+						<location id="main_street" />
+					</at>
+					<role>bystander</role>
+					<!-- Mental state of agent consists of personality, emotion and stances -->
+					<personality>melancholic</personality>
+					<emotion>angry</emotion>
+					<!-- Stance w.r.t. roles or specific characters (entities) -->
+					<stances>
+					</stances>
+					<!-- In-character goal -->
+					<goal>windowshopping</goal>
+				</ic>
+				
+				<!-- Out-of-character data -->
+				<ooc>
+				</ooc>
+				
+				<!-- Presentation data -->
+				<presentation>
+                    <narration>
+						<adjective>tough</adjective>
+						<adjective>beautiful</adjective>
+					
+                        <descriptive lang="NL">
+                            een omstaander
+                        </descriptive>
+                    </narration>
+				</presentation>
+			</character>
+			
+			<!-- "Barry de omstaander" -->
+			<character id="bystander3" control="AI" perception="relion">
+				<!-- In-character data -->
+				<ic>
+					<name>Manuela</name>
+					<gender>female</gender>
+					<at>
+						<location id="main_street" />
+					</at>
+					<role>bystander</role>
+					<!-- Mental state of agent consists of personality, emotion and stances -->
+					<personality>melancholic</personality>
+					<emotion>afraid</emotion>
+					<!-- Stance w.r.t. roles or specific characters (entities) -->
+					<stances>
+					</stances>
+					<!-- In-character goal -->
+					<goal>windowshopping</goal>
+				</ic>
+				
+				<!-- Out-of-character data -->
+				<ooc>
+				</ooc>
+				
+				<!-- Presentation data -->
+				<presentation>
+                    <narration>
+                        <descriptive lang="NL">
+                            een omstaander
+                        </descriptive>
+                    </narration>
+				</presentation>
+				
+			</character>
+			
+		</characters>
+		
+	</world_objects>
+	
+	
+	<!-- The list of all possible actions -->
+	<actions>
+		<action type="move_to" />
+		<action type="look_at" />
+		<action type="do_nothing" />
+		<action type="kick" />
+		<action type="wave" />
+		<action type="duck_and_cover" />
+		<action type="ask_for_direction" />
+		<action type="speak" />
+		<action type="draw" />
+		
+		<action type="hit_with" />
+		<action type="insult" />
+		<action type="speak_to" />
+	</actions>
+	
+	<!-- The list of all possible emotions -->
+	<emotions>
+		<emotion type="angry" />
+		<emotion type="sad" />
+	</emotions>	
+	
+	<!-- The list of roles that characters can have -->
+	<roles>
+		<role id="policeofficer" />
+		<role id="bystander" />
+		<role id="loiteringyouth" />
+	</roles>
+</world>

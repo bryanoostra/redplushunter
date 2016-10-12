@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="cause-voluntary">
+		<nucleus>
+			<dt>
+	        	<node rel="top" cat="smain" >
+	        		<node rel="su" cat="np">
+    	 				<node rel="det" pos="det" root="de" morph="sing" />
+     					<node rel="hd" pos="noun" root="prins" morph="sing" />
+     				</node>
+	        		<node rel="hd" pos="verb" root="haat" morph="3.sing.present" />
+	        		<node rel="obj1" pos="nom" root="Brutus" />
+	        	</node>
+        	</dt>       
+		</nucleus>
+    	<satellite>
+    		<rhetrelation cat="cause-involuntary">
+    			<nucleus>
+    				<dt>
+    					<node rel="top" cat="smain" >
+    						<node rel="hd" pos="verb" root="haat" morph="3.sing.present" />
+	        				<node rel="obj1" pos="nom" root="Brutus" />
+	        				<node rel="su" pos="nom" root="Amalia" />
+     					</node>
+    				</dt>
+    			</nucleus>
+    			<satellite>
+		    		<dt>
+     					<node rel="top" cat="smain" >
+    						<node rel="hd" pos="verb" root="haat" morph="3.sing.present" />
+	        				<node rel="su" pos="nom" root="Brutus" />
+	        				<node rel="obj1" pos="nom" root="Amalia" />
+     					</node>
+      				</dt>
+	    		</satellite>
+			</rhetrelation>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

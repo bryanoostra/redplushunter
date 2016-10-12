@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1403010031505" name="duplicate:http://www.owl-ontologies.com/FabulaKnowledge.owl" uri="FabulaKnowledge-stripped.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403010031505" name="duplicate:http://www.owl-ontologies.com/FabulaKnowledge.owl" uri="FabulaKnowledge-swoop.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403010031505" name="duplicate:http://www.owl-ontologies.com/FabulaKnowledge.owl" uri="FabulaKnowledge-unstripped.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403010031505" name="duplicate:http://www.owl-ontologies.com/FabulaKnowledge.owl" uri="FabulaKnowledge.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403010031505" name="duplicate:http://www.owl-ontologies.com/FabulaKnowledge.owl" uri="FabulaKnowledge_noCausalRestrictions.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403010031505" name="http://www.owl-ontologies.com/StoryWorldCore.owl" uri="StoryWorldCore.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403010031505" name="http://www.owl-ontologies.com/StoryWorldInstances.owl" uri="Old/PlopWorld.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403010031505" name="duplicate:http://www.owl-ontologies.com/StoryWorldSettings/Cinderella" uri="Old/cinderellaSetting.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403010031505" name="duplicate:http://www.owl-ontologies.com/StoryWorldSettings/Cinderella" uri="Old/cinderellaSetting2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403010031505" name="shadowed:http://www.owl-ontologies.com/StoryWorldCore.owl" uri="Old/StoryWorldCore.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1403010031505" name="shadowed:http://www.owl-ontologies.com/StoryWorldCore.owl" uri="New/StoryWorldCore.owl"/>
+    </group>
+</catalog>

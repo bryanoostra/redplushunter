@@ -1,0 +1,46 @@
+GF:
+Een lange omstander, die Richard heette, was in de hoofdstraat. 
+Ook was een stoere hangjongere, die Barry heette, in de hoofdstraat. 
+Ook was een politieman, die Adrie heette, in de hoofdstraat. 
+Eerder had Richard Barry's scooter gekrast, dus Barry was boos. 
+Hij schreeuwde naar de lange omstander. 
+Adrie hoorde dat Barry naar de omstander schreeuwde. 
+Nadat Adrie naar Barry zwaaide, gebaarde hij kalmerend naar hem.
+Hij praatte met de hangjongere, zodat hij rustig was. 
+De politieman zag dat de hangjongere rustig was. 
+Daarom was Adrie blij. 
+
+GG:
+Een lange omstander, die Richard heette, was in de hoofdstraat. 
+Ook was een stoere hangjongere, die Barry heette, in de hoofdstraat. 
+Ook was een politieman, die Adrie heette, in de hoofdstraat. 
+Barry was boos, dus hij schreeuwde naar Richard. 
+Adrie hoorde dat Barry naar de omstander schreeuwde. 
+De politieman zwaaide daarom naar de hangjongere.
+Adrie praatte met Barry, nadat hij naar de hangjongere kalmerend gebaarde. 
+De hangjongere was rustig. 
+Adrie zag dat de hangjongere rustig was. Dus was de politieman blij. 
+
+AN:
+Een lange omstander, die Richard heette, was in de hoofdstraat. 
+Ook was een stoere hangjongere, die Barry heette, in de hoofdstraat. 
+Ik was ook in de hoofdstraat. 
+Ik hoorde dat Barry naar Richard schreeuwde, dus ik zwaaide naar de hangjongere. 
+Ik praatte met Barry, nadat ik naar de stoere hangjongere kalmerend gebaarde. 
+Ik zag dat de hangjongere rustig was. Daarom was ik blij. 
+
+BF:
+Een lange omstander, die Richard heette, was in de hoofdstraat. 
+Ook was ik in de hoofdstraat. 
+Ook was een politieman, die Adrie heette, in de hoofdstraat. 
+Eerder had Richard mijn scooter gekrast, dus ik was boos en ik schreeuwde naar hem. 
+Nadat Adrie naar mij zwaaide, gebaarde hij kalmerend naar mij. 
+Hij praatte met mij, zodat ik rustig was. 
+
+BG:
+Een lange omstander, die Richard heette, was in de hoofdstraat. 
+Ook was ik in de hoofdstraat. 
+Ook was een politieman, die Adrie heette, in de hoofdstraat. 
+Ik was boos, dus ik schreeuwde naar Richard. 
+Nadat Adrie naar mij zwaaide, gebaarde hij naar mij kalmerend. 
+Hij praatte met mij, zodat ik rustig was. 

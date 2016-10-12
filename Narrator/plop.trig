@@ -1,0 +1,666 @@
+@prefix :        <http://www.owl-ontologies.com/StoryWorldSettings/plop.owl#> .
+@prefix ns1:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns0:     <http://www.owl-ontologies.com/FabulaKnowledge.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<plop.owl> {
+	fabula:Taste
+          a       owl:Class ;
+          rdfs:subClassOf fabula:Perception .
+
+    fabula:Drink
+          a       owl:Class ;
+          rdfs:comment "Ingesting substance food." ;
+          rdfs:subClassOf fabula:Consume .
+
+    fabula:duration
+          a       owl:DatatypeProperty , owl:FunctionalProperty ;
+          rdfs:comment "total duration of an action" ;
+          rdfs:domain fabula:Action ;
+          rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+    fabula:Close
+          a       owl:Class ;
+          rdfs:comment "Close a device which is open and can be closed using the object itself. This excludes closing a frying pan with its cover, assuming that the cover is not a part of the pan." ;
+          rdfs:subClassOf fabula:Manipulate .
+
+    fabula:Feel
+          a       owl:Class ;
+          rdfs:subClassOf fabula:Perception .
+
+    fabula:Insert
+          a       owl:Class ;
+          rdfs:comment "The action of inserting an Object into another object." ;
+          rdfs:subClassOf fabula:Put .
+
+    fabula:character
+          a       owl:FunctionalProperty , owl:ObjectProperty ;
+          rdfs:domain fabula:FabulaElement .
+
+    fabula:chanceOfSuccess
+          a       owl:DatatypeProperty , owl:FunctionalProperty ;
+          rdfs:comment "Chance of success for an action" ;
+          rdfs:domain fabula:Action ;
+          rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+    fabula:Fold
+          a       owl:Class ;
+          rdfs:comment "Fold a foldable item into its folded or original state." ;
+          rdfs:subClassOf fabula:Manipulate .
+
+    fabula:Walk
+          a       owl:Class ;
+          rdfs:comment "Normal movement over ground." ;
+          rdfs:subClassOf fabula:Ambulate .
+
+    fabula:Unlock
+          a       owl:Class ;
+          rdfs:comment "Unlock a lock with a key." ;
+          rdfs:subClassOf fabula:Manipulate .
+
+    <http://www.owl-ontologies.com/FabulaKnowledge.owl>
+          a       owl:Ontology ;
+          owl:imports <http://protege.stanford.edu/plugins/owl/protege> .
+
+    fabula:AvoidGoal
+          a       owl:Class ;
+          rdfs:comment "A goal to avoid a certain situation / state, i.e. that the vilain escapes" ;
+          rdfs:subClassOf fabula:Goal .
+
+    fabula:Disassemble
+          a       owl:Class ;
+          rdfs:comment "Disassemble the object into its parts." ;
+          rdfs:subClassOf fabula:Creation .
+
+    fabula:Cognition
+          a       owl:Class ;
+          rdfs:subClassOf fabula:InternalElement .
+
+    fabula:WorldChanges
+          a       owl:Class ;
+          rdfs:subClassOf fabula:InternalAttribute .
+
+    fabula:motivates
+          a       owl:ObjectProperty ;
+          rdfs:subPropertyOf fabula:causes .
+
+    fabula:TestMove1Effects
+          a       fabula:TestMoveEffects ;
+          fabula:delete "(swc:isMovingOnTransitWay ?AGENS ?path)" .
+
+    fabula:Drain
+          a       owl:Class ;
+          rdfs:comment "Using a syringe to extract a Substance from an Object. Inverse (more or less) of Inject." ;
+          rdfs:subClassOf fabula:Extract .
+
+    fabula:BeliefElement
+          a       owl:Class ;
+          rdfs:comment "An Internal Element representing a belief of a character" ;
+          rdfs:subClassOf fabula:InternalElement .
+
+    fabula:Goal
+          a       owl:Class ;
+          rdfs:comment "A goal of a character" ;
+          rdfs:subClassOf fabula:FabulaElement .
+
+    fabula:Event
+          a       owl:Class ;
+          rdfs:comment "Any change in the world that is not a direct and planned result of a character action" ;
+          rdfs:subClassOf fabula:FabulaElement .
+
+    fabula:Outcome
+          a       owl:Class ;
+          rdfs:comment "Describes what happened to a Goal" ;
+          rdfs:subClassOf fabula:FabulaElement .
+
+    fabula:resolves
+          a       owl:ObjectProperty , owl:FunctionalProperty ;
+          rdfs:domain fabula:Outcome ;
+          rdfs:range fabula:Goal .
+
+    fabula:TestMoveInterEffects
+          a       owl:Class ;
+          rdfs:subClassOf fabula:TestMoveChanges ;
+          rdfs:subClassOf
+                  [ a       owl:Restriction ;
+                    owl:hasValue "(swc:supportedBy ?AGENS ?currLoc)" ;
+                    owl:onProperty fabula:delete
+                  ] .
+
+    fabula:enables
+          a       owl:ObjectProperty ;
+          rdfs:subPropertyOf fabula:causes .
+
+    fabula:TestMove
+          a       owl:Class ;
+          rdfs:comment "A testing move. Should be removed if everything is working properly." ;
+          rdfs:subClassOf fabula:Action ;
+          rdfs:subClassOf
+                  [ a       owl:Restriction ;
+                    owl:hasValue "100" ;
+                    owl:onProperty fabula:chanceOfSuccess
+                  ] ;
+          rdfs:subClassOf
+                  [ a       owl:Restriction ;
+                    owl:hasValue "2" ;
+                    owl:onProperty fabula:interruptableDuration
+                  ] ;
+          rdfs:subClassOf
+                  [ a       owl:Restriction ;
+                    owl:hasValue "(rdf:type ?currLoc swc:GeographicArea)" ;
+                    owl:onProperty fabula:preconditions
+                  ] ;
+          rdfs:subClassOf
+                  [ a       owl:Restriction ;
+                    owl:hasValue "4" ;
+                    owl:onProperty fabula:duration
+                  ] ;
+          rdfs:subClassOf
+                  [ a       owl:Restriction ;
+                    owl:hasValue "(swc:supportedBy ?AGENS ?currLoc)" ;
+                    owl:onProperty fabula:preconditions
+                  ] .
+
+    fabula:StitchOff
+          a       owl:Class ;
+          rdfs:comment "Turn off a device which 'on'." ;
+          rdfs:subClassOf fabula:Manipulate .
+
+    <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_See.plop.12>
+          a       fabula:See ;
+          fabula:character <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1> ;
+          fabula:psi_causes <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_BeliefElement.plop.14> .
+
+    fabula:causes
+          a       owl:ObjectProperty .
+
+    <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Eat.plop.9>
+          a       fabula:Eat ;
+          fabula:agens <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1> ;
+          fabula:hasContext <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_AttainGoal.plop.8> ;
+          fabula:patiens <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.6> .
+
+    fabula:FutureBeliefElement
+          a       owl:Class ;
+          rdfs:comment "Describes a belief about the future, this could be a hope or a worry, for instance" ;
+          rdfs:subClassOf fabula:BeliefElement .
+
+    fabula:TakeFrom
+          a       owl:Class ;
+          rdfs:comment """The action of taking an object which is supported by another
+object.""" ;
+          rdfs:subClassOf fabula:Take .
+
+    fabula:SwitchOn
+          a       owl:Class ;
+          rdfs:comment "Turn a device with a power source on." ;
+          rdfs:subClassOf fabula:Manipulate .
+
+    fabula:Consume
+          a       owl:Class ;
+          rdfs:comment "Ingesting food" ;
+          rdfs:subClassOf fabula:Action .
+
+    fabula:Smell
+          a       owl:Class ;
+          rdfs:subClassOf fabula:Perception .
+
+    fabula:preconditions
+          a       owl:DatatypeProperty ;
+          rdfs:comment "Conditions which must hold for an action to be performed" ;
+          rdfs:domain fabula:Action ;
+          rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+    fabula:Character
+          a       owl:Class .
+
+    fabula:InternalElement
+          a       owl:Class ;
+          rdfs:comment "Anything internal to a character, like a belief, or an emotion, feeling, etc." ;
+          rdfs:subClassOf fabula:FabulaElement .
+
+    fabula:Extract
+          a       owl:Class ;
+          rdfs:comment "The action of extracting an Object from another Object" ;
+          rdfs:subClassOf fabula:Take .
+
+    fabula:Creation
+          a       owl:Class ;
+          rdfs:comment "Class of actions dealing with creation and uncreation." ;
+          rdfs:subClassOf fabula:Action .
+
+    fabula:interEffects
+          a       owl:ObjectProperty , owl:FunctionalProperty ;
+          rdfs:comment "Changes of the world after interDuration time has passed, and therefore making the action uninterruptable. Only used in TransitMoves." ;
+          rdfs:domain fabula:Action ;
+          rdfs:range fabula:WorldChanges .
+
+    fabula:Open
+          a       owl:Class ;
+          rdfs:comment "Open a device which is closed." ;
+          rdfs:subClassOf fabula:Manipulate .
+
+    <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Outcome.plop.16>
+          a       fabula:Outcome ;
+          fabula:character <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1> ;
+          fabula:resolves <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_AttainGoal.plop.8> .
+
+    fabula:Transfer
+          a       owl:Class ;
+          rdfs:comment """The general action of changing the location of an object other
+than the acting object.""" ;
+          rdfs:subClassOf fabula:Action .
+
+    fabula:PutIn
+          a       owl:Class ;
+          rdfs:comment "The action of placing an Object inside a Container." ;
+          rdfs:subClassOf fabula:Insert .
+
+    fabula:DropControl
+          a       owl:Class ;
+          rdfs:comment "Drop control over a device." ;
+          rdfs:subClassOf fabula:ControlAct .
+
+    fabula:TestMove2
+          a       fabula:TestMove ;
+          fabula:effects fabula:TestMove1Effects ;
+          fabula:interEffects fabula:TestMove1InterEffects ;
+          fabula:preconditions
+                  "(swc:toGeographicArea ?path ?currLoc)" , "(swc:fromGeographicArea ?path ?TARGET)" .
+
+    fabula:TestMove1InterEffects
+          a       fabula:TestMoveInterEffects ;
+          fabula:add "(swc:isMovingOnTransitWay ?AGENS ?path)" .
+
+    fabula:add
+          a       owl:DatatypeProperty ;
+          rdfs:comment "List of facts to be added upon a world change." ;
+          rdfs:domain fabula:WorldChanges ;
+          rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+    fabula:TestMove3
+          a       fabula:TestMove ;
+          fabula:effects fabula:TestMove1Effects ;
+          fabula:interEffects fabula:TestMove1InterEffects ;
+          fabula:preconditions
+                  "(swc:toGeographicArea ?path ?TARGET)" , "(swc:fromGeographicArea ?path ?currloc)" , "(not(swc:attachedBy ?AGENS ?AttachingObject))" .
+
+    fabula:TestMove4
+          a       fabula:TestMove ;
+          fabula:effects fabula:TestMove1Effects ;
+          fabula:interEffects fabula:TestMove1InterEffects ;
+          fabula:preconditions
+                  "(swc:fromGeographicArea ?path ?currLoc)" , "(swc:toGeographicArea ?path ?TARGET)" , "(swc:isLocated ?TARGET ?multipleAnswers)" .
+
+    <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_BeliefElement.plop.14>
+          a       fabula:BeliefElement ;
+          fabula:character <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1> ;
+          fabula:psi_causes <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Outcome.plop.16> .
+
+    fabula:Untie
+          a       owl:Class ;
+          rdfs:comment "Detaching an object which is fastened by a rope-like device." ;
+          rdfs:subClassOf fabula:Detach .
+
+    fabula:psi_causes
+          a       owl:ObjectProperty ;
+          rdfs:subPropertyOf fabula:causes .
+
+    fabula:Action
+          a       owl:Class ;
+          rdfs:subClassOf fabula:FabulaElement .
+
+    fabula:TestMoveEffects
+          a       owl:Class ;
+          rdfs:subClassOf fabula:TestMoveChanges ;
+          rdfs:subClassOf
+                  [ a       owl:Restriction ;
+                    owl:hasValue "(swc:supportedBy ?AGENS ?TARGET)" ;
+                    owl:onProperty fabula:add
+                  ] .
+
+    fabula:CurrentBeliefElement
+          a       owl:Class ;
+          rdfs:comment "Describes a belief about the now...e.g. what is believed to be true now." ;
+          rdfs:subClassOf fabula:BeliefElement .
+
+    fabula:effects
+          a       owl:FunctionalProperty , owl:ObjectProperty ;
+          rdfs:comment "effects of an succesfully performed action" ;
+          rdfs:domain fabula:Action ;
+          rdfs:range fabula:WorldChanges .
+
+    fabula:Emotion
+          a       owl:Class ;
+          rdfs:subClassOf fabula:InternalElement .
+
+    fabula:Detach
+          a       owl:Class ;
+          rdfs:subClassOf fabula:Attaching .
+
+    fabula:TakeOut
+          a       owl:Class ;
+          rdfs:comment "The action of taking an object out of a Container." ;
+          rdfs:subClassOf fabula:Extract .
+
+    fabula:Eat
+          a       owl:Class ;
+          rdfs:comment "Ingesting corpuscular food. (i.e. food which is not a substance)." ;
+          rdfs:subClassOf fabula:Consume .
+
+    fabula:Glue
+          a       owl:Class ;
+          rdfs:comment "Attach one object to another using a sticky substance. The substance will be removed from the storyworld after use." ;
+          rdfs:subClassOf fabula:Attach .
+
+    fabula:TransitMove
+          a       owl:Class ;
+          rdfs:comment """The general class of actions in which the acting object changes
+its location.""" ;
+          rdfs:subClassOf fabula:Action .
+
+    fabula:Assemble
+          a       owl:Class ;
+          rdfs:comment "Creating an artifact from its parts. Action is reversible by Disassemble." ;
+          rdfs:subClassOf fabula:Make .
+
+    fabula:Ambulate
+          a       owl:Class ;
+          rdfs:comment "Movement over ground using legs." ;
+          rdfs:subClassOf fabula:GroundMove .
+
+    fabula:Inject
+          a       owl:Class ;
+          rdfs:comment """Inserting a BiologicallyActiveSubstance into an Animal or Human
+with a syringe. This is SUMO and will not be implemented in our first
+world.""" ;
+          rdfs:subClassOf fabula:Insert .
+
+    fabula:isNonPerception
+          a       owl:DatatypeProperty , owl:FunctionalProperty ;
+          rdfs:domain fabula:Perception ;
+          rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> .
+
+    <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_BeliefElement.plop.3>
+          fabula:character <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1> ;
+          fabula:psi_causes <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_AttainGoal.plop.8> .
+
+    fabula:Fly
+          a       owl:Class ;
+          rdfs:comment """Movement through the air using wings. Is not yet different from Air-
+Move. Note that AirMove is included because of consistency, and Fly is
+added because it is a more intuitive term to use. One can split AirMove
+in movement using moving wings and movement using a jet-engine, if
+it proves to be a useful distinction.""" ;
+          rdfs:subClassOf fabula:AirMove .
+
+    fabula:Attaching
+          a       owl:Class ;
+          rdfs:comment "General class of actions that deal with attaching and detaching objects." ;
+          rdfs:subClassOf fabula:Action .
+
+    fabula:LeaveGoal
+          a       owl:Class ;
+          rdfs:comment "A goal to leave a certain situation / state, i.e. being hungry" ;
+          rdfs:subClassOf fabula:Goal .
+
+    fabula:TestMoveChanges
+          a       owl:Class ;
+          rdfs:subClassOf fabula:WorldChanges .
+
+    fabula:Lock
+          a       owl:Class ;
+          rdfs:comment "Lock a securityDevice 'Lock'" ;
+          rdfs:subClassOf fabula:Manipulate .
+
+    fabula:TakeControl
+          a       owl:Class ;
+          rdfs:comment "Take control of a device." ;
+          rdfs:subClassOf fabula:ControlAct .
+
+    <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.6>
+          a       ns1:FruitOrVegetable ;
+          fabula:hasContext <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_BeliefElement.plop.3> ;
+          fabula:hasInterpretation
+                  <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.4> ;
+          ns1:isLocated <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_GeographicArea.plop.7> .
+
+    <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_TakeFrom.plop.10>
+          a       fabula:TakeFrom ;
+          fabula:agens <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1> ;
+          fabula:patiens <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.6> .
+
+    <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.4>
+          a       ns1:FruitOrVegetable .
+
+    <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_AttainGoal.plop.8>
+          a       ns1:AttainGoal ;
+          fabula:character <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1> ;
+          fabula:motivates <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_TakeFrom.plop.10> , <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Eat.plop.11> .
+
+    fabula:WaterMove
+          a       owl:Class ;
+          rdfs:comment "All movement that is done over a WaterWay." ;
+          rdfs:subClassOf fabula:TransitMove .
+
+    fabula:Transform
+          a       owl:Class ;
+          rdfs:comment "Creating an artifact from its substances. (i.e. create a WineGlass from Sand or a Key from Metal). Action is irreversible." ;
+          rdfs:subClassOf fabula:Make .
+
+    fabula:Put
+          a       owl:Class ;
+          rdfs:comment """The action of changing the location of an object which has an isLocated
+relation with the hands (or hand-like object) of the actor. After the
+action the actor does not hold the object anymore.""" ;
+          rdfs:subClassOf fabula:Transfer .
+
+    fabula:Kick
+          a       owl:Class ;
+          rdfs:comment "Kick an object using ones legs." ;
+          rdfs:subClassOf fabula:Attack .
+
+    fabula:InternalAttribute
+          a       owl:Class ;
+          rdfs:comment "Property made into a class" .
+
+    fabula:GroundMove
+          a       owl:Class ;
+          rdfs:comment """All move actions that are done over the ground (i.e. a GroundWay) fall in this
+category.""" ;
+          rdfs:subClassOf fabula:TransitMove .
+
+    fabula:TestMove1
+          a       fabula:TestMove ;
+          fabula:effects fabula:TestMove1Effects ;
+          fabula:interEffects fabula:TestMove1InterEffects ;
+          fabula:preconditions
+                  "(swc:fromGeographicArea ?path ?currLoc)" , "(swc:toGeographicArea ?path ?TARGET)" .
+
+    fabula:Punch
+          a       owl:Class ;
+          rdfs:comment "Attack an object using bare hands." ;
+          rdfs:subClassOf fabula:Attack .
+
+    fabula:Climb
+          a       owl:Class ;
+          rdfs:comment """Movement over ground using arms and legs. Used for crossing a
+very steep hill or for crossing a path which is blocked by some large
+object (like a Wall).""" ;
+          rdfs:subClassOf fabula:GroundMove .
+
+    fabula:phi_causes
+          a       owl:ObjectProperty ;
+          rdfs:subPropertyOf fabula:causes .
+
+    fabula:interruptableDuration
+          a       owl:DatatypeProperty , owl:FunctionalProperty ;
+          rdfs:comment "Duration of an action in which it can be interrupted. Only used for TransitMoves." ;
+          rdfs:domain fabula:Action ;
+          rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+    fabula:PutOn
+          a       owl:Class ;
+          rdfs:comment """The action of placing an Object from ones Hands atop of another
+object.""" ;
+          rdfs:subClassOf fabula:Put .
+
+    fabula:SustainGoal
+          a       owl:Class ;
+          rdfs:comment "A goal to sustain a certain situation or state, i.e. being healthy" ;
+          rdfs:subClassOf fabula:Goal .
+
+    fabula:ControlAct
+          a       owl:Class ;
+          rdfs:comment "Actions involving control" ;
+          rdfs:subClassOf fabula:Action .
+
+    fabula:Manipulate
+          a       owl:Class ;
+          rdfs:comment "General class of actions that change one property of an object." ;
+          rdfs:subClassOf fabula:Action .
+
+    fabula:Take
+          a       owl:Class ;
+          rdfs:comment """The action of changing the location of an object to the grabbing device
+of the acting object.""" ;
+          rdfs:subClassOf fabula:Transfer .
+
+    <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_GeographicArea.plop.7>
+          a       ns1:GeographicArea ;
+          fabula:hasContext <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_BeliefElement.plop.3> ;
+          fabula:hasInterpretation
+                  <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_GeographicArea.plop.5> .
+
+    fabula:AirMove
+          a       owl:Class ;
+          rdfs:comment """Transit movement through the air. Note that one can fly through
+corridors.""" ;
+          rdfs:subClassOf fabula:TransitMove .
+
+    fabula:FabulaElement
+          a       owl:Class ;
+          rdfs:comment "An element that represents a part of fabula, being that what happens in a story, the actual events and processes" .
+
+    fabula:Make
+          a       owl:Class ;
+          rdfs:comment """[SUMO] The subclass of Creation in which an individual Artifact or a type of
+Artifact is made.""" ;
+          rdfs:subClassOf fabula:Creation .
+
+    fabula:delete
+          a       owl:DatatypeProperty ;
+          rdfs:comment "list of facts to be deleted upon a world change." ;
+          rdfs:domain fabula:WorldChanges ;
+          rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+    <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_GeographicArea.plop.5>
+          a       ns1:GeographicArea .
+
+    fabula:AttainGoal
+          a       owl:Class ;
+          rdfs:comment "A goal to attain a certain situation / state, i.e. being rich" ;
+          rdfs:subClassOf fabula:Goal .
+
+    fabula:Dress
+          a       owl:Class ;
+          rdfs:comment "Putting on WearableProducts, like Bracelets or Jeans." ;
+          rdfs:subClassOf fabula:Put .
+
+    fabula:Perception
+          a       owl:Class ;
+          rdfs:comment "Describing what a character perceives" ;
+          rdfs:subClassOf fabula:FabulaElement .
+
+    fabula:Swim
+          a       owl:Class ;
+          rdfs:comment "Movement through water by using arms or fins." ;
+          rdfs:subClassOf fabula:WaterMove .
+
+    fabula:Hear
+          a       owl:Class ;
+          rdfs:subClassOf fabula:Perception .
+
+    fabula:See
+          a       owl:Class ;
+          rdfs:subClassOf fabula:Perception .
+
+    fabula:Attack
+          a       owl:Class ;
+          rdfs:comment "Try to hurt/damage an object." ;
+          rdfs:subClassOf fabula:Action .
+
+    <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Eat.plop.11>
+          a       fabula:Eat ;
+          fabula:agens <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1> ;
+          fabula:patiens <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.6> ;
+          fabula:phi_causes <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_See.plop.12> .
+
+    fabula:Tie
+          a       owl:Class ;
+          rdfs:comment "Attach one object to another using a rope-like device." ;
+          rdfs:subClassOf fabula:Attach .
+
+    <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Eat.plop.13>
+          a       fabula:Eat ;
+          fabula:agens <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1> ;
+          fabula:hasContext <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_See.plop.12> ;
+          fabula:isSuccessful "true" ;
+          fabula:patiens <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.4> .
+
+    fabula:Undress
+          a       owl:Class ;
+          rdfs:comment "The act of taking off WearableProducts." ;
+          rdfs:subClassOf fabula:Take .
+
+    fabula:Attach
+          a       owl:Class ;
+          rdfs:comment "Attach one object to another using a AttachingDevice." ;
+          rdfs:subClassOf fabula:Attaching .
+
+    fabula:ForcefulDetach
+          a       owl:Class ;
+          rdfs:comment """Detaching an object using force. This can be done on
+glued and tied objects. There is the risk of breaking one of the objects,
+however.""" ;
+          rdfs:subClassOf fabula:Detach .
+
+    <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Eat.plop.15>
+          a       fabula:Eat ;
+          fabula:agens <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1> ;
+          fabula:hasContext <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_BeliefElement.plop.14> ;
+          fabula:patiens <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.6> ;
+          fabula:sameConcept <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Eat.plop.13> .
+
+    fabula:Strike
+          a       owl:Class ;
+          rdfs:comment "Attack an object while holding another object to hit with. (i.e. use that object as weapon)." ;
+          rdfs:subClassOf fabula:Attack .
+
+    <http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Hunger.plop.2>
+          fabula:character <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1> ;
+          fabula:psi_causes <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_AttainGoal.plop.8> .
+
+    fabula:Run
+          a       owl:Class ;
+          rdfs:comment """Fast movement over ground. Consumes more energy per distance
+measure.""" ;
+          rdfs:subClassOf fabula:Ambulate .
+
+    fabula:Drive
+          a       owl:Class ;
+          rdfs:comment "Movement over ground by means of Wheels." ;
+          rdfs:subClassOf fabula:GroundMove .
+
+    <http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1>
+          a       ns1:Humanoid .
+
+    fabula:Sail
+          a       owl:Class ;
+          rdfs:comment """Movement through water by means of transportation device. Can be
+split in movement needing wind and movement using an engine.""" ;
+          rdfs:subClassOf fabula:WaterMove .
+}
+

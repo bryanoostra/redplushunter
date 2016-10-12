@@ -1,0 +1,3789 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix narrator:     <http://www.owl-ontologies.com/Narrator.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<#defaultGraph> {
+    <element_mountain>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "mountain" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "berg" .
+
+    <element_quiet>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "quiet" ;
+          narrator:root "zacht" .
+
+    <element_diana>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "diana" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "Diana" .
+
+    <element_wail>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "wail" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "jammer" .
+
+    <element_summer>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "summer" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "zomer" .
+
+    <element_live>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "live" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "woon" .
+
+    <element_not>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "not" ;
+          narrator:root "niet" .
+
+    <element_still>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "still" ;
+          narrator:root "nog steeds" .
+
+    <element_shine>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "shine" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "door" ;
+          narrator:root "schijn" .
+
+    <element_sad>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "sad" ;
+          narrator:root "verdrietig" .
+
+    <element_kind>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "kind" ;
+          narrator:root "aardig" .
+
+    <element_cruel>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "cruel" ;
+          narrator:root "wreed" .
+
+    <element_rich>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "rich" ;
+          narrator:root "rijk" .
+
+    <element_islocated>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "islocated" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "lig" .
+
+    <element_charles>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "charles" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "Charles" .
+
+    <element_king>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "king" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "vorst" , "koning" .
+
+    <element_try>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "try" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "probeer" .
+
+    <element_comment>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "comment" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "op" ;
+          narrator:root "merk" ;
+          narrator:svp "aan" .
+
+    <element_hardly>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "hardly" ;
+          narrator:root "nauwelijks" .
+
+    <element_kill>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "kill" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "vermoord" .
+
+    <element_give>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "give" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "aan" ;
+          narrator:root "geef" .
+
+    <element_raw>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "raw" ;
+          narrator:root "guur" .
+
+    <element_morning>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "morning" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "ochtend" .
+
+    <element_afternoon>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "afternoon" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "middag" .
+
+    <element_ice>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "ice" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "ijsje" .
+
+    <element_kidnap>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "kidnap" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "ontvoer" .
+
+    <element_terrifying>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "terrifying" ;
+          narrator:root "angstaanjagend" .
+
+    <element_gate>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "gate" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "poort" .
+
+    <element_fear>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "fear" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "angst" .
+
+    <element_dark>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "dark" ;
+          narrator:root "donker" .
+
+    <element_animal>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "animal" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "dier" .
+
+    <element_villain>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "villain" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "schurk" .
+
+    <element_father>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "father" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "vader" .
+
+    <element_exist>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "exist" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "lig" .
+
+    <element_desert>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "desert" ;
+          narrator:det "de" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "woestijn" .
+
+    <element_receive>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "receive" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "krijg" .
+
+    <element_struggle>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "struggle" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "tegenstribbel" .
+
+    <element_Kick>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "Kick" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "schop" .
+
+    <element_joy>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "joy" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "vreugde" .
+
+    narrator:det
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:det ;
+          owl:equivalentProperty
+                  narrator:det .
+
+    <element_climb>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "climb" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "klim" .
+
+    <element_Buy>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "Buy" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "koop" ;
+          narrator:svp "van" .
+
+    <element_apple>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "apple" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "appel" .
+
+    <element_jump>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "jump" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "spring" ;
+          narrator:svp "binnen" .
+
+    <element_dead>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "dead" ;
+          narrator:root "dood" .
+
+    <element_faraway>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "faraway" ;
+          narrator:root "ver" .
+
+    <element_sound>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "sound" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "geluid" .
+
+    <element_iAction_linda_4>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "iAction_linda_4" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "koop" .
+
+    <element_hop>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "hop" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "huppel" .
+
+    <element_become>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "become" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "word" .
+
+    <element_money>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "money" ;
+          narrator:det "het" ;
+          narrator:morph "singular" ;
+          narrator:root "geld" .
+
+    <element_sing>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "sing" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "zing" .
+
+    <element_heavy>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "heavy" ;
+          narrator:root "zwaar" .
+
+    <element_pound>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "pound" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "bons" .
+
+    <element_frightened>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "frightened" ;
+          narrator:root "geschrokken" .
+
+    <element_everyday>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "everyday" ;
+          narrator:root "elke dag" .
+
+    <element_hand>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "hand" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "hand" .
+
+    <element_ground>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "ground" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "grond" .
+
+    <element_jumpn>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "jumpn" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "sprongetje" .
+
+    <element_IceCreamTruck>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "IceCreamTruck" ;
+          narrator:det "de" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "ijsverkooptent" .
+
+    <element_day>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "day" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "dag" .
+
+    <element_eat>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "eat" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "eet" .
+
+    <element_plop>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "plop" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "Plop" .
+
+    <element_young>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "young" ;
+          narrator:root "jong" .
+
+    <element_man>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "man" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "man" .
+
+    <element_Perception>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "Perception" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "zie" .
+
+    <element_vanilla_ice>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "vanilla_ice" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "ijsje" .
+
+    <element_winter>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "winter" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "winter" .
+
+    <element_flee>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "flee" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "vlucht" .
+
+    <element_beautiful>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "beautiful" ;
+          narrator:root "mooi" .
+
+    <element_atotherside>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "atotherside" ;
+          narrator:root "aan de overkant" .
+
+    <element_branch>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "branch" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "tak" .
+
+    <element_brutus>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "brutus" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "Brutus" .
+
+    <element_mean>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "mean" ;
+          narrator:root "gemeen" .
+
+    <element_small>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "small" ;
+          narrator:root "klein" .
+
+    <element_see>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "see" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "zie" .
+
+    <element_hungry>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "hungry" ;
+          narrator:root "hongerig" .
+
+    <element_sun>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "sun" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "zon" .
+
+    <element_country>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "country" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "land" .
+
+    <element_visit>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "visit" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "bezoek" .
+
+    <element_run>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "run" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "ren" ;
+          narrator:svp "weg" .
+
+    narrator:prep
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:prep ;
+          owl:equivalentProperty
+                  narrator:prep .
+
+    <element_child>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "child" ;
+          narrator:det "het" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "kind" .
+
+    <element_ask>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "ask" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "vraag" .
+
+    <element_puton>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "puton" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "op" ;
+          narrator:root "zet" .
+
+    <element_sword>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "sword" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "zwaard" .
+
+    <element_annoying>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "annoying" ;
+          narrator:root "vervelend" .
+
+    <element_moon>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "moon" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "maan" .
+
+    <element_fork>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "fork" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "vork" .
+
+    <element_nomore>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "nomore" ;
+          narrator:root "niet meer" .
+
+    narrator:PoS
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:PoS ;
+          owl:equivalentProperty
+                  narrator:PoS .
+
+    <element_spoon>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "spoon" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "lepel" .
+
+    <element_relieved>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "relieved" ;
+          narrator:root "opgelucht" .
+
+    <element_whistle>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "whistle" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "fluit" .
+
+    <element_stand>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "stand" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "bij" ;
+          narrator:root "sta" .
+
+    <element_shake>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "shake" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "van" ;
+          narrator:root "tril" .
+
+    <element_scream>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "scream" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "schreeuw" .
+
+    <element_high>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "high" ;
+          narrator:root "hoog" .
+
+    <element_ugly>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "ugly" ;
+          narrator:root "lelijk" .
+
+    <element_grandmother>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "grandmother" ;
+          narrator:det "de" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "oma" .
+
+    <element_forest>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "forest" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "bos" .
+
+    <element_finally>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "finally" ;
+          narrator:root "uiteindelijk" .
+
+    <element_laughat>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "laughat" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "lach" ;
+          narrator:svp "uit" .
+
+    <element_stamp>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "stamp" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "stamp" .
+
+    <element_night>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "night" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "nacht" .
+
+    <element_arrive>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "arrive" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "bij" ;
+          narrator:root "kom" ;
+          narrator:svp "aan" .
+
+    <element_bridge>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "bridge" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "brug" .
+
+    <element_dwarf>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "dwarf" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "kabouter" .
+
+    <element_edge>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "edge" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "rand" .
+
+    <element_heart>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "heart" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "hart" .
+
+    <element_pick>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "pick" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "voor" ;
+          narrator:root "kies" ;
+          narrator:svp "uit" .
+
+    narrator:root
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:root ;
+          owl:equivalentProperty
+                  narrator:root .
+
+    <element_suddenly>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "suddenly" ;
+          narrator:root "plotseling" .
+
+    <element_new>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "new" ;
+          narrator:root "nieuw" .
+
+    <element_gift>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "gift" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "cadeau" .
+
+    <element_evening>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "evening" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "avond" .
+
+    narrator:morph
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:morph ;
+          owl:equivalentProperty
+                  narrator:morph .
+
+    <element_missing>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "missing" ;
+          narrator:root "kwijt" .
+
+    <element_nobody>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "nobody" ;
+          narrator:morph "singular" ;
+          narrator:root "niemand" .
+
+    <element_extraordinary>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "extraordinary" ;
+          narrator:root "buitengewoon" .
+
+    <element_castle>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "castle" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "kasteel" .
+
+    <element_inlove>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "inlove" ;
+          narrator:prep "op" ;
+          narrator:root "verliefd" .
+
+    <element_autumn>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "autumn" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "herfst" .
+
+    <element_scared>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "scared" ;
+          narrator:prep "voor" ;
+          narrator:root "bang" .
+
+    <element_knuppel>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "knuppel" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "knuppel" .
+
+    <element_husband>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "husband" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "echtgenoot" .
+
+    <element_also>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "also" ;
+          narrator:root "ook" .
+
+    <element_hunger>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "hunger" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "honger" .
+
+    <element_person>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "person" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "persoon" .
+
+    <element_collapse>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "collapse" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "stort" ;
+          narrator:svp "in" .
+
+    <element_look>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "look" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "kijk" ;
+          narrator:svp "rond" .
+
+    <element_careful>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "careful" ;
+          narrator:root "voorzichtig" .
+
+    <element_sit>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "sit" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "op" ;
+          narrator:root "zit" .
+
+    <element_goto>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "goto" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "naar" ;
+          narrator:root "loop" , "wandel" , "ga" .
+
+    <element_bird>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "bird" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "vogel" .
+
+    <element_pickup>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "pickup" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "pak" ;
+          narrator:svp "op" .
+
+    <element_poor>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "poor" ;
+          narrator:root "armoedig" .
+
+    <element_sick>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "sick" ;
+          narrator:root "ziek" .
+
+    <element_linda>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "linda" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "Linda" .
+
+    <element_amalia>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "amalia" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "Amalia" .
+
+    <element_happy>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "happy" ;
+          narrator:root "gelukkig" , "blij" , "vrolijk" .
+
+    <element_atbranch>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "atbranch" ;
+          narrator:det "de" ;
+          narrator:morph "singular" ;
+          narrator:root "op een tak" .
+
+    <element_bedroom>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "bedroom" ;
+          narrator:det "de" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "slaapkamer" .
+
+    <element_rain>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "rain" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "regen" .
+
+    <element_old>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "old" ;
+          narrator:root "oud" .
+
+    <element_enter>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "enter" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "ga" ;
+          narrator:svp "binnen" .
+
+    <element_atcourt>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "atcourt" ;
+          narrator:det "het" ;
+          narrator:morph "singular" ;
+          narrator:root "aan het hof" .
+
+    narrator:svp
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:svp ;
+          owl:equivalentProperty
+                  narrator:svp .
+
+    <element_horse>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "horse" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "paard" .
+
+    <element_locked>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "locked" ;
+          narrator:root "op slot" .
+
+    <element_keep>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "keep" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "houd" .
+
+    <element_bring>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "bring" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "naar" ;
+          narrator:root "breng" .
+
+    <element_laugh>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "laugh" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "lach" .
+
+    <element_behaviour>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "behaviour" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "gedrag" .
+
+    <element_follow>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "follow" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "naar" ;
+          narrator:root "volg" .
+
+    <element_appear>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "appear" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "verschijn" .
+
+    <element_down>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "down" ;
+          narrator:prep "naar" ;
+          narrator:root "beneden" .
+
+    <element_foot>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "foot" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "voet" .
+
+    <element_house>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "house" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "huis" .
+
+    <element_park>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "park" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "park" .
+
+    <element_very>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "very" ;
+          narrator:root "heel" .
+
+    <element_find>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "find" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "vind" ;
+          narrator:svp "terug" .
+
+    <element_poundingheart>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "poundingheart" ;
+          narrator:root "met een bonzend hart" .
+
+    <element_afraid>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "afraid" ;
+          narrator:prep "voor" ;
+          narrator:root "bang" .
+
+    <element_open>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "open" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "open" .
+
+    <element_break>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "break" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "breek" .
+
+    <element_at>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "prep" ;
+          narrator:concept "at" ;
+          narrator:root "op" .
+
+    <element_big>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "big" ;
+          narrator:root "groot" .
+
+    <element_jolly>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "jolly" ;
+          narrator:root "vrolijk" .
+
+    <element_kiss>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "kiss" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "zoen" .
+
+    narrator:gen
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:gen ;
+          owl:equivalentProperty
+                  narrator:gen .
+
+    <element_blow>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "blow" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "door" ;
+          narrator:root "waai" .
+
+    <element_knight>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "knight" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "ridder" .
+
+    <element_rough>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "rough" ;
+          narrator:root "hardhandig" .
+
+    <element_hopeful>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "hopeful" ;
+          narrator:root "hoopvol" .
+
+    <element_jealous>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "jealous" ;
+          narrator:root "jaloers" .
+
+    <element_sweet>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "sweet" ;
+          narrator:root "lief" .
+
+    <element_verkennen>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "verkennen" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "verken" .
+
+    <element_everybody>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "everybody" ;
+          narrator:morph "singular" ;
+          narrator:root "iedereen" .
+
+    <element_knife>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "knife" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "mes" .
+
+    <element_strange>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "strange" ;
+          narrator:root "vreemd" .
+
+    <element_dense>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "dense" ;
+          narrator:root "dicht" .
+
+    <element_located>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "located" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "ben" .
+
+    <element_stay>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "stay" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "blijf" .
+
+    <element_call>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "call" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "heet" .
+
+    <element_hit>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "hit" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "sla" .
+
+    <element_fall>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "fall" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "val" .
+
+    <element_onemorning>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "onemorning" ;
+          narrator:root "op een ochtend" .
+
+    <element_kick>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "kick" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "schop" .
+
+    <element_be>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "be" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "bij" ;
+          narrator:root "ben" .
+
+    <element_hold>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "hold" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "houd" ;
+          narrator:svp "vast" .
+
+    <element_have>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "have" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "heb" .
+
+    <element_takefrom>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "takefrom" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "pak" ;
+          narrator:svp "op" .
+
+    <element_stok>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "stok" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "stok" .
+
+    <element_ToddleOffTo>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "ToddleOffTo" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "naar" ;
+          narrator:root "huppel" .
+
+    <element_spring>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "spring" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "lente" .
+
+    <element_throat>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "throat" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "keel" .
+
+    <element_conceited>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "conceited" ;
+          narrator:root "verwaand" .
+
+    <element_cat>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "cat" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "poes" .
+
+    <element_path>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "path" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "pad" .
+
+    <element_omgeving>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "omgeving" ;
+          narrator:det "de" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "omgeving" .
+
+    <element_lucky>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "lucky" ;
+          narrator:root "gelukkig" .
+
+    owl:Nothing
+          a       owl:Class ;
+          rdfs:subClassOf owl:Nothing , narrator:lexicon_entry ;
+          owl:complementOf owl:Thing ;
+          owl:disjointWith owl:Nothing , narrator:lexicon_entry ;
+          owl:equivalentClass owl:Nothing .
+
+    <element_wind>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "wind" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "wind" .
+
+    <element_girl>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "girl" ;
+          narrator:det "het" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "meisje" .
+
+    <element_shakinglegs>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "shakinglegs" ;
+          narrator:root "op trillende benen" .
+
+    <element_extremely>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "extremely" ;
+          narrator:root "hevig" .
+
+    <element_mouth>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "mouth" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "mond" .
+
+    <element_cry>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "cry" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "huil" .
+
+    narrator:deplabel
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:deplabel ;
+          owl:equivalentProperty
+                  narrator:deplabel .
+
+    <element_search>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "search" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "naar" ;
+          narrator:root "zoek" .
+
+    <element_tree>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "tree" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "boom" .
+
+    narrator:lexicon_entry
+          a       owl:Class ;
+          rdfs:subClassOf narrator:lexicon_entry , owl:Thing ;
+          owl:disjointWith owl:Nothing ;
+          owl:equivalentClass narrator:lexicon_entry .
+
+    <element_want>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "want" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "wil" .
+
+    <element_loud>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "loud" ;
+          narrator:root "hard" .
+
+    <element_catch>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "catch" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "vang" .
+
+    <element_otto>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "otto" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "Otto" .
+
+    <element_hear>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "hear" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "hoor" .
+
+    <element_again>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "again" ;
+          narrator:root "weer" , "nog een keer" .
+
+    <element_object>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "object" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "ding" .
+
+    <element_lamb>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "lamb" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "lam" .
+
+    <element_HaveIce>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "HaveIce" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "ijs" .
+
+    <element_quick>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "quick" ;
+          narrator:root "snel" .
+
+    <element_princess>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "princess" ;
+          narrator:det "de" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "prinses" .
+
+    <element_escape>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "escape" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "ontsnap" .
+
+    <element_cottage>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "cottage" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "hut" .
+
+    <element_slaughter>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "slaughter" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "slacht" .
+
+    <element_swamp>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "swamp" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "moeras" .
+
+    <element_leg>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "leg" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "been" .
+
+    <element_love>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "love" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "van" ;
+          narrator:root "houd" .
+
+    <element_capture>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "capture" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "sluit" ;
+          narrator:svp "op" .
+
+    <element_yesterday>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "yesterday" ;
+          narrator:root "gisteren" .
+
+    <element_something>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "something" ;
+          narrator:root "iets" .
+
+    <element_think>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "think" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "denk" .
+
+    <element_weak>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "weak" ;
+          narrator:root "zwak" .
+
+    <element_always>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "always" ;
+          narrator:morph "singular" ;
+          narrator:root "altijd" .
+
+    <element_woman>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "woman" ;
+          narrator:det "de" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "vrouw" .
+
+    <element_make>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "make" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "maak" .
+
+    <element_walk>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "walk" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "loop" .
+
+    <element_all>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "all" ;
+          narrator:root "alle" .
+
+    <element_angry>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "angry" ;
+          narrator:prep "op" ;
+          narrator:root "boos" .
+
+    <element_building>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "building" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "gebouw" .
+
+    owl:Thing
+          a       owl:Class ;
+          rdfs:subClassOf owl:Thing ;
+          owl:complementOf owl:Nothing ;
+          owl:disjointWith owl:Nothing ;
+          owl:equivalentClass owl:Thing .
+
+    narrator:concept
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:concept ;
+          owl:equivalentProperty
+                  narrator:concept .
+
+    <element_prince>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "prince" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "prins" .
+
+    <element_oneday>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "oneday" ;
+          narrator:root "op een dag" .
+
+    <element_hum>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "hum" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "neurie" .
+
+    <element_onenight>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "onenight" ;
+          narrator:root "op een nacht" .
+}
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns0:     <http://www.owl-ontologies.com/Narrator.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<#defaultGraph> {<element_mountain>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "mountain" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "berg" .
+
+    <element_quiet>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "quiet" ;
+          narrator:root "zacht" .
+
+    <element_diana>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "diana" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "Diana" .
+
+    <element_wail>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "wail" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "jammer" .
+
+    <element_summer>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "summer" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "zomer" .
+
+    <element_live>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "live" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "woon" .
+
+    <element_not>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "not" ;
+          narrator:root "niet" .
+
+    <element_still>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "still" ;
+          narrator:root "nog steeds" .
+
+    <element_shine>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "shine" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "door" ;
+          narrator:root "schijn" .
+
+    <element_sad>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "sad" ;
+          narrator:root "verdrietig" .
+
+    <element_kind>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "kind" ;
+          narrator:root "aardig" .
+
+    <element_cruel>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "cruel" ;
+          narrator:root "wreed" .
+
+    <element_rich>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "rich" ;
+          narrator:root "rijk" .
+
+    <element_islocated>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "islocated" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "lig" .
+
+    <element_charles>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "charles" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "Charles" .
+
+    <element_king>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "king" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "vorst" , "koning" .
+
+    <element_try>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "try" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "probeer" .
+
+    <element_comment>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "comment" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "op" ;
+          narrator:root "merk" ;
+          narrator:svp "aan" .
+
+    <element_hardly>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "hardly" ;
+          narrator:root "nauwelijks" .
+
+    <element_kill>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "kill" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "vermoord" .
+
+    <element_give>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "give" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "aan" ;
+          narrator:root "geef" .
+
+    <element_raw>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "raw" ;
+          narrator:root "guur" .
+
+    <element_morning>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "morning" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "ochtend" .
+
+    <element_afternoon>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "afternoon" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "middag" .
+
+    <element_ice>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "ice" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "ijsje" .
+
+    <element_kidnap>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "kidnap" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "ontvoer" .
+
+    <element_terrifying>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "terrifying" ;
+          narrator:root "angstaanjagend" .
+
+    <element_gate>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "gate" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "poort" .
+
+    <element_fear>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "fear" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "angst" .
+
+    <element_dark>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "dark" ;
+          narrator:root "donker" .
+
+    <element_animal>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "animal" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "dier" .
+
+    <element_villain>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "villain" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "schurk" .
+
+    <element_father>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "father" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "vader" .
+
+    <element_exist>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "exist" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "lig" .
+
+    <element_desert>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "desert" ;
+          narrator:det "de" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "woestijn" .
+
+    <element_receive>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "receive" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "krijg" .
+
+    <element_struggle>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "struggle" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "tegenstribbel" .
+
+    <element_Kick>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "Kick" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "schop" .
+
+    <element_joy>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "joy" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "vreugde" .
+
+    narrator:det
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:det ;
+          owl:equivalentProperty
+                  narrator:det .
+
+    <element_climb>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "climb" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "klim" .
+
+    <element_Buy>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "Buy" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "koop" ;
+          narrator:svp "van" .
+
+    <element_apple>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "apple" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "appel" .
+
+    <element_jump>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "jump" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "spring" ;
+          narrator:svp "binnen" .
+
+    <element_dead>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "dead" ;
+          narrator:root "dood" .
+
+    <element_faraway>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "faraway" ;
+          narrator:root "ver" .
+
+    <element_sound>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "sound" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "geluid" .
+
+    <element_iAction_linda_4>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "iAction_linda_4" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "koop" .
+
+    <element_hop>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "hop" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "huppel" .
+
+    <element_become>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "become" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "word" .
+
+    <element_money>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "money" ;
+          narrator:det "het" ;
+          narrator:morph "singular" ;
+          narrator:root "geld" .
+
+    <element_sing>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "sing" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "zing" .
+
+    <element_heavy>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "heavy" ;
+          narrator:root "zwaar" .
+
+    <element_pound>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "pound" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "bons" .
+
+    <element_frightened>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "frightened" ;
+          narrator:root "geschrokken" .
+
+    <element_everyday>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "everyday" ;
+          narrator:root "elke dag" .
+
+    <element_hand>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "hand" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "hand" .
+
+    <element_ground>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "ground" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "grond" .
+
+    <element_jumpn>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "jumpn" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "sprongetje" .
+
+    <element_IceCreamTruck>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "IceCreamTruck" ;
+          narrator:det "de" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "ijsverkooptent" .
+
+    <element_day>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "day" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "dag" .
+
+    <element_eat>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "eat" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "eet" .
+
+    <element_plop>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "plop" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "Plop" .
+
+    <element_young>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "young" ;
+          narrator:root "jong" .
+
+    <element_man>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "man" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "man" .
+
+    <element_Perception>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "Perception" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "zie" .
+
+    <element_vanilla_ice>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "vanilla_ice" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "ijsje" .
+
+    <element_winter>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "winter" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "winter" .
+
+    <element_flee>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "flee" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "vlucht" .
+
+    <element_beautiful>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "beautiful" ;
+          narrator:root "mooi" .
+
+    <element_atotherside>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "atotherside" ;
+          narrator:root "aan de overkant" .
+
+    <element_branch>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "branch" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "tak" .
+
+    <element_brutus>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "brutus" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "Brutus" .
+
+    <element_mean>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "mean" ;
+          narrator:root "gemeen" .
+
+    <element_small>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "small" ;
+          narrator:root "klein" .
+
+    <element_see>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "see" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "zie" .
+
+    <element_hungry>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "hungry" ;
+          narrator:root "hongerig" .
+
+    <element_sun>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "sun" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "zon" .
+
+    <element_country>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "country" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "land" .
+
+    <element_visit>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "visit" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "bezoek" .
+
+    <element_run>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "run" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "ren" ;
+          narrator:svp "weg" .
+
+    narrator:prep
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:prep ;
+          owl:equivalentProperty
+                  narrator:prep .
+
+    <element_child>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "child" ;
+          narrator:det "het" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "kind" .
+
+    <element_ask>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "ask" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "vraag" .
+
+    <element_puton>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "puton" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "op" ;
+          narrator:root "zet" .
+
+    <element_sword>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "sword" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "zwaard" .
+
+    <element_annoying>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "annoying" ;
+          narrator:root "vervelend" .
+
+    <element_moon>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "moon" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "maan" .
+
+    <element_fork>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "fork" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "vork" .
+
+    <element_nomore>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "nomore" ;
+          narrator:root "niet meer" .
+
+    narrator:PoS
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:PoS ;
+          owl:equivalentProperty
+                  narrator:PoS .
+
+    <element_spoon>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "spoon" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "lepel" .
+
+    <element_relieved>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "relieved" ;
+          narrator:root "opgelucht" .
+
+    <element_whistle>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "whistle" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "fluit" .
+
+    <element_stand>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "stand" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "bij" ;
+          narrator:root "sta" .
+
+    <element_shake>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "shake" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "van" ;
+          narrator:root "tril" .
+
+    <element_scream>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "scream" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "schreeuw" .
+
+    <element_high>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "high" ;
+          narrator:root "hoog" .
+
+    <element_ugly>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "ugly" ;
+          narrator:root "lelijk" .
+
+    <element_grandmother>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "grandmother" ;
+          narrator:det "de" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "oma" .
+
+    <element_forest>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "forest" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "bos" .
+
+    <element_finally>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "finally" ;
+          narrator:root "uiteindelijk" .
+
+    <element_laughat>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "laughat" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "lach" ;
+          narrator:svp "uit" .
+
+    <element_stamp>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "stamp" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "stamp" .
+
+    <element_night>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "night" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "nacht" .
+
+    <element_arrive>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "arrive" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "bij" ;
+          narrator:root "kom" ;
+          narrator:svp "aan" .
+
+    <element_bridge>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "bridge" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "brug" .
+
+    <element_dwarf>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "dwarf" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "kabouter" .
+
+    <element_edge>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "edge" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "rand" .
+
+    <element_heart>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "heart" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "hart" .
+
+    <element_pick>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "pick" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "voor" ;
+          narrator:root "kies" ;
+          narrator:svp "uit" .
+
+    narrator:root
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:root ;
+          owl:equivalentProperty
+                  narrator:root .
+
+    <element_suddenly>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "suddenly" ;
+          narrator:root "plotseling" .
+
+    <element_new>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "new" ;
+          narrator:root "nieuw" .
+
+    <element_gift>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "gift" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "cadeau" .
+
+    <element_evening>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "evening" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "avond" .
+
+    narrator:morph
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:morph ;
+          owl:equivalentProperty
+                  narrator:morph .
+
+    <element_missing>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "missing" ;
+          narrator:root "kwijt" .
+
+    <element_nobody>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "nobody" ;
+          narrator:morph "singular" ;
+          narrator:root "niemand" .
+
+    <element_extraordinary>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "extraordinary" ;
+          narrator:root "buitengewoon" .
+
+    <element_castle>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "castle" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "kasteel" .
+
+    <element_inlove>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "inlove" ;
+          narrator:prep "op" ;
+          narrator:root "verliefd" .
+
+    <element_autumn>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "autumn" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "herfst" .
+
+    <element_scared>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "scared" ;
+          narrator:prep "voor" ;
+          narrator:root "bang" .
+
+    <element_knuppel>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "knuppel" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "knuppel" .
+
+    <element_husband>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "husband" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "echtgenoot" .
+
+    <element_also>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "also" ;
+          narrator:root "ook" .
+
+    <element_hunger>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "hunger" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "honger" .
+
+    <element_person>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "person" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "persoon" .
+
+    <element_collapse>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "collapse" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "stort" ;
+          narrator:svp "in" .
+
+    <element_look>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "look" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "kijk" ;
+          narrator:svp "rond" .
+
+    <element_careful>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "careful" ;
+          narrator:root "voorzichtig" .
+
+    <element_sit>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "sit" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "op" ;
+          narrator:root "zit" .
+
+    <element_goto>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "goto" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "naar" ;
+          narrator:root "loop" , "wandel" , "ga" .
+
+    <element_bird>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "bird" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "vogel" .
+
+    <element_pickup>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "pickup" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "pak" ;
+          narrator:svp "op" .
+
+    <element_poor>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "poor" ;
+          narrator:root "armoedig" .
+
+    <element_sick>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "sick" ;
+          narrator:root "ziek" .
+
+    <element_linda>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "linda" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "Linda" .
+
+    <element_amalia>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "amalia" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "Amalia" .
+
+    <element_happy>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "happy" ;
+          narrator:root "gelukkig" , "blij" , "vrolijk" .
+
+    <element_atbranch>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "atbranch" ;
+          narrator:det "de" ;
+          narrator:morph "singular" ;
+          narrator:root "op een tak" .
+
+    <element_bedroom>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "bedroom" ;
+          narrator:det "de" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "slaapkamer" .
+
+    <element_rain>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "rain" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "regen" .
+
+    <element_old>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "old" ;
+          narrator:root "oud" .
+
+    <element_enter>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "enter" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "ga" ;
+          narrator:svp "binnen" .
+
+    <element_atcourt>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "atcourt" ;
+          narrator:det "het" ;
+          narrator:morph "singular" ;
+          narrator:root "aan het hof" .
+
+    narrator:svp
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:svp ;
+          owl:equivalentProperty
+                  narrator:svp .
+
+    <element_horse>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "horse" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "paard" .
+
+    <element_locked>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "locked" ;
+          narrator:root "op slot" .
+
+    <element_keep>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "keep" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "houd" .
+
+    <element_bring>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "bring" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "naar" ;
+          narrator:root "breng" .
+
+    <element_laugh>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "laugh" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "lach" .
+
+    <element_behaviour>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "behaviour" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "gedrag" .
+
+    <element_follow>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "follow" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "naar" ;
+          narrator:root "volg" .
+
+    <element_appear>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "appear" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "verschijn" .
+
+    <element_down>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "down" ;
+          narrator:prep "naar" ;
+          narrator:root "beneden" .
+
+    <element_foot>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "foot" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "voet" .
+
+    <element_house>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "house" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "huis" .
+
+    <element_park>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "park" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "park" .
+
+    <element_very>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "very" ;
+          narrator:root "heel" .
+
+    <element_find>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "find" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "vind" ;
+          narrator:svp "terug" .
+
+    <element_poundingheart>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "poundingheart" ;
+          narrator:root "met een bonzend hart" .
+
+    <element_afraid>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "afraid" ;
+          narrator:prep "voor" ;
+          narrator:root "bang" .
+
+    <element_open>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "open" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "open" .
+
+    <element_break>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "break" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "breek" .
+
+    <element_at>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "prep" ;
+          narrator:concept "at" ;
+          narrator:root "op" .
+
+    <element_big>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "big" ;
+          narrator:root "groot" .
+
+    <element_jolly>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "jolly" ;
+          narrator:root "vrolijk" .
+
+    <element_kiss>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "kiss" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "zoen" .
+
+    narrator:gen
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:gen ;
+          owl:equivalentProperty
+                  narrator:gen .
+
+    <element_blow>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "blow" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "door" ;
+          narrator:root "waai" .
+
+    <element_knight>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "knight" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "ridder" .
+
+    <element_rough>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "rough" ;
+          narrator:root "hardhandig" .
+
+    <element_hopeful>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "hopeful" ;
+          narrator:root "hoopvol" .
+
+    <element_jealous>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "jealous" ;
+          narrator:root "jaloers" .
+
+    <element_sweet>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "sweet" ;
+          narrator:root "lief" .
+
+    <element_verkennen>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "verkennen" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "verken" .
+
+    <element_everybody>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "everybody" ;
+          narrator:morph "singular" ;
+          narrator:root "iedereen" .
+
+    <element_knife>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "knife" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "mes" .
+
+    <element_strange>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "strange" ;
+          narrator:root "vreemd" .
+
+    <element_dense>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "dense" ;
+          narrator:root "dicht" .
+
+    <element_located>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "located" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "ben" .
+
+    <element_stay>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "stay" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "blijf" .
+
+    <element_call>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "call" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "heet" .
+
+    <element_hit>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "hit" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "sla" .
+
+    <element_fall>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "fall" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "val" .
+
+    <element_onemorning>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "onemorning" ;
+          narrator:root "op een ochtend" .
+
+    <element_kick>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "kick" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "schop" .
+
+    <element_be>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "be" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "bij" ;
+          narrator:root "ben" .
+
+    <element_hold>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "hold" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "houd" ;
+          narrator:svp "vast" .
+
+    <element_have>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "have" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "heb" .
+
+    <element_takefrom>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "takefrom" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "pak" ;
+          narrator:svp "op" .
+
+    <element_stok>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "stok" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "stok" .
+
+    <element_ToddleOffTo>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "ToddleOffTo" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "naar" ;
+          narrator:root "huppel" .
+
+    <element_spring>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "spring" ;
+          narrator:det "de" ;
+          narrator:gen "time" ;
+          narrator:morph "singular" ;
+          narrator:root "lente" .
+
+    <element_throat>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "throat" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "keel" .
+
+    <element_conceited>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "conceited" ;
+          narrator:root "verwaand" .
+
+    <element_cat>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "cat" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "poes" .
+
+    <element_path>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "path" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "pad" .
+
+    <element_omgeving>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "omgeving" ;
+          narrator:det "de" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "omgeving" .
+
+    <element_lucky>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "lucky" ;
+          narrator:root "gelukkig" .
+
+    owl:Nothing
+          a       owl:Class ;
+          rdfs:subClassOf owl:Nothing , narrator:lexicon_entry ;
+          owl:complementOf owl:Thing ;
+          owl:disjointWith owl:Nothing , narrator:lexicon_entry ;
+          owl:equivalentClass owl:Nothing .
+
+    <element_wind>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "wind" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "wind" .
+
+    <element_girl>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "girl" ;
+          narrator:det "het" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "meisje" .
+
+    <element_shakinglegs>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "shakinglegs" ;
+          narrator:root "op trillende benen" .
+
+    <element_extremely>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "extremely" ;
+          narrator:root "hevig" .
+
+    <element_mouth>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "mouth" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "mond" .
+
+    <element_cry>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "cry" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "huil" .
+
+    narrator:deplabel
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:deplabel ;
+          owl:equivalentProperty
+                  narrator:deplabel .
+
+    <element_search>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "search" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "naar" ;
+          narrator:root "zoek" .
+
+    <element_tree>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "tree" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "boom" .
+
+    narrator:lexicon_entry
+          a       owl:Class ;
+          rdfs:subClassOf narrator:lexicon_entry , owl:Thing ;
+          owl:disjointWith owl:Nothing ;
+          owl:equivalentClass narrator:lexicon_entry .
+
+    <element_want>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "want" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "wil" .
+
+    <element_loud>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "loud" ;
+          narrator:root "hard" .
+
+    <element_catch>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "catch" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "vang" .
+
+    <element_otto>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "nom" ;
+          narrator:concept "otto" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "Otto" .
+
+    <element_hear>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "hear" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "hoor" .
+
+    <element_again>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "again" ;
+          narrator:root "weer" , "nog een keer" .
+
+    <element_object>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "object" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "ding" .
+
+    <element_lamb>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "lamb" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "lam" .
+
+    <element_HaveIce>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "HaveIce" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "ijs" .
+
+    <element_quick>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "quick" ;
+          narrator:root "snel" .
+
+    <element_princess>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "princess" ;
+          narrator:det "de" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "prinses" .
+
+    <element_escape>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "escape" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "ontsnap" .
+
+    <element_cottage>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "cottage" ;
+          narrator:det "de" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "hut" .
+
+    <element_slaughter>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "slaughter" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "slacht" .
+
+    <element_swamp>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "swamp" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "moeras" .
+
+    <element_leg>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "leg" ;
+          narrator:det "het" ;
+          narrator:gen "neutral" ;
+          narrator:morph "singular" ;
+          narrator:root "been" .
+
+    <element_love>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "love" ;
+          narrator:deplabel "predc" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "van" ;
+          narrator:root "houd" .
+
+    <element_capture>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "capture" ;
+          narrator:deplabel "ld" ;
+          narrator:morph "3.singular.past" ;
+          narrator:prep "in" ;
+          narrator:root "sluit" ;
+          narrator:svp "op" .
+
+    <element_yesterday>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "yesterday" ;
+          narrator:root "gisteren" .
+
+    <element_something>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "something" ;
+          narrator:root "iets" .
+
+    <element_think>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "think" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "denk" .
+
+    <element_weak>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "weak" ;
+          narrator:root "zwak" .
+
+    <element_always>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "always" ;
+          narrator:morph "singular" ;
+          narrator:root "altijd" .
+
+    <element_woman>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "woman" ;
+          narrator:det "de" ;
+          narrator:gen "female" ;
+          narrator:morph "singular" ;
+          narrator:root "vrouw" .
+
+    <element_make>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "make" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "maak" .
+
+    <element_walk>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "walk" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "loop" .
+
+    <element_all>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adv" ;
+          narrator:concept "all" ;
+          narrator:root "alle" .
+
+    <element_angry>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "adj" ;
+          narrator:concept "angry" ;
+          narrator:prep "op" ;
+          narrator:root "boos" .
+
+    <element_building>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "building" ;
+          narrator:det "het" ;
+          narrator:gen "place" ;
+          narrator:morph "singular" ;
+          narrator:root "gebouw" .
+
+    owl:Thing
+          a       owl:Class ;
+          rdfs:subClassOf owl:Thing ;
+          owl:complementOf owl:Nothing ;
+          owl:disjointWith owl:Nothing ;
+          owl:equivalentClass owl:Thing .
+
+    narrator:concept
+          a       owl:DatatypeProperty , rdf:Property ;
+          rdfs:subPropertyOf narrator:concept ;
+          owl:equivalentProperty
+                  narrator:concept .
+
+    <element_prince>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "noun" ;
+          narrator:concept "prince" ;
+          narrator:det "de" ;
+          narrator:gen "male" ;
+          narrator:morph "singular" ;
+          narrator:root "prins" .
+
+    <element_oneday>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "oneday" ;
+          narrator:root "op een dag" .
+
+    <element_hum>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "verb" ;
+          narrator:concept "hum" ;
+          narrator:morph "3.singular.past" ;
+          narrator:root "neurie" .
+
+    <element_onenight>
+          a       narrator:lexicon_entry ;
+          narrator:PoS "expr" ;
+          narrator:concept "onenight" ;
+          narrator:root "op een nacht" .
+}

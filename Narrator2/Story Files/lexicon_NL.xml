@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lexicon 
+xmlns="http://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3schools.com narrator_lexicon.xsd">
+
+	<!-- LOCATIONS -->
+	<sense id="main_street">
+		<entry>
+			<root>hoofdstraat</root>
+			<partofspeech>noun</partofspeech>
+			<determiner>de</determiner>
+			<plural>hoofdstraten</plural>
+		</entry>
+	</sense>
+			
+	<sense id="alley">
+		<entry>
+			<root>steegje</root>
+			<partofspeech>noun</partofspeech>
+			<determiner>het</determiner>
+			<plural>steegjes</plural>
+		</entry>
+	</sense>
+		
+	<sense id="square">
+		<entry>
+			<root>plein</root>
+			<partofspeech>noun</partofspeech>
+			<determiner>het</determiner>
+			<atpreposition>op</atpreposition>
+		</entry>
+	</sense>
+	
+	<!-- ITEMS -->
+	<sense id="shoe">
+		<entry>
+			<root>schoen</root>
+			<partofspeech>noun</partofspeech>
+			<determiner>de</determiner>
+			<plural>schoenen</plural>
+		</entry>
+	</sense>
+	
+	<!-- CHARACTERS -->
+	
+	<!-- ACTIONS -->
+	<!-- N.B.: THE ACTIONS "be", "be_at", "become", "have", "try", "want" AND "call" HAVE TO BE DEFINED IN THE LEXICON! -->
+	<sense id="be">
+		<entry>
+			<root>zij</root>
+			<partofspeech>verb</partofspeech>
+			<sg1>ben</sg1>
+			<sg2>bent</sg2>
+			<sg3>is</sg3>
+			<plpres>zijn</plpres>
+			<sgpast>was</sgpast>
+			<plpast>waren</plpast>
+			<participle>geweest</participle>
+			<auxverb>be</auxverb>
+		</entry>
+	</sense>
+		
+	<sense id="be_at">
+		<entry>
+			<root>zij</root>
+			<partofspeech>verb</partofspeech>
+			<sg1>ben</sg1>
+			<sg2>bent</sg2>
+			<sg3>is</sg3>
+			<plpres>zijn</plpres>
+			<sgpast>was</sgpast>
+			<plpast>waren</plpast>			
+			<participle>geweest</participle>
+			<preposition>in</preposition>
+			<dependencylabel>ld</dependencylabel>
+			<auxverb>be</auxverb>
+		</entry>
+	</sense>
+		
+	<sense id="have">
+		<entry>
+			<root>heb</root>
+			<partofspeech>verb</partofspeech>
+			<sg2>hebt</sg2>
+			<sg3>heeft</sg3>
+			<plpres>hebben</plpres>
+			<sgpast>had</sgpast>
+			<plpast>hadden</plpast>
+			<participle>gehad</participle>
+			<auxverb>have</auxverb>
+		</entry>
+	</sense>
+	
+	<sense id="call">
+		<entry>
+			<root>heet</root>
+			<partofspeech>verb</partofspeech>
+			<auxverb>have</auxverb>
+		</entry>
+	</sense>
+	
+	<sense id="try">
+		<entry>
+			<root>probeer</root>
+			<partofspeech>verb</partofspeech>
+			<auxverb>have</auxverb>
+		</entry>
+	</sense>
+	
+	<sense id="want">
+		<entry>
+			<root>wil</root>
+			<partofspeech>verb</partofspeech>
+			<sg2>wilt</sg2>
+			<sg3>wil</sg3>
+			<auxverb>have</auxverb>
+		</entry>
+	</sense>
+	
+	<sense id="become">
+		<entry>
+			<root>word</root>
+			<partofspeech>verb</partofspeech>
+			<sgpast>werd</sgpast>
+			<auxverb>be</auxverb>
+		</entry>
+	</sense>
+	
+	<sense id="will">
+		<entry>
+			<root>zal</root>
+			<partofspeech>verb</partofspeech>
+			<sg2>zult</sg2>
+			<sg3>zal</sg3>
+			<plpres>zullen</plpres>
+			<sgpast>zou</sgpast>
+			<plpast>zouden</plpast>
+			<auxverb>have</auxverb>
+		</entry>
+	</sense>
+	
+	<sense id="stay">
+		<entry>
+			<root>blijf</root>
+			<partofspeech>verb</partofspeech>
+			<plpres>blijven</plpres>
+			<sgpast>bleef</sgpast>
+			<plpast>bleven</plpast>
+			<participle>gebleven</participle>
+			<auxverb>be</auxverb>
+		</entry>
+	</sense>
+	
+	<sense id="hit_with">
+		<entry>
+			<root>sla</root>
+			<partofspeech>verb</partofspeech>
+			<sg2>sla</sg2>
+			<sg3>slaat</sg3>
+			<plpres>slaan</plpres>
+			<sgpast>sloeg</sgpast>
+			<participle>geslagen</participle>
+			<preposition>met</preposition>
+			<dependencylabel>mod</dependencylabel>
+		</entry>
+		<entry>
+			<root>mep</root>
+			<partofspeech>verb</partofspeech>
+			<preposition>met</preposition>
+			<dependencylabel>mod</dependencylabel>
+		</entry>
+	</sense>
+	
+	<sense id="insult">
+		<entry>
+			<root>beledig</root>
+			<partofspeech>verb</partofspeech>
+			<plpres>beledigen</plpres>
+		</entry>
+	</sense>
+	
+	<sense id="see">
+		<entry>
+			<root>zie</root>
+			<partofspeech>verb</partofspeech>
+			<plpres>zien</plpres>
+			<sgpast>zag</sgpast>
+			<participle>gezien</participle>
+		</entry>
+	</sense>
+
+	<sense id="speak_to">
+		<entry>
+			<root>praat</root>
+			<partofspeech>verb</partofspeech>
+			<preposition>met</preposition>
+			<dependencylabel>obj1</dependencylabel>
+		</entry>
+		<entry>
+			<root>spreek</root>
+			<partofspeech>verb</partofspeech>
+			<preposition>met</preposition>
+			<dependencylabel>obj1</dependencylabel>
+		</entry>
+	</sense>
+	
+	<sense id="yell">
+		<entry>
+			<root>schreeuw</root>
+			<partofspeech>verb</partofspeech>
+			<preposition>naar</preposition>
+			<dependencylabel>obj1</dependencylabel>
+		</entry>
+	</sense>
+	
+	<sense id="go_to">
+		<entry>
+			<root>ga</root>
+			<partofspeech>verb</partofspeech>
+			<sg3>gaat</sg3>
+			<plpres>gaan</plpres>
+			<sgpast>ging</sgpast>
+			<plpast>gingen</plpast>
+			<participle>gegaan</participle>
+			<preposition>naar</preposition>
+			<dependencylabel>ld</dependencylabel>
+		</entry>
+	</sense>
+	
+	<sense id="walk_to">
+		<entry>
+			<root>loop</root>
+			<partofspeech>verb</partofspeech>
+			<sgpast>liep</sgpast>
+			<preposition>naar</preposition>
+			<dependencylabel>ld</dependencylabel>
+		</entry>
+	</sense>
+	
+	<sense id="duck_and_cover">
+		<entry>
+			<root>duik</root>
+			<partofspeech>verb</partofspeech>
+			<particle>weg</particle>
+		</entry>
+	</sense>
+	
+	<sense id="wave">
+		<entry>
+			<root>zwaai</root>
+			<partofspeech>verb</partofspeech>
+			<preposition>naar</preposition>
+			<dependencylabel>obj1</dependencylabel>
+		</entry>
+	</sense>
+	
+	<sense id="frown">
+		<entry>
+			<root>frons</root>
+			<partofspeech>verb</partofspeech>
+		</entry>
+	</sense>
+
+	<sense id="say">
+		<entry>
+			<root>zeg</root>
+			<partofspeech>verb</partofspeech>
+			<preposition>tegen</preposition>
+			<dependencylabel>obj2</dependencylabel>
+		</entry>
+	</sense>
+	
+	<sense id="say_to">
+		<entry>
+			<root>zeg</root>
+			<partofspeech>verb</partofspeech>
+			<preposition>tegen</preposition>
+			<dependencylabel>obj2</dependencylabel>
+		</entry>
+	</sense>
+	
+	<sense id="avert_gaze">
+		<entry>
+			<root>kijk</root>
+			<partofspeech>verb</partofspeech>
+			<particle>weg</particle>
+		</entry>
+	</sense>
+	
+	<sense id="shrug">
+		<entry>
+			<root>haal</root>
+			<partofspeech>verb</partofspeech>
+			<particle>schouders op</particle>
+		</entry>
+	</sense>
+	
+	<sense id="cross_arms">
+		<entry>
+			<root>doe</root>
+			<partofspeech>verb</partofspeech>
+			<particle>armen over elkaar</particle>
+		</entry>
+	</sense>
+	
+	<sense id="do_nothing">
+		<entry>
+			<root>doe</root>
+			<partofspeech>verb</partofspeech>
+			<particle>niets</particle>
+		</entry>
+	</sense>
+	
+	<!-- lol -->
+	<sense id="soothing_arms">
+		<entry>
+			<root>doe</root>
+			<partofspeech>verb</partofspeech>
+			<particle>armen ding</particle>
+		</entry>
+	</sense>
+	
+	<!-- Dit omzetten naar pak item -->
+	<sense id="take_knife">
+		<entry>
+			<root>pak</root>
+			<partofspeech>verb</partofspeech>
+			<particle>mes</particle>
+		</entry>
+	</sense>
+	
+	<!-- Deze dingen moet omgezet worden naar emoties -->
+	
+	<sense id="become_dominant">
+		<entry>
+			<root>word</root>
+			<partofspeech>verb</partofspeech>
+			<particle>dominant</particle>
+		</entry>
+	</sense>
+	
+	<sense id="become_submissive">
+		<entry>
+			<root>word</root>
+			<partofspeech>verb</partofspeech>
+			<particle>onderdanig</particle>
+		</entry>
+	</sense>
+	
+	<sense id="become_sad">
+		<entry>
+			<root>word</root>
+			<partofspeech>verb</partofspeech>
+			<particle>verdrietig</particle>
+		</entry>
+	</sense>
+	
+	<sense id="become_happy">
+		<entry>
+			<root>word</root>
+			<partofspeech>verb</partofspeech>
+			<particle>blij</particle>
+		</entry>
+	</sense>
+	
+	<!-- EMOTIONS -->
+	<sense id="angry">
+		<entry>
+			<root>boos</root>
+			<partofspeech>adj</partofspeech>
+		</entry>
+		<entry>
+			<root>kwaad</root>
+			<partofspeech>adj</partofspeech>
+		</entry>
+	</sense>
+		
+	<sense id="sad">
+		<entry>
+			<root>verdrietig</root>
+			<partofspeech>adj</partofspeech>
+		</entry>
+	</sense>
+	
+	<!-- ROLES -->
+	<sense id="policeofficer">
+		<entry>
+			<root>politieman</root>
+			<partofspeech>noun</partofspeech>
+			<determiner>de</determiner>
+			<plural>politiemannen</plural>
+		</entry>
+	</sense>
+
+	<sense id="police officer">
+		<entry>
+			<root>politieman</root>
+			<partofspeech>noun</partofspeech>
+			<determiner>de</determiner>
+			<plural>politiemannen</plural>
+		</entry>
+	</sense>	
+	
+	<sense id="bystander">
+		<entry>
+			<root>omstander</root>
+			<partofspeech>noun</partofspeech>
+			<determiner>de</determiner>
+			<plural>omstanders</plural>
+		</entry>
+	</sense>
+
+	<sense id="loiteringyouth">
+		<entry>
+			<root>hangjongere</root>
+			<partofspeech>noun</partofspeech>
+			<determiner>de</determiner>
+			<plural>hangjongeren</plural>
+		</entry>
+	</sense>
+
+	<!-- ADJECTIVES -->
+	<sense id="beautiful">
+		<entry>
+			<root>mooi</root>
+			<partofspeech>adj</partofspeech>
+			<adjinflect>mooie</adjinflect>
+		</entry>
+	</sense>
+	
+	<sense id="tough">
+		<entry>
+			<root>stoer</root>
+			<partofspeech>adj</partofspeech>
+		</entry>	
+	</sense>
+	
+	<sense id="tall">
+		<entry>
+			<root>lang</root>
+			<partofspeech>adj</partofspeech>
+		</entry>	
+	</sense>
+	
+	<!-- OTHER -->
+	<sense id="also">
+		<entry>
+			<root>ook</root>
+			<partofspeech>adv</partofspeech>
+		</entry>
+	</sense>
+	
+	<sense id="not">
+		<entry>
+			<root>niet</root>
+			<partofspeech>adv</partofspeech>
+		</entry>
+	</sense>
+	
+	<sense id="nomore">
+		<entry>
+			<root>niet meer</root>
+			<partofspeech>adv</partofspeech>
+		</entry>
+	</sense>
+</lexicon>

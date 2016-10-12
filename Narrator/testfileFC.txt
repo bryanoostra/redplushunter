@@ -1,0 +1,14 @@
+partof: oLadder_up -- oShip_1
+partof: oDeck_1 -- oShip_1
+partof: oWaterSupply_1 -- oShip_1
+partof: oHold_1 -- oShip_1
+partof: oHatch_1 -- oHold_1
+partof: oBeach_1 -- oTreasureIsland_1
+exactlyOne? oCrate_1, Rum
+exactlyOne? oShip_1, WaterSupply
+exactlyOne? leChuck, Ship
+exactlyOne? oHold_1, Hatch
+exactlyOne? oShip_1, Hold
+exactlyOne? oShip_1, Ladder
+exactlyOne? oShip_1, Deck
+exactlyOne? oPond_1, Water

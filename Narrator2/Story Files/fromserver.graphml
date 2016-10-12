@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <!--World Setting file: world.xml-->
+  <!--Lexicon file lang="NL": lexicon_NL.xml-->
+  <key id="EventType" for="node" attr.name="EventType" attr.type="string">
+    <default>NoType</default>
+  </key>
+  
+  <key id="Type" for="node" attr.name="Type" attr.type="string">
+    <default>NoType</default>
+  </key>
+  
+  <key id="Agens" for="node" attr.name="Agens" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Patiens" for="node" attr.name="Patiens" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Target" for="node" attr.name="Target" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Instrument" for="node" attr.name="Instrument" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Time" for="node" attr.name="Time" attr.type="integer">
+    <default>-1</default>
+  </key>
+  
+  <key id="RelType" for="edge" attr.name="RelType" attr.type="string">
+	<default>NoType</default>
+  </key>
+  
+  <graph id="Fabula" edgedefault="directed">
+<node id="duck_and_cover1392813951004">
+<data key="EventType">action</data>
+<data key="Type">duck_and_cover</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392813951004</data>
+</node>
+<node id="become_dominant1392813956006">
+<data key="EventType">action</data>
+<data key="Type">become_dominant</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392813956006</data>
+</node>
+<node id="become_submissive1392813961009">
+<data key="EventType">action</data>
+<data key="Type">become_submissive</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392813961009</data>
+</node>
+<node id="wave1392813966011">
+<data key="EventType">action</data>
+<data key="Type">wave</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392813966011</data>
+</node>
+<node id="become_sad1392813971013">
+<data key="EventType">action</data>
+<data key="Type">become_sad</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392813971013</data>
+</node>
+<node id="walk_to1392813976017">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">alley</data>
+<data key="Time">1392813976017</data>
+</node>
+<node id="say1392813981015">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Doei
+</data>
+<data key="Target">bystander1</data>
+<data key="Time">1392813981015</data>
+</node>
+<node id="shrug1392813986017">
+<data key="EventType">action</data>
+<data key="Type">shrug</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392813986017</data>
+</node>
+<node id="say1392813991019">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Doei
+</data>
+<data key="Target">bystander3</data>
+<data key="Time">1392813991019</data>
+</node>
+<node id="cross_arms1392813996020">
+<data key="EventType">action</data>
+<data key="Type">cross_arms</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392813996020</data>
+</node>
+<node id="say1392814001022">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Hoi
+</data>
+<data key="Target">bystander1</data>
+<data key="Time">1392814001022</data>
+</node>
+<node id="say1392814006023">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Hoi
+</data>
+<data key="Target">bystander1</data>
+<data key="Time">1392814006023</data>
+</node>
+<node id="walk_to1392814011025">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">main_street</data>
+<data key="Time">1392814011025</data>
+</node>
+<node id="become_happy1392814016026">
+<data key="EventType">action</data>
+<data key="Type">become_happy</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814016026</data>
+</node>
+<node id="walk_to1392814021030">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">square</data>
+<data key="Time">1392814021030</data>
+</node>
+<node id="duck_and_cover1392814026030">
+<data key="EventType">action</data>
+<data key="Type">duck_and_cover</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814026030</data>
+</node>
+<node id="do_nothing1392814031032">
+<data key="EventType">action</data>
+<data key="Type">do_nothing</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814031032</data>
+</node>
+<node id="take_knife1392814036033">
+<data key="EventType">action</data>
+<data key="Type">take_knife</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814036033</data>
+</node>
+<node id="walk_to1392814041036">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">main_street</data>
+<data key="Time">1392814041036</data>
+</node>
+<node id="say1392814046040">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Doei
+</data>
+<data key="Target">bystander1</data>
+<data key="Time">1392814046040</data>
+</node>
+<node id="walk_to1392814051040">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">square</data>
+<data key="Time">1392814051040</data>
+</node>
+<node id="say1392814056041">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Hoi
+</data>
+<data key="Target">bystander2</data>
+<data key="Time">1392814056041</data>
+</node>
+<node id="avert_gaze1392814061043">
+<data key="EventType">action</data>
+<data key="Type">avert_gaze</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814061043</data>
+</node>
+<node id="become_dominant1392814066045">
+<data key="EventType">action</data>
+<data key="Type">become_dominant</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814066045</data>
+</node>
+<node id="walk_to1392814071047">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">square</data>
+<data key="Time">1392814071047</data>
+</node>
+<node id="soothing_arms1392814076048">
+<data key="EventType">action</data>
+<data key="Type">soothing_arms</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814076048</data>
+</node>
+<node id="shrug1392814081049">
+<data key="EventType">action</data>
+<data key="Type">shrug</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814081049</data>
+</node>
+<node id="say1392814086053">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Doei
+</data>
+<data key="Target">bystander3</data>
+<data key="Time">1392814086053</data>
+</node>
+<node id="walk_to1392814091055">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">main_street</data>
+<data key="Time">1392814091055</data>
+</node>
+<node id="say1392814096057">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Doei
+</data>
+<data key="Target">bystander3</data>
+<data key="Time">1392814096057</data>
+</node>
+<node id="say1392814101057">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Doei
+</data>
+<data key="Target">bystander3</data>
+<data key="Time">1392814101057</data>
+</node>
+<node id="duck_and_cover1392814106058">
+<data key="EventType">action</data>
+<data key="Type">duck_and_cover</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814106058</data>
+</node>
+<node id="duck_and_cover1392814111062">
+<data key="EventType">action</data>
+<data key="Type">duck_and_cover</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814111062</data>
+</node>
+<node id="walk_to1392814116063">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">main_street</data>
+<data key="Time">1392814116063</data>
+</node>
+<node id="walk_to1392814121067">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">alley</data>
+<data key="Time">1392814121067</data>
+</node>
+<node id="shrug1392814126071">
+<data key="EventType">action</data>
+<data key="Type">shrug</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814126071</data>
+</node>
+<node id="wave1392814131073">
+<data key="EventType">action</data>
+<data key="Type">wave</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814131073</data>
+</node>
+<node id="frown1392814136076">
+<data key="EventType">action</data>
+<data key="Type">frown</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814136076</data>
+</node>
+<node id="say1392814141077">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Doei
+</data>
+<data key="Target">bystander2</data>
+<data key="Time">1392814141077</data>
+</node>
+<node id="do_nothing1392814146080">
+<data key="EventType">action</data>
+<data key="Type">do_nothing</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814146080</data>
+</node>
+<node id="shrug1392814151082">
+<data key="EventType">action</data>
+<data key="Type">shrug</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814151082</data>
+</node>
+<node id="do_nothing1392814156083">
+<data key="EventType">action</data>
+<data key="Type">do_nothing</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814156083</data>
+</node>
+<node id="walk_to1392814161086">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">square</data>
+<data key="Time">1392814161086</data>
+</node>
+<node id="say1392814166088">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Hoi
+</data>
+<data key="Target">bystander1</data>
+<data key="Time">1392814166088</data>
+</node>
+<node id="say1392814171090">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Hoi
+</data>
+<data key="Target">bystander1</data>
+<data key="Time">1392814171090</data>
+</node>
+<node id="say1392814176091">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Doei
+</data>
+<data key="Target">bystander1</data>
+<data key="Time">1392814176091</data>
+</node>
+<node id="walk_to1392814181093">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">alley</data>
+<data key="Time">1392814181093</data>
+</node>
+<node id="wave1392814186095">
+<data key="EventType">action</data>
+<data key="Type">wave</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814186095</data>
+</node>
+<node id="cross_arms1392814191099">
+<data key="EventType">action</data>
+<data key="Type">cross_arms</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814191099</data>
+</node>
+<node id="avert_gaze1392814196100">
+<data key="EventType">action</data>
+<data key="Type">avert_gaze</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814196100</data>
+</node>
+<node id="become_dominant1392814201103">
+<data key="EventType">action</data>
+<data key="Type">become_dominant</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814201103</data>
+</node>
+<node id="become_happy1392814206107">
+<data key="EventType">action</data>
+<data key="Type">become_happy</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814206107</data>
+</node>
+<node id="become_sad1392814211106">
+<data key="EventType">action</data>
+<data key="Type">become_sad</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814211106</data>
+</node>
+<node id="become_happy1392814216108">
+<data key="EventType">action</data>
+<data key="Type">become_happy</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814216108</data>
+</node>
+<node id="walk_to1392814221111">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">main_street</data>
+<data key="Time">1392814221111</data>
+</node>
+<node id="say1392814226109">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Hoi
+</data>
+<data key="Target">bystander2</data>
+<data key="Time">1392814226109</data>
+</node>
+<node id="avert_gaze1392814231113">
+<data key="EventType">action</data>
+<data key="Type">avert_gaze</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814231113</data>
+</node>
+<node id="walk_to1392814236115">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">square</data>
+<data key="Time">1392814236115</data>
+</node>
+<node id="say1392814241115">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Hoi
+</data>
+<data key="Target">bystander2</data>
+<data key="Time">1392814241115</data>
+</node>
+<node id="walk_to1392814246116">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">square</data>
+<data key="Time">1392814246116</data>
+</node>
+<node id="become_submissive1392814251120">
+<data key="EventType">action</data>
+<data key="Type">become_submissive</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814251120</data>
+</node>
+<node id="duck_and_cover1392814256119">
+<data key="EventType">action</data>
+<data key="Type">duck_and_cover</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814256119</data>
+</node>
+<node id="become_submissive1392814261123">
+<data key="EventType">action</data>
+<data key="Type">become_submissive</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814261123</data>
+</node>
+<node id="walk_to1392814266124">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">main_street</data>
+<data key="Time">1392814266124</data>
+</node>
+<node id="say1392814271126">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Hoi
+</data>
+<data key="Target">bystander1</data>
+<data key="Time">1392814271126</data>
+</node>
+<node id="say1392814276129">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Hoi
+</data>
+<data key="Target">bystander1</data>
+<data key="Time">1392814276129</data>
+</node>
+<node id="walk_to1392814281132">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">main_street</data>
+<data key="Time">1392814281132</data>
+</node>
+<node id="take_knife1392814286134">
+<data key="EventType">action</data>
+<data key="Type">take_knife</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814286134</data>
+</node>
+<node id="become_sad1392814291136">
+<data key="EventType">action</data>
+<data key="Type">become_sad</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814291136</data>
+</node>
+<node id="avert_gaze1392814296137">
+<data key="EventType">action</data>
+<data key="Type">avert_gaze</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814296137</data>
+</node>
+<node id="cross_arms1392814301139">
+<data key="EventType">action</data>
+<data key="Type">cross_arms</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814301139</data>
+</node>
+<node id="say1392814306141">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Doei
+</data>
+<data key="Target">bystander2</data>
+<data key="Time">1392814306141</data>
+</node>
+<node id="say1392814311144">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Hoi
+</data>
+<data key="Target">bystander2</data>
+<data key="Time">1392814311144</data>
+</node>
+<node id="walk_to1392814316145">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">alley</data>
+<data key="Time">1392814316145</data>
+</node>
+<node id="take_knife1392814321148">
+<data key="EventType">action</data>
+<data key="Type">take_knife</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814321148</data>
+</node>
+<node id="cross_arms1392814326148">
+<data key="EventType">action</data>
+<data key="Type">cross_arms</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814326148</data>
+</node>
+<node id="walk_to1392814331149">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">square</data>
+<data key="Time">1392814331149</data>
+</node>
+<node id="walk_to1392814336152">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">alley</data>
+<data key="Time">1392814336152</data>
+</node>
+<node id="walk_to1392814341155">
+<data key="EventType">action</data>
+<data key="Type">walk_to</data>
+<data key="Agens">policeofficer</data>
+<data key="Target">main_street</data>
+<data key="Time">1392814341155</data>
+</node>
+<node id="say1392814346157">
+<data key="EventType">action</data>
+<data key="Type">say</data>
+<data key="Agens">policeofficer</data>
+<data key="Patiens">Doei
+</data>
+<data key="Target">bystander2</data>
+<data key="Time">1392814346157</data>
+</node>
+<node id="become_happy1392814351158">
+<data key="EventType">action</data>
+<data key="Type">become_happy</data>
+<data key="Agens">policeofficer</data>
+<data key="Time">1392814351158</data>
+</node>
+  </graph>
+</graphml>

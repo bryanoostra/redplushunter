@@ -1,0 +1,32 @@
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="cause-voluntary">
+		<nucleus>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="blaas" morph="3.singular.present" />
+					<node rel="su" cat="np">
+						<node rel="hd" pos="noun" root="poes" morph="singular" />
+						<node rel="det" pos="det" root="de" morph="singular" />
+					</node>
+				</node>
+			</dt>
+		</nucleus>
+		<satellite>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="gooi" morph="1.singular.present" />
+					<node rel="su" pos="pron" root="ik" />
+					<node rel="obj1" cat="np">
+						<node rel="hd" pos="noun" root="poes" morph="singular" />
+						<node rel="det" pos="det" root="de" morph="singular" />
+					</node>
+					<node rel="mod" cat="pp">
+						<node rel="hd" pos="prep" root="van" />
+						<node rel="obj1" pos="noun" root="schoot" morph="singular" />
+					</node>
+				</node>
+			</dt>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

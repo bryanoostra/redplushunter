@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation index="r1" cat="contrast-causal">
+		<nucleus>
+			<dt>
+	        		<node rel="top" cat="smain" >
+     					<node rel="su" index="A" pos="nom" root="Amalia" />
+     					<node rel="hd" pos="verb" root="kan" morph="3.sing.present" />
+     					<node rel="vc" cat="inf">
+     						<node rel="hd" pos="verb" root="kom" morph="inf" />
+     						<node rel="mod" pos="adv" root="niet" />
+     						<node rel="ld" cat="pp">
+							<node rel="hd" pos="prep" root="bij" />
+	     						<node rel="obj1" cat="np">
+	        						<node rel="det" pos="det" root="het" morph="sing" />
+	     							<node rel="hd" pos="noun" root="zwaard" morph="sing" />
+	        					</node>
+	        				</node>
+     						<node rel="su" index="A" />
+     					</node>
+     				</node>
+        		</dt>       
+		</nucleus>
+    		<satellite>
+    			<dt>
+    				<node rel="top" cat="smain" >
+	        			<node rel="su" pos="nom" root="Amalia" />
+	        			<node rel="hd" pos="verb" root="zie" morph="3.sing.present" />
+	        			<node rel="obj1" cat="np">
+	        				<node rel="det" pos="det" root="het" morph="sing" />
+	     					<node rel="hd" pos="noun" root="zwaard" morph="sing" />
+	        			</node>
+	        		</node>	
+	     		</dt>
+	    </satellite>
+	</rhetrelation>
+</rhetdepgraph>

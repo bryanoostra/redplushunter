@@ -1,0 +1,50 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:swc="http://www.owl-ontologies.com/StoryWorldCore.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.owl-ontologies.com/StoryWorldSettings/Pirates#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" >
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oBeach_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#GeographicArea"/>
+    <swc:partOfGeographicArea rdf:resource="StoryWorldSettings/Pirates#oTreasureIsland_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oPond_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Water"/>
+    <swc:contains rdf:resource="StoryWorldSettings/Pirates#oWater_1"/>
+    <swc:supportedBy rdf:resource="StoryWorldSettings/Pirates#oTreasureIsland_1"/>
+    <rdfs:label>a pond of fresh water on the island</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oGold_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Gold"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oWater_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Water"/>
+    <rdfs:label>fresh water in a pond</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oShoreWay_2">
+    <rdf:type rdf:resource="StoryWorldCore.owl#SeaWay"/>
+    <swc:fromGeographicArea rdf:resource="StoryWorldSettings/Pirates#oBeach_1"/>
+    <swc:toGeographicArea rdf:resource="StoryWorldSettings/Pirates#oSea_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oShoreWay_1">
+    <rdf:type rdf:resource="StoryWorldCore.owl#SeaWay"/>
+    <swc:fromGeographicArea rdf:resource="StoryWorldSettings/Pirates#oSea_1"/>
+    <swc:toGeographicArea rdf:resource="StoryWorldSettings/Pirates#oBeach_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oShovel_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Shovel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oTreasureIsland_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Island"/>
+    <rdfs:label>Treasure Island</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oSea_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Sea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oTreasureChest_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#TreasureChest"/>
+    <swc:contains rdf:resource="StoryWorldSettings/Pirates#oGold_1"/>
+    <swc:contains rdf:resource="StoryWorldSettings/Pirates#oShovel_1"/>
+    <swc:supportedBy rdf:resource="StoryWorldSettings/Pirates#oBeach_1"/>
+  </rdf:Description>
+</rdf:RDF>

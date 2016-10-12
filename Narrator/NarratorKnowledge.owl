@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.owl-ontologies.com/NarratorKnowledge.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/NarratorKnowledge.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="LexiconEntry">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An entry in the lexicon. Supplies lexical information about the word: pos, root, morphological information, preposition, svp, etc.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Determiner">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The determiner of a lexiconEntry, i.e. de or het</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="PoS">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Part of Speech of a LexiconEntry. This can be one of the following: verb, noun, nom, expr, adv, or adj.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Gender">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The gender of a lexicon entry, i.e. male, female or neutral</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="DependencyLabel">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The dependency label is used for verbs with a target.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="LexicalObject">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Information about a specific character or object in the world. Sex and name (optional) are supplied.</rdfs:comment>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasProperty">
+    <rdfs:domain rdf:resource="#LexicalObject"/>
+    <rdfs:range rdf:resource="#LexiconEntry"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Assigns a certain property to a certain character</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:FunctionalProperty rdf:ID="pos">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the Part of Speech of a LexiconEntry.</rdfs:comment>
+    <rdfs:domain rdf:resource="#LexiconEntry"/>
+    <rdfs:range rdf:resource="#PoS"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="gender">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The gender of the noun, i.e. male, female or neutral</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#LexiconEntry"/>
+          <owl:Class rdf:about="#LexicalObject"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="#Gender"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="root">
+    <rdfs:domain rdf:resource="#LexiconEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The root of the word. In case of a verb, it's the 1st person, present tense (example: zijn -&gt; root:ben). In case of a noun it's the singular form.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="prep">
+    <rdfs:domain rdf:resource="#LexiconEntry"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A preposition links verbs, adjectives, adverbs to other words in a sentence. (e.g. wandelen, prep: naar --&gt; hij wandelde naar het bos, or bang, prep: voor --&gt; hij was bang voor haar)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="isMassNoun">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="#LexiconEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines whether the noun is a mass noun (e.g. water, money, milk, sand, etc)</rdfs:comment>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="determiner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#Determiner"/>
+    <rdfs:domain rdf:resource="#LexiconEntry"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The determiner to be used with the noun (de or het)</rdfs:comment>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="isUnique">
+    <rdfs:domain rdf:resource="#LexiconEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines whether a certain object is unique in the world (e.q. the sun).</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="svp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Seperate Verb Part; it's the part of the verb that is seperatable (e.g. instorten --&gt; het kasteel stortte in)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#LexiconEntry"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="name">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Name of the described character</rdfs:comment>
+    <rdfs:domain rdf:resource="#LexicalObject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="deplabel">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the dependency label for verbs with target (predc of ld)</rdfs:comment>
+    <rdfs:range rdf:resource="#DependencyLabel"/>
+    <rdfs:domain rdf:resource="#LexiconEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <LexiconEntry rdf:ID="break">
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >breek</root>
+    <pos>
+      <PoS rdf:ID="verb">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Verb, e.g. arrive, hit, solve, fight, etc.</rdfs:comment>
+      </PoS>
+    </pos>
+  </LexiconEntry>
+  <PoS rdf:ID="adj">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Adjective, e.g. happy, angry, hopeful, sic, etc.</rdfs:comment>
+  </PoS>
+  <LexiconEntry rdf:ID="become">
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >word</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="climb">
+    <pos rdf:resource="#verb"/>
+    <prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >in</prep>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >klim</root>
+    <deplabel>
+      <DependencyLabel rdf:ID="ld">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >This dependency label ...</rdfs:comment>
+      </DependencyLabel>
+    </deplabel>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="exist">
+    <deplabel rdf:resource="#ld"/>
+    <prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >in</prep>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >lig</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="have">
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >heb</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <Determiner rdf:ID="de"/>
+  <LexiconEntry rdf:ID="blow">
+    <deplabel rdf:resource="#ld"/>
+    <pos rdf:resource="#verb"/>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >waai</root>
+    <prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >door</prep>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="find">
+    <svp rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >terug</svp>
+    <pos rdf:resource="#verb"/>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vind</root>
+  </LexiconEntry>
+  <Gender rdf:ID="male"/>
+  <LexiconEntry rdf:ID="fall">
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >val</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="arrive">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >kom</root>
+    <svp rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >aan</svp>
+    <prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bij</prep>
+  </LexiconEntry>
+  <DependencyLabel rdf:ID="predc"/>
+  <LexiconEntry rdf:ID="bring">
+    <prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >naar</prep>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >breng</root>
+    <deplabel rdf:resource="#ld"/>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="escape">
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ontsnap</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="comment">
+    <pos rdf:resource="#verb"/>
+    <svp rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >aan</svp>
+    <deplabel rdf:resource="#predc"/>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >merk</root>
+    <prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >op</prep>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="be">
+    <deplabel rdf:resource="#ld"/>
+    <prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bij</prep>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ben</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="call">
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >heet</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <Gender rdf:ID="female"/>
+  <LexiconEntry rdf:ID="goto">
+    <deplabel rdf:resource="#ld"/>
+    <pos rdf:resource="#verb"/>
+    <prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >naar</prep>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ga</root>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="give">
+    <pos rdf:resource="#verb"/>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >geef</root>
+    <prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >aan</prep>
+    <deplabel rdf:resource="#predc"/>
+  </LexiconEntry>
+  <Gender rdf:ID="neutral"/>
+  <LexiconEntry rdf:ID="eat">
+    <pos rdf:resource="#verb"/>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >eet</root>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="appear">
+    <pos rdf:resource="#verb"/>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >verschijn</root>
+  </LexiconEntry>
+  <PoS rdf:ID="noun">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Noun, e.g. bird, country, ship, sword, etc.</rdfs:comment>
+  </PoS>
+  <PoS rdf:ID="expr">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Expression, e.g. atotherside, oneday, shakinglegs, etc.</rdfs:comment>
+  </PoS>
+  <LexiconEntry rdf:ID="follow">
+    <pos rdf:resource="#verb"/>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >volg</root>
+    <prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >naar</prep>
+    <deplabel rdf:resource="#ld"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="collapse">
+    <svp rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >in</svp>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >stort</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="enter">
+    <svp rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >binnen</svp>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ga</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="flee">
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vlucht</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="capture">
+    <pos rdf:resource="#verb"/>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >sluit</root>
+    <prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >in</prep>
+    <deplabel rdf:resource="#ld"/>
+    <svp rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >op</svp>
+  </LexiconEntry>
+  <PoS rdf:ID="adv">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Adverb, e.g. always, everybody, something</rdfs:comment>
+  </PoS>
+  <Determiner rdf:ID="het"/>
+  <LexiconEntry rdf:ID="see">
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >zie</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="ask">
+    <pos rdf:resource="#verb"/>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vraag</root>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="cry">
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >huil</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="want">
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >wil</root>
+    <pos rdf:resource="#verb"/>
+  </LexiconEntry>
+  <LexiconEntry rdf:ID="catch">
+    <pos rdf:resource="#verb"/>
+    <root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vang</root>
+  </LexiconEntry>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->

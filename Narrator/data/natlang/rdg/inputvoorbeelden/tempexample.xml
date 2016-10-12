@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="temp-when-soonas">
+		<nucleus>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="pak" morph="3.sing.present" />
+					<node rel="su" pos="nom" root="Amalia" index="A" />
+					<node rel="obj1" cat="np">
+						<node rel="det" pos="det" root="het" morph="sing" />
+						<node rel="hd" pos="noun" root="zwaard" morph="sing" />
+					</node>
+				</node>
+			</dt>
+		</nucleus>
+		<satellite>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="su" pos="nom" index="A" root="Amalia" />
+					<node rel="hd" pos="verb" root="zie" morph="3.sing.present" />
+					<node rel="obj1" cat="np">
+						<node rel="det" pos="det" root="het" morph="sing" />
+						<node rel="hd" pos="noun" root="zwaard" morph="sing" />
+					</node>
+				</node>
+			</dt>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

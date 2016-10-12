@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://www.owl-ontologies.com/Pirates_Ivo.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:nk="http://www.owl-ontologies.com/NarratorKnowledge.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/Pirates_Ivo.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl"/>
+  </owl:Ontology>
+  <nk:LexiconEntry rdf:ID="Stab">
+    <nk:svp rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >neer</nk:svp>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >steek</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="OpenContainer">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >open</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="supportedBy">
+    <nk:prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >op</nk:prep>
+    <nk:deplabel rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#ld"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >steun</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Treasure">
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >schatkist</nk:root>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#de"/>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#neutral"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Deck">
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >dek</nk:root>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#het"/>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#place"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="type">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ben</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Lord">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >heerschap</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#male"/>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#het"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Ship">
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#place"/>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#het"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >schip</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="WoundEnemy">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >verwond</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Captain">
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#de"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >kapitein</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="owns">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bezit</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Hold">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ruim</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#place"/>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#het"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="heldBy">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >houdt</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+    <nk:deplabel rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#ld"/>
+    <nk:prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vast</nk:prep>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="FillBoatWithWater">
+    <nk:prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bij</nk:prep>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vul</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="rapier">
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#neutral"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >zwaard</nk:root>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#het"/>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Island">
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >schateiland</nk:root>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#het"/>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#place"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Run">
+    <nk:deplabel rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#ld"/>
+    <nk:prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >naar</nk:prep>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ren</nk:root>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="WaterSupply">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >watervoorraad</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#neutral"/>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#de"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="wornBy">
+    <nk:prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >door</nk:prep>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >draag</nk:root>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="GetOffBoat">
+    <nk:svp rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >aan land</nk:svp>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ga</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+    <nk:deplabel rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#ld"/>
+    <nk:prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bij</nk:prep>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Pond">
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#de"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vijver</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#place"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="GetTreasure">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >heb</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="hasWaterSupply">
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >heb</nk:root>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="belt">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >riem</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#neutral"/>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#de"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="OpenDoor">
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >open</nk:root>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="OutOfWater">
+    <nk:svp rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >leeg</nk:svp>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ben</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Crate">
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#neutral"/>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#het"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >krat</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Pirate">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >piraat</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#de"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="SailToLand">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vaar</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+    <nk:prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >naar</nk:prep>
+    <nk:deplabel rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#ld"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Ladder">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ladder</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#neutral"/>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#de"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="containedBy">
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >zit</nk:root>
+    <nk:prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >in</nk:prep>
+    <nk:deplabel rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#ld"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="WalkFromToDoor">
+    <nk:deplabel rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#ld"/>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >loop</nk:root>
+    <nk:svp rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >naar</nk:svp>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="RefillWaterSupply">
+    <nk:prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bij</nk:prep>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vul</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="TakeOut">
+    <nk:prep rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >uit</nk:prep>
+    <nk:deplabel rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#ld"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >pak</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="GetBottle">
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >heb</nk:root>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="mooredAt">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >land</nk:root>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#verb"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Hatch">
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >luik</nk:root>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#het"/>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#neutral"/>
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Rum">
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >rumfles</nk:root>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#neutral"/>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#de"/>
+  </nk:LexiconEntry>
+  <nk:LexiconEntry rdf:ID="Water">
+    <nk:pos rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#noun"/>
+    <nk:gender rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#neutral"/>
+    <nk:determiner rdf:resource="http://www.owl-ontologies.com/NarratorKnowledge.owl#het"/>
+    <nk:root rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >water</nk:root>
+    <nk:isMassNoun rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</nk:isMassNoun>
+  </nk:LexiconEntry>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->

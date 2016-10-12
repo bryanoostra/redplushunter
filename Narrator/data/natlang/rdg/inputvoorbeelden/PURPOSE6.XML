@@ -1,0 +1,35 @@
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="purpose">
+		<nucleus>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="breng" morph="3.singular.present" />
+					<node rel="su" cat="np" index="P">
+						<node rel="det" pos="det" root="de" morph="singular" />
+						<node rel="hd" pos="noun" root="poes" morph="singular" />
+					</node>
+					<node rel="obj1" cat="np">
+						<node rel="det" pos="det" root="haar" morph="singular" />
+						<node rel="hd" pos="noun" root="speelgoedmuis" morph="singular" />
+					</node>
+				</node>
+			</dt>
+		</nucleus>
+		<satellite>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="wil" morph="3.singular.present" />
+					<node rel="su" cat="np" index="P">
+						<node rel="det" pos="det" root="de" morph="singular" />
+						<node rel="hd" pos="noun" root="poes" morph="singular" />
+					</node>
+					<node rel="vc" cat="inf">
+						<node rel="su" index="P" />
+						<node rel="hd" pos="verb" root="speel" morph="infinitive" />
+					</node>
+				</node>
+			</dt>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

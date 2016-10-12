@@ -1,0 +1,202 @@
+@prefix swc:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix red:   <http://www.owl-ontologies.com/Red.owl#> .
+@prefix :        <http://www.owl-ontologies.com/Red.owl#> .
+
+# Description of the story world.
+# Author: Ivo Swartjes
+# Date:   6 oct 2008
+
+# ----------
+# CHARACTERS
+# ----------
+
+# Little Red Riding Hood
+:red
+    a   red:LittleGirl ;
+    a   swc:Character ;
+    swc:at      :reds_house ;  
+    swc:has     :birthday_cake ;
+    swc:owns    :birthday_cake ;
+    rdfs:label "Little Red Riding Hood" ;
+    .
+    
+# The big bad wolf    
+:wolf
+    a   red:Wolf ;
+    a   swc:Character ;
+    swc:at  :forest ;
+    swc:hasAttribute red:hungry;
+    rdfs:label "Wolf" ;
+    .
+    
+# Grandma
+:grandma
+    a   red:Grandmother ;
+    a   swc:Character ;
+    swc:at  :grandmas_house ;
+    rdfs:label "Grandma" ;
+    . 
+       
+# The hunter
+:hunter
+    a   red:Hunter ;
+    a   swc:Character ;
+    swc:at  :forest ;
+    rdfs:label "The Hunter" ;
+    .
+# ----------
+# LOCATIONS
+# ----------
+
+# The house of LRRH    
+:reds_house
+    a   red:House ;
+    a   swc:Location ;
+    rdfs:label "Reds house" ;
+    .
+    
+# The forest    
+:forest
+    a   red:Forest ;
+    a   swc:Location ;
+    rdfs:label "the open spot in the forest" ;
+    .
+
+# Grandmother's house    
+:grandmas_house
+    a   red:House ;
+    a   swc:Location ;
+    rdfs:label "Grandmas house" ;
+    .    
+
+    
+# Path from Red's house to forest
+:forest_path1a
+    a   swc:Path ;
+    swc:from    :reds_house ;
+    swc:to      :forest ;
+    rdfs:label "the path leading to the forest" ;
+    .
+    
+# Path from Red's house to forest
+:forest_path1b
+    a   swc:Path ;
+    swc:from    :forest ;
+    swc:to      :reds_house ;
+    rdfs:label "the path leading to Red's house" ;
+    .    
+
+
+# Path from grandmas garden to grandmas house
+:house_door1
+    a   swc:Path ;
+    swc:from    :forest ;
+    swc:to  :grandmas_house ;
+    rdfs:label "the door of Grandma's house" ;
+    .   
+    
+# Path from grandmas garden to grandmas house
+:house_door2
+    a   swc:Path ;
+    swc:from  :grandmas_house ;
+    swc:to    :forest ;
+    rdfs:label "the door of Grandma's house" ;
+    .   
+    
+
+
+### new locations: #########
+
+# The Lake    
+:lake
+    a   swc:Location ;
+    rdfs:label "the lake" ;
+    .
+    
+# The Beach    
+:beach
+    a   swc:Location ;
+    rdfs:label "the beach" ;
+    .
+	
+	
+# Path from reds house to the beach
+:beach_path1a
+    a   swc:Path ;
+    swc:from    :reds_house ;
+    swc:to  :beach ;
+    rdfs:label "the path leading to the beach" ;
+    .   
+    
+# Path from reds house to the beach
+:beach_path1b
+    a   swc:Path ;
+    swc:from  :beach ;
+    swc:to    :reds_house ;
+    rdfs:label "the path leading to Red's house" ;
+    . 
+    
+    
+    
+# Path from beach to lake
+:beach_path2a
+    a   swc:Path ;
+    swc:from    :beach ;
+    swc:to  :lake ;
+    rdfs:label "the path leading to the lake" ;
+    .   
+    
+# Path from beach to lake
+:beach_path2b
+    a   swc:Path ;
+    swc:from  :lake ;
+    swc:to    :beach ;
+    rdfs:label "the path leading to the beach" ;
+    . 
+    
+    
+# Path from grandmas house to the beach
+:beach_path3a
+    a   swc:Path ;
+    swc:from	:grandmas_house ;
+    swc:to		:beach ;
+    rdfs:label "the path leading to the beach" ;
+    .   
+    
+# Path from grandmas house to the beach
+:beach_path3b
+    a   swc:Path ;
+    swc:from	:beach ;
+    swc:to		:grandmas_house ;
+    rdfs:label "the path leading to Grandma's house" ;
+    . 
+
+# ----------
+# OBJECTS
+# ----------	
+:birthday_cake
+    a   red:Cake ;
+    rdfs:label "the birthday cake" ;
+    .	
+    
+:chocolate_cake
+    a   red:Cake ;    
+    swc:hasAttribute red:unbaked ;
+    rdfs:label "the chocolate cake" ;
+    .	          
+    
+:apple_pie
+    a   red:Cake ;    
+    swc:hasAttribute red:unbaked ;
+    rdfs:label "the apple pie" ;
+    .	 
+    
+:cheese_cake
+    a   red:Cake ;    
+    swc:hasAttribute red:unbaked ;
+    rdfs:label "the cheese cake" ;
+    .          
+	    

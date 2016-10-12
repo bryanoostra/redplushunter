@@ -1,0 +1,34 @@
+@prefix ns2:     <http://www.owl-ontologies.com/StoryWorldSettings/Pirates#> .
+@prefix ns1:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+@prefix ns0:     <http://www.owl-ontologies.com/FabulaKnowledge.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<#defaultGraph> {
+
+	<#iGoal_anne_bonney_1>
+          a       ns2:GetTreasure ;
+          ns0:character ns2:anne_bonney ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:patiens ns2:treasure1 ;
+          ns0:motivates <#iAction_anne_bonney_11> , <#iAction_anne_bonney_17> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+	<#iAction_anne_bonney_11>
+		a		ns0:Run ;
+		ns0:character ns2:anne_bonney ;
+        ns0:agens ns2:anne_bonney ;
+        ns0:target ns2:oTreasureIsland_1 ;
+        ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+       	ns0:endtime "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        ns0:starttime "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+	
+	<#iAction_anne_bonney_17>
+		a		ns0:OpenContainer ;
+		ns0:character ns2:anne_bonney ;
+		ns0:agens ns2:anne_bonney ;
+        ns0:patiens ns2:treasure1 ;
+        ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+       	ns0:endtime "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        ns0:starttime "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+}
+

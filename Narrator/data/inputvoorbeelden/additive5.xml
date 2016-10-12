@@ -1,0 +1,21 @@
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="additive-moreover">
+		<nucleus>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="zing" morph="3.singular.present" />
+					<node rel="su" pos="nom" root="Amalia" />
+				</node>
+			</dt>
+		</nucleus>
+		<satellite>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="dans" morph="3.singular.present" />
+					<node rel="su" pos="nom" root="Amalia" />
+				</node>
+			</dt>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

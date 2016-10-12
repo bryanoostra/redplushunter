@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.owl-ontologies.com/Red.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:swc="http://www.owl-ontologies.com/StoryWorldCore.owl#"
+    xmlns:fabula="http://www.owl-ontologies.com/FabulaKnowledge.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/Red.owl">
+  <owl:Ontology rdf:about="http://www.owl-ontologies.com/Red.owl">
+    <owl:imports rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl"/>
+    <owl:imports rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="SeekSupport">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#AttainGoal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TellSomeoneTookSomething">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BecomeHungry">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Event"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Die">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Event"/>
+  </owl:Class>
+  <owl:Class rdf:ID="WhatToDo">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PoisonFood">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EatSomething">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#AttainGoal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Eat">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Cake">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Food"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SneakTo">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SkipTo">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Give">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Thank">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ShuffleTo">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ExpressAnger">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ExpressSympathy">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Food">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#Object"/>
+  </owl:Class>
+  <owl:Class rdf:ID="GreetBack">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+  </owl:Class>
+  <owl:Class rdf:ID="GreetAgain">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Poison">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#AttainGoal"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TellAboutPoisonPlan">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BakeCake">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TakeFrom">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TakeBack">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer"/>
+  </owl:Class>
+   <owl:Class rdf:ID="TakeAgain">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Cry">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Laugh">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Greet">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BringCake">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#AttainGoal"/>
+  </owl:Class>
+  
+  
+   <owl:Class rdf:ID="WatchBirds">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+   <owl:Class rdf:ID="WatchClouds">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+   <owl:Class rdf:ID="BuildSandCastle">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+   <owl:Class rdf:ID="RollSand">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+   <owl:Class rdf:ID="EnjoySun">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TakeNap">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Dive">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="TreadWater">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Fart">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Fart2">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Fart3">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Dust">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>
+  <owl:Class rdf:ID="WashDishes">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:Class>  
+  
+  <owl:Class rdf:ID="LittleGirl">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#Role"/>
+  </owl:Class>
+  
+  <owl:ObjectProperty rdf:ID="greeted"/>
+  <owl:ObjectProperty rdf:ID="told_what_happened"/>
+  <owl:ObjectProperty rdf:ID="told_about_poison_plan"/>
+  
+  <swc:InternalAttribute rdf:ID="poisoned"/>
+  <swc:InternalAttribute rdf:ID="mean"/>
+  <swc:InternalAttribute rdf:ID="hungry"/>
+  <swc:InternalAttribute rdf:ID="farted1"/>
+  <swc:InternalAttribute rdf:ID="farted2"/>
+  <swc:InternalAttribute rdf:ID="farted3"/>
+  
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->

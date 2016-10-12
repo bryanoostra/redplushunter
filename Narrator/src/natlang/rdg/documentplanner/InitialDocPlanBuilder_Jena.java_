@@ -1,0 +1,1363 @@
+package natlang.rdg.documentplanner;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.net.URL;
+import java.util.Iterator;
+import java.util.Vector;
+
+//import jtp.ReasoningStep;
+//import jtp.ReasoningStepIterator;
+//import jtp.context.owl.OWLReasoningContext;
+//import jtp.disp.DispatcherUtils;
+//import jtp.fol.Literal;
+//import jtp.fol.SubstUtils;
+//import jtp.fol.Symbol;
+//import jtp.fol.kif.KIF2CNF;
+//import jtp.func.Equals;
+//import jtp.func.ForIn;
+//import jtp.func.GetSetof;
+//import jtp.func.InEqual;
+//import jtp.func.Unprovable;
+import natlang.rdg.model.Detail;
+import natlang.rdg.model.PlotElement;
+import natlang.rdg.model.RSEdge;
+import natlang.rdg.model.RSGraph;
+import natlang.rdg.model.RSVertex;
+import natlang.rdg.model.RhetRelation;
+
+import org.mindswap.pellet.jena.PelletReasonerFactory;
+
+import parlevink.parlegraph.model.MLabeledEdge;
+import parlevink.util.Resources;
+
+import com.hp.hpl.jena.query.Query;
+import com.hp.hpl.jena.query.QueryExecution;
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+import com.hp.hpl.jena.query.QueryFactory;
+import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.RDFNode;
+
+/** 
+ * InitialDocumentPlanBuilder is the first component of the DocumentPlanner and is 
+ * responsible for the conversion of the fabula in OWL format into an initial document plan
+ * 
+ * @author Nanda Slabbers 
+ */
+public class InitialDocPlanBuilder_Jena 
+{
+	private RSGraph graph;
+	private Vector edges;
+//	private OWLReasoningContext context;	
+	PlotElement prevpe;		
+	PlotElement prevprevpe;
+	Vector toldMessages;
+	
+	private Model model;
+		
+	public static void main(String[] args){
+		InitialDocPlanBuilder_Jena idpb = new InitialDocPlanBuilder_Jena();
+		idpb.transform();
+	}
+	
+	/**
+	 * Constructor - creates the OWL Reasoning context and reads the fabula 
+	 */
+	public InitialDocPlanBuilder_Jena()
+	{
+		toldMessages = new Vector();
+		prevpe = null;
+		prevprevpe = null;
+					
+		try
+		{
+			// Create OWL Reasoning context
+//			context = new OWLReasoningContext();
+//			context.setUp();
+			
+//			*********************************************
+			// JENA Create Jena Model
+			model = ModelFactory.createOntologyModel( PelletReasonerFactory.THE_SPEC  );
+			//*********************************************
+			
+			// Add unprovable reasoner
+//			Unprovable unpReasoner = new Unprovable();
+//			unpReasoner.setAskingReasoner(context.getAskingReasoner());
+//			DispatcherUtils.addToDispatcher(unpReasoner, context.getAskingDispatcher());
+			
+			// Add equals reasoner
+//			DispatcherUtils.addToDispatcher(new Equals(), context.getAskingDispatcher());
+//			DispatcherUtils.addToDispatcher(new InEqual(), context.getAskingDispatcher());
+			
+			// Add Get-setof reasoner
+//			GetSetof getsetofReasoner = new GetSetof();
+//			getsetofReasoner.setAskingReasoner(context.getAskingReasoner());
+//			DispatcherUtils.addToDispatcher(getsetofReasoner, context.getAskingDispatcher());
+			
+			// Add ForIn reasoner
+//			DispatcherUtils.addToDispatcher(new ForIn(), context.getAskingDispatcher());
+				
+			// retrieve the parser used for parsing KIF sentences
+//			KIF2CNF kifParser = context.getKifParser();
+				
+			// create namespace mappings for OWL, RDF and RDFS
+//			kifParser.addNamespaceMapping("owl", "http://www.w3.org/2002/07/owl#");
+//			kifParser.addNamespaceMapping("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
+//			kifParser.addNamespaceMapping("rdfs", "http://www.w3.org/2000/01/rdf-schema#");
+//			kifParser.addNamespaceMapping("fabula", "http://www.owl-ontologies.com/FabulaKnowledge.owl#");
+//			kifParser.addNamespaceMapping("swc", "http://www.owl-ontologies.com/StoryWorldCore.owl#");
+			
+//			*********************************************
+			// JENA Create namescapce mappings for OWL, RDF and RDFS
+			model.setNsPrefix("owl", "http://www.w3.org/2002/07/owl#");
+			model.setNsPrefix("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
+			model.setNsPrefix("rdfs", "http://www.w3.org/2000/01/rdf-schema#");
+			model.setNsPrefix("fabula", "http://www.owl-ontologies.com/FabulaKnowledge.owl#");
+			model.setNsPrefix("swc", "http://www.owl-ontologies.com/StoryWorldCore.owl#");
+			//*********************************************
+			
+//			kifParser.setCaseSensitiveSymbols(true);
+					
+			System.out.println("Voor fabula laden");
+			
+//			Resources rs = new Resources(this);									
+//			URL url = rs.getURL("plop.owl");
+//			context.loadKB(url);			
+//			
+//			context.setParser(context.getKifParser());
+			
+//			*********************************************
+			// JENA read file
+//			InputStream in = FileManager.get().open( url );
+			
+//			InputStream in = rs.getInputStream(owlFileName);
+			InputStream in = new FileInputStream("plop.owl");
+			
+			
+			if(in == null){
+				System.err.println("File 'plop.owl' not found! ");
+				// for the time being exit when file not found
+				// but better to throw exception, as to handle the
+				// problem with more care
+				System.exit(0);
+			}
+			
+			model.read(in, "");
+			model.write(System.out, "N-TRIPLE");
+
+			//*********************************************
+			
+			System.out.println("Na fabula laden");
+		}
+		catch (Exception e) 
+		{
+			System.out.println("error initializing fabula");
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+		
+	/**
+	 * Starts the process of transforming the fabula into an initial document plan,
+	 * and removes some plot elements if necessary (e.g. A -> P -> B) 
+	 * @return whether the transformation has ended successfully 
+	 */
+	public boolean transform()
+	{		
+		toldMessages = new Vector();
+		edges = new Vector();	
+			
+		PlotElement pe = new PlotElement("setting", "be", "humanoid.1", "", "", new Vector());				
+		RDFNode n = getStartingNode();
+		RSVertex rr = createRhetRel("temporal", createRhetRel("temp-once", pe), createTreeOwl(n, null, null, true));
+		rr = createRhetRel("temporal", rr);
+			
+		graph = new RSGraph((RhetRelation) rr);
+		
+		for (int i=0; i<edges.size(); i++)
+		{			
+			MLabeledEdge tmp = (MLabeledEdge) edges.elementAt(i);
+			graph.addMEdge(tmp);
+		}
+		
+		removeMessages();
+		
+		return true;
+	}	
+	
+	/**
+	 * Returns the starting node of the fabula, which is the node with the lowest
+	 * time argument
+	 * @return the name of the starting node
+	 */
+	public RDFNode getStartingNode()
+	{		
+		RDFNode start = null;
+		int time = -1;
+		
+//		try
+//		{
+			// get all plot elements and select the one with the smallest time argument
+//			ReasoningStepIterator rsi = context.ask("(rdf:type ?x fabula:FabulaElement)");
+//			ReasoningStep rs = null;	
+			
+			System.out.println("\n\n*** PLOT ELEMENTS ***\n\n");
+			
+			Query q = QueryFactory.create("" +
+					"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+					"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+					"PREFIX fabula: <http://www.owl-ontologies.com/FabulaKnowledge.owl#> " + 
+					"SELECT ?x " +
+					"WHERE {" +
+					"	?x rdf:type fabula:FabulaElement . " +
+					"}");
+			QueryExecution qe = QueryExecutionFactory.create(q, model);
+			ResultSet results = qe.execSelect();
+			
+			
+			while(results.hasNext()){
+				
+//				System.out.println(results.nextSolution().toString());
+				RDFNode n = results.nextSolution().get("x");
+				String result = n.toString();
+				int i = result.lastIndexOf('.');
+				if (i >= 0)
+				{
+					try{
+						int t = Integer.parseInt(result.substring(i+1));
+
+						
+						if (time == -1 || t < time)
+						{
+							time = t;
+							start = n;
+						}
+					}
+					catch(NumberFormatException e){
+						System.err.println("This entry doesn't have a time parameter: " + result);
+					}
+				}
+			}
+			System.out.println("\nmin time: " + time);
+			System.out.println("\n\n*** END PLOT ELEMENTS ***\n\n");
+			
+//		}
+//		catch (Exception e)
+//		{
+//			System.out.println(e.getMessage() + " - " + e.getClass());
+//			System.out.println("error retrieving the starting node");
+//		}
+		
+		return start;
+	}
+	
+	/**
+	 * Converts the fabula structure into an initial document plan recursively
+	 * @param curr the name of the node currently to be added to the document plan
+	 * @param prev the name of the last node added to the document plan
+	 * @param v the document plan generated sofar
+	 * @param forward a boolean indicating whether the tree is to be created forwards or backwards
+	 * @return the document plan
+	 */
+	public RSVertex createTreeOwl(RDFNode curr, RDFNode prev, RSVertex v, boolean forward)
+	{		
+		System.out.println("CreateTree: " + getCorrectstring(curr, true));
+		toldMessages.add(curr);
+		
+		Vector nextnodes = new Vector();
+		Vector prevnodes = new Vector();
+		
+		try
+		{
+			// find next nodes
+			Query q = QueryFactory.create("" +
+					"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+					"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+					"PREFIX fabula: <http://www.owl-ontologies.com/FabulaKnowledge.owl#> " + 
+					"SELECT ?x " +
+					"WHERE {" +
+					"	<"+curr+"> fabula:causes ?x . " +
+					"}");
+			QueryExecution qe = QueryExecutionFactory.create(q, model);
+			ResultSet results = qe.execSelect();
+			
+			while(results.hasNext()){
+				RDFNode n = results.nextSolution().get("x");
+				if(!alreadyTold(n))
+					insert(nextnodes, n);
+			}
+			
+//			// find next nodes
+//			ReasoningStepIterator rsi = context.ask("(fabula:causes " + curr + " ?x)");
+//			ReasoningStep rs = null;	
+//			while ((rs = rsi.next()) != null)
+//			{
+//				Literal lit = SubstUtils.deReferenceLiteral((Literal) rs.getGoal());
+//				Symbol s = (Symbol) lit.getArgs().get(1);
+//				if (!alreadyTold(s))
+//					insert(nextnodes, s);		
+//			}
+			
+			// find previous nodes
+			q = QueryFactory.create("" +
+					"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+					"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+					"PREFIX fabula: <http://www.owl-ontologies.com/FabulaKnowledge.owl#> " + 
+					"SELECT ?x " +
+					"WHERE {" +
+					"	?x fabula:causes <"+curr+"> . " +
+					"}");
+			qe = QueryExecutionFactory.create(q, model);
+			results = qe.execSelect();
+			
+			while(results.hasNext()){
+				RDFNode n = results.nextSolution().get("x");
+				if(!alreadyTold(n))
+					insert(prevnodes, n);
+			}
+			
+			// find previous nodes
+//			rsi = context.ask("(fabula:causes ?x " + curr + ")");
+//			rs = null;	
+//			while ((rs = rsi.next()) != null)
+//			{
+//				Literal lit = SubstUtils.deReferenceLiteral((Literal) rs.getGoal());
+//				Symbol s = (Symbol) lit.getArgs().get(0);
+//				if (!alreadyTold(s))
+//					insert(prevnodes, s);						
+//			}
+			
+			System.out.println("number of new next nodes in " + getCorrectstring(curr, true) + ": " + nextnodes.size());
+			System.out.println("number of new prev nodes in " + getCorrectstring(curr, true) + ": " + prevnodes.size());
+						
+			RSVertex result = v;
+			
+			if (forward)
+			{
+				if (prevnodes.size() == 0)
+				{
+					// do nothing at all
+				}
+				else if (prevnodes.size() == 1)
+				{
+					if (result != null)
+					{
+						// node is added to the document plan based on the time arguments 
+						if (precedes((RDFNode) prevnodes.elementAt(0), result))
+						{
+							RSVertex tree = createTreeOwl((RDFNode) prevnodes.elementAt(0), curr, null, false);
+							if (tree != null)
+								result = createRhetRel("additive", tree, result);
+						}
+						else
+						{
+							RSVertex tree = createTreeOwl((RDFNode) prevnodes.elementAt(0), curr, null, false);
+							if (tree != null)
+								result = createRhetRel("additive", result, tree);
+						}
+					}
+					else
+						result = createTreeOwl((RDFNode) prevnodes.elementAt(0), curr, null, false);
+				}
+				else if (prevnodes.size() > 1)
+				{
+					RSVertex tmpresult = null;
+					for (int i=prevnodes.size()-2; i>=0; i--)
+					{
+						if (i==prevnodes.size()-2)
+						{
+							RSVertex tree1 = createTreeOwl((RDFNode) prevnodes.elementAt(i), curr, null, false);
+							RSVertex tree2 = createTreeOwl((RDFNode) prevnodes.elementAt(i+1), curr, null, false);
+							if (tree1 != null && tree2 != null)
+								tmpresult = createRhetRel("additive", tree1, tree2);
+							else if (tree1 == null)
+								tmpresult = tree2;
+							else if (tree2 == null)
+								tmpresult = tree1;
+						}
+						else
+						{
+							RSVertex tree = createTreeOwl((RDFNode) prevnodes.elementAt(i), curr, null, false);
+							if (tree != null)
+								tmpresult = createRhetRel("additive", tree, tmpresult);
+						}
+					}
+					if (result != null)
+					{
+						if (tmpresult != null)
+							result = createRhetRel("additive", result, tmpresult);
+					}
+					else
+						result = tmpresult;
+				}
+							
+				if (nextnodes.size() == 0)
+				{					
+					if (result != null)
+					{
+						String rel = getRelation(prev, curr);
+						result = createRhetRel(rel, result, createPlotElement(curr));
+					}						
+					else
+						result = createPlotElement(curr);
+				}				
+				else if (nextnodes.size() == 1)
+				{			
+					if (result != null)
+					{
+						String rel = getRelation(prev, curr);
+						result = createRhetRel(rel, result, createPlotElement(curr));
+						result = createTreeOwl((RDFNode) nextnodes.elementAt(0), curr, result, true);
+					}
+					else
+						result = createTreeOwl((RDFNode) nextnodes.elementAt(0), curr, createPlotElement(curr), true);
+				}				
+				else if (nextnodes.size() > 1)
+				{
+					RSVertex tmpresult = null;
+					for (int i=nextnodes.size()-2; i>=0; i--)
+					{
+						if (i==nextnodes.size()-2)
+						{
+							RSVertex tree1 = createTreeOwl((RDFNode) nextnodes.elementAt(i), curr, null, true);
+							RSVertex tree2 = createTreeOwl((RDFNode) nextnodes.elementAt(i+1), curr, null, true);
+							if (tree1 != null && tree2 != null)
+								tmpresult = createRhetRel("temp-after-sequence", tree1, tree2);
+							else if (tree1 == null)
+								tmpresult = tree2;
+							else if (tree2 == null)
+								tmpresult = tree1;
+						}
+						else
+						{
+							RSVertex tree = createTreeOwl((RDFNode) nextnodes.elementAt(i), curr, null, true);
+							if (tree != null)
+								tmpresult = createRhetRel("temp-after-sequence", tree, tmpresult);
+						}
+					}
+
+					if (result != null)
+					{
+						String rel = getRelation(prev, curr);
+						result = createRhetRel(rel, result, createPlotElement(curr));
+						String rel2 = getRelation(curr, (RDFNode) nextnodes.elementAt(0)); 
+						result = createRhetRel(rel2, result, tmpresult);
+					}
+					else
+					{
+						String rel = getRelation(curr, (RDFNode) nextnodes.elementAt(0)); 
+						result = createRhetRel(rel, createPlotElement(curr), tmpresult);
+					}
+				}			
+			}
+			else		// if backwards
+			{
+				RSVertex prevs = null;
+				RSVertex nexts = null;
+							
+				// the new previous nodes are used to create all incoming branches
+				if (prevnodes.size() == 1)
+					prevs = createTreeOwl((RDFNode) prevnodes.elementAt(0), curr, null, false);
+				else if (prevnodes.size() > 1)
+				{
+					for (int i=prevnodes.size()-2; i>=0; i--)
+					{
+						if (i==prevnodes.size()-2)
+						{
+							RSVertex tree1 = createTreeOwl((RDFNode) prevnodes.elementAt(i), curr, null, false);
+							RSVertex tree2 = createTreeOwl((RDFNode) prevnodes.elementAt(i+1), curr, null, false);
+							if (tree1 != null && tree2 != null)
+								prevs = createRhetRel("additive", tree1, tree2);
+							else if (tree1 == null)
+								prevs = tree2;
+							else if (tree2 == null)
+								prevs = tree1;
+						}
+						else
+						{
+							RSVertex tree = createTreeOwl((RDFNode) prevnodes.elementAt(i), curr, null, false);
+							if (tree != null)
+								prevs = createRhetRel("additive", tree, prevs);
+						}
+					}
+				}
+				
+				// the new next nodes are used to create all outgoing branches
+				if (nextnodes.size() == 1)
+					nexts = createTreeOwl((RDFNode) nextnodes.elementAt(0), curr, null, true);	
+				else if (nextnodes.size() > 1)
+				{
+					for (int i=nextnodes.size()-2; i>=0; i--)
+					{
+						if (i==nextnodes.size()-2)
+						{
+							RSVertex tree1 = createTreeOwl((RDFNode) nextnodes.elementAt(i), curr, null, true);
+							RSVertex tree2 = createTreeOwl((RDFNode) nextnodes.elementAt(i+1), curr, null, true);
+							if (tree1 != null && tree2 != null)
+								nexts = createRhetRel("temp-after-sequence", tree1, tree2);
+							else if (tree1 == null)
+								nexts = tree2;
+							else if (tree2 == null)
+								nexts = tree1;
+						}
+						else
+						{
+							RSVertex tree = createTreeOwl((RDFNode) nextnodes.elementAt(i), curr, null, true);
+							if (tree != null)
+								nexts = createRhetRel("temp-after-sequence", tree, nexts);
+						}
+					}
+				}
+				
+				// then the sofar generated trees are connected in the correct order 
+				if (prevs != null)
+				{
+					String rel = getRelation((RDFNode) prevnodes.elementAt(prevnodes.size()-1), curr); 
+					result = createRhetRel(rel, prevs, createPlotElement(curr));
+				}
+				if (nexts != null)
+				{
+					String rel = getRelation(curr, (RDFNode) nextnodes.elementAt(0));
+					if (result != null)
+						result = createRhetRel(rel, result, nexts);
+					else
+						result = createRhetRel(rel, createPlotElement(curr), nexts);
+				}				
+				if (result == null)
+					result = createPlotElement(curr);
+			}
+				
+			return result;				
+		}
+		catch (Exception e)
+		{
+			System.out.println(e.getMessage() + " - " + e.getClass());
+			System.out.println(curr);
+			System.out.println("error querying knowledge base");
+		}
+									
+		return null;
+	}
+		
+	/**
+	 * Checks whether plot element n happens before all plot elements used in v
+	 * @param n the name of the current plot element
+	 * @param v the branch that should appear before or after n
+	 * @return whether n precedes all plot elements in v
+	 */		
+	public boolean precedes(RDFNode n, RSVertex v)
+	{
+		String name = n.toString();
+		
+		int lp = name.lastIndexOf('.');
+		String time = name.substring(lp+1);
+		int tn = Integer.parseInt(time);
+		
+		int t1 = getRightmostTime(v);
+		int t2 = getLeftmostTime(v);
+		
+		if (tn < t1 && tn < t2)
+			return true;
+		
+		return false;
+	}
+	
+	/**
+	 * Gets the time of the rightmost plot element in v
+	 * @param v
+	 * @return the time
+	 */
+	public int getRightmostTime(RSVertex v)
+	{
+		if (v.getType().equals("mess"))
+			return ((PlotElement) v).getTime();
+		else if (v.getType().equals(("rhetrel")))
+			getRightmostTime(((RhetRelation) v).getNucleus());
+		return -1;
+	}
+	
+	/**
+	 * Gets the time of the leftmost plot element in v
+	 * @param v
+	 * @return the time
+	 */
+	public int getLeftmostTime(RSVertex v)
+	{
+		if (v.getType().equals("mess"))
+			return ((PlotElement) v).getTime(); 
+		else if (v.getType().equals(("rhetrel")))
+			getLeftmostTime(((RhetRelation) v).getNucleus());
+		return -1;
+	}
+	
+	/**
+	 * Inserts n into v such that the elements in v are ordered chronologically
+	 * @param v vector containing names of plot elements
+	 * @param n the name of the plot element to be inserted into v
+	 */
+	public void insert(Vector v, RDFNode n)
+	{		
+		int i = n.toString().lastIndexOf('.');
+		String timestring = n.toString().substring(i+1);
+		int newtime = Integer.parseInt(timestring);
+		
+		int idx = 0;
+		while(idx < v.size())
+		{					
+			String tmp = ((RDFNode) v.elementAt(idx)).toString();
+			int id = tmp.lastIndexOf('.');
+			String tstring = tmp.substring(id+1);	
+			int oldtime = Integer.parseInt(tstring);
+					
+			if (newtime < oldtime)
+				break;
+			else if (newtime > oldtime)
+				idx++;
+		}
+		v.add(idx, n);
+	}
+	
+	public int getTime(RDFNode n)
+	{
+		String name = n.toString();
+		int lp = name.lastIndexOf('.');
+		String time = name.substring(lp+1);
+		return Integer.parseInt(time);
+	}
+	
+	/**
+	 * Returns the type of the plot element.
+	 * This type can be retrieved from the name of the plot element.
+	 * Currently, the story world does not include the fact that Hunger is of type InternalState, 
+	 * but this will be added soon.
+	 * @param s
+	 * @return type
+	 */
+	public String getType(RDFNode n)
+	{
+		String name = n.toString();
+		
+		if (name.indexOf("Action") >= 0)
+			return "action";
+		if (name.indexOf("Goal") >= 0)
+			return getCorrectstring(n, false);
+		if (name.indexOf("Belief") >= 0)
+			return "belief";
+		if (name.indexOf("Perception") >= 0)
+			return "perception";
+		if (name.indexOf("Hunger") >= 0)
+			return "state";
+		if (name.indexOf("Outcome") >= 0)
+			return "outcome";
+		
+		return "";
+	}
+	
+	/**
+	 * Creates a Plot Element and retrieves all information (such as 
+	 * agens, patiens, target) from the fabula structure
+	 * @param s name of the plot element
+	 * @return a plot element structure that can be understood by the microplanner
+	 */
+	public PlotElement createPlotElement(RDFNode n)
+	{
+		String type = "";
+		String name = "";
+		String agens = "";
+		String patiens = "";
+		String target = "";
+		Vector instruments = new Vector();
+		Vector subargs = new Vector();
+		int time = -1;
+		boolean success = true;
+		boolean addnot = false;
+		
+		System.out.println("createPlotElement: " + n);
+		
+		time = getTime(n);						
+		name = getCorrectstring(n, false);
+				
+		type = getType(n);		
+		if (type.equals("belief"))
+			name = "think";
+		else if (type.indexOf("Goal") > 0)
+			name = "want";
+		else if (type.equals(""))
+			type = getCorrectstring(n, false);
+				
+		try
+		{		
+			// get type
+			Query q = QueryFactory.create("" +
+					"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+					"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+					"PREFIX fabula: <http://www.owl-ontologies.com/FabulaKnowledge.owl#> " + 
+					"SELECT ?x " +
+					"WHERE {" +
+					"	<"+n+"> rdf:type ?x . " +
+					"}");
+			QueryExecution qe = QueryExecutionFactory.create(q, model);
+			ResultSet results = qe.execSelect();
+
+			while(results.hasNext()){
+				RDFNode nresult = results.nextSolution().get("x");
+				String tp = getType(nresult);
+				
+				if (!tp.equals(""))
+				{
+					type = tp;
+					if (tp.indexOf("Goal") > 0)
+						name = "want";
+					else if (tp.indexOf("Belief") > 0)
+						name = "believe";
+					break;
+				}
+			}
+			// get type
+//			ReasoningStepIterator rsi = context.ask("(rdf:type " + s + " ?x)");
+//			ReasoningStep rs = null;				
+//			while ((rs = rsi.next()) != null)
+//			{
+//				Literal lit = SubstUtils.deReferenceLiteral((Literal) rs.getGoal());				
+//				
+//				Symbol tmp = (Symbol) lit.getArgs().get(1);
+//				String tp = getType(tmp);
+//				if (!tp.equals(""))
+//				{
+//					type = tp;
+//					if (tp.indexOf("Goal") > 0)
+//						name = "want";
+//					else if (tp.indexOf("Belief") > 0)
+//						name = "believe";
+//					break;
+//				}
+//			}
+			
+			// sets the arguments of the plot element
+			agens = getArgument("agens", n);
+			if (agens.equals(""))
+				agens = getArgument("character", n);
+			patiens = getArgument("patiens", n);
+			target = getArgument("target", n);
+			instruments = getArguments("instrument", n);
+			
+			if (getArgument("isSuccessful", n).equals("false"))
+				success = false;
+			if (getArgument("isNonperception", n).equals("true"))
+				addnot = true;
+			if (getArgument("isNonbelief", n).equals("true"))
+				addnot = true;
+						
+			// check if the element has contents in which case these contents are the subplotelement
+			q = QueryFactory.create("" +
+					"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+					"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+					"PREFIX fabula: <http://www.owl-ontologies.com/FabulaKnowledge.owl#> " + 
+					"SELECT ?x " +
+					"WHERE {" +
+					"	?x rdf:hasContext <"+n+"> . " +
+					"}");
+			qe = QueryExecutionFactory.create(q, model);
+			results = qe.execSelect();
+
+			while(results.hasNext()){
+				RDFNode nresult = results.nextSolution().get("x");
+				subargs.add(nresult);
+			}
+			
+			
+			
+//			rsi = context.ask("(fabula:hasContext ?x " + s + ")");
+//			rs = null;				
+//			while ((rs = rsi.next()) != null)
+//			{
+//				Literal lit = SubstUtils.deReferenceLiteral((Literal) rs.getGoal());
+//				subargs.add((Symbol) lit.getArgs().get(0));
+//			}			
+		}
+		catch (Exception e) 
+		{
+			System.out.println("error creating plotelement");
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+		
+		System.out.println("\nNew plot element: \ntype: " + type + "\nname: " + name + "\nagens " + agens + "\npatiens: " + patiens + "\ntarget: " + target + "\ninstruments: " + instruments.size() + "\nsubmess: " + (subargs.size() > 0) + "\n");
+		
+		// create the plot element
+		PlotElement result = new PlotElement(type, name, agens, patiens, target, instruments);
+		result.setTime(time);
+		
+		// if the property isSuccesful is set to false, set the descriptor
+		// to 'failed' (the microplanner can now select the correct template)
+		if (!success)
+			result.setDescr("failed");
+				
+		// if the boolean isNonperception or isNonbelief is set to true, add the
+		// modifier not to the details vector of the plot element
+		if (addnot)
+			result.addDetail(new Detail(name, "not"));
+		
+		// if the vector subargs has any elements create the sub plot element
+		// if there is exactly one element, simply call this function recursively
+		// if the vector contains more elements call the function createSubplotelement 
+		PlotElement subpe = null;
+		if (subargs.size() == 1)
+			subpe = createPlotElement((RDFNode) subargs.elementAt(0));
+		else if (subargs.size() > 1)
+			subpe = createSubPlotElement(subargs);
+		
+		// set the sub plot element
+		if (subpe != null)
+			result.setSubElement(subpe);
+		
+		return result;
+		
+	}
+	
+	/**
+	 * Retrieves an argument of a plot element
+	 * @param kind the type of argument (e.g. agens, patiens..)
+	 * @param plotel the current plot element
+	 * @return the value of the argument
+	 */
+	public String getArgument(String kind, RDFNode plotel)
+	{
+//		System.out.println(" GET ARGUMENT: " + kind + " <--> " + plotel);
+		try
+		{
+			Query q = QueryFactory.create("" +
+					"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+					"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+					"PREFIX fabula: <http://www.owl-ontologies.com/FabulaKnowledge.owl#> " + 
+					"SELECT ?x " +
+					"WHERE {" +
+					"	<"+plotel+"> fabula:"+kind+" ?x . " +
+					"}");
+			QueryExecution qe = QueryExecutionFactory.create(q, model);
+			ResultSet results = qe.execSelect();
+
+			while(results.hasNext()){
+				RDFNode n = results.nextSolution().get("x");
+				System.err.println("Something could go wrong here, because in the old code" +
+						"there was a equation between the result and jtp.fol.Symbol, n = "  + n);
+				return getCorrectstring(n, true);
+			}
+			
+			
+//			ReasoningStepIterator rsi = context.ask("(fabula:" + kind + " " + plotel + " ?x)");
+//			ReasoningStep rs = null;				
+//			if ((rs = rsi.next()) != null)
+//			{
+//				Literal lit = SubstUtils.deReferenceLiteral((Literal) rs.getGoal());
+//				if (!lit.getArgs().get(1).getClass().getName().equals("jtp.fol.Symbol"))
+//					return (String) lit.getArgs().get(1);
+//				return getCorrectstring((Symbol) lit.getArgs().get(1), true);
+//			}
+		}
+		catch (Exception e) 
+		{
+			System.out.println("error creating plotelement");
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+		return "";
+	}
+	
+	/**
+	 * Same as getArgument, but this one returns a Vector containing ALL values, 
+	 * necessary for the instruments Vector
+	 * @param kind
+	 * @param plotel
+	 * @return vector with arguments
+	 */
+	public Vector getArguments(String kind, RDFNode plotel)
+	{
+		Vector result = new Vector();
+		try
+		{
+			Query q = QueryFactory.create("" +
+					"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+					"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+					"PREFIX fabula: <http://www.owl-ontologies.com/FabulaKnowledge.owl#> " + 
+					"SELECT ?x " +
+					"WHERE {" +
+					"	<"+plotel+"> fabula:"+kind+" ?x . " +
+					"}");
+			QueryExecution qe = QueryExecutionFactory.create(q, model);
+			ResultSet results = qe.execSelect();
+
+			while(results.hasNext()){
+				RDFNode n = results.nextSolution().get("x");
+				System.err.println("Something could go wrong here, because in the old code" +
+						"there was a equation between the result and jtp.fol.Symbol, n = "  + n);
+				result.add(getCorrectstring(n, true));
+			}
+			
+//			ReasoningStepIterator rsi = context.ask("(fabula:" + kind + " " + plotel + " ?x)");
+//			ReasoningStep rs = null;				
+//			while ((rs = rsi.next()) != null)
+//			{
+//				Literal lit = SubstUtils.deReferenceLiteral((Literal) rs.getGoal());
+//				result.add(getCorrectstring((Symbol) lit.getArgs().get(1), true));
+//			}
+		}
+		catch (Exception e) 
+		{
+			System.out.println("error creating plotelement");
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	// Ervan uitgaan dat altijd de volgende dingen gelden (niet helemaal zeker?):
+	// - Vector args heeft precies twee elementen
+	// - er bestaat precies één relatie tussen die elementen
+	// - dit kan altijd verwoord worden door een setting node met de relatie als name en de argumenten als agens en target
+	// (Voorbeeld: Plop dacht 'dat er een appel in huis lag')
+	/**
+	 * Creates a sub plot element based on the elements in the Vector. The function
+	 * first finds the relation that holds between the arguments and then creates
+	 * a settings plot element for this relation and its arguments.
+	 * 
+	 */
+	public PlotElement createSubPlotElement(Vector args)
+	{
+//		System.out.println("createSubPlotElement: " + args);
+//		
+//		String type = "setting";
+//		String name = "";
+//		String patiens = "";
+//		String agens = "";
+//		String target = "";
+//		Vector instruments = new Vector();
+//		
+//		try
+//		{	
+//			ReasoningStepIterator rsi = context.ask("(holds ?rel " + args.elementAt(0) + " " + args.elementAt(1) + ")");
+//			ReasoningStep rs = null;				
+//			if ((rs = rsi.next()) != null)
+//			{
+//				Literal lit = SubstUtils.deReferenceLiteral((Literal) rs.getGoal());
+//				name = getCorrectstring((Symbol) lit.getArgs().get(0), false);
+//				agens = getCorrectstring((Symbol) lit.getArgs().get(1), true);
+//				target = getCorrectstring((Symbol) lit.getArgs().get(2), true);
+//			}
+//			
+//			// in case the elements are added to the vector in the incorrect order
+//			rsi = context.ask("(holds ?rel " + args.elementAt(1) + " " + args.elementAt(0) + ")");
+//			rs = null;				
+//			if ((rs = rsi.next()) != null)
+//			{
+//				Literal lit = SubstUtils.deReferenceLiteral((Literal) rs.getGoal());
+//				name = getCorrectstring((Symbol) lit.getArgs().get(0), false);
+//				agens = getCorrectstring((Symbol) lit.getArgs().get(1), true);
+//				target = getCorrectstring((Symbol) lit.getArgs().get(2), true);
+//			}
+//		}
+//		catch (Exception e) 
+//		{
+//			System.out.println("error creating subplotelement");
+//			System.out.println(e.getMessage());
+//			e.printStackTrace();
+//		}	
+//		
+//		return new PlotElement(type, name, agens, patiens, target, instruments);
+		return null;
+	}
+			
+	/**
+	 * Translates the name of the plot element used in the fabula structure into the name 
+	 * of the plot element that can be used in the Narrator. This can be achieved by 
+	 * removing the namespace and removing the substring "ind_" and ".plop".
+	 * Furthermore the function checks if a hasInterpretation has been specified, 
+	 * in which case the correct name will be stored.  
+	 * Finally, based on the argument nr the time is added to the name or not. 
+	 * @param n the name to be converted into the correct string 
+	 * @param nr boolean indicating whether the id should be included in the name
+	 * @return the simplified name
+	 */
+	public String getCorrectstring(RDFNode n, boolean nr)
+	{		
+		System.out.println("getcorrectstring: " + n);
+		String tmp = n.toString();
+
+		// first check if it is the correct name: if a 'hasinterpretation' has been specified
+		// the correct name is stored in that rule
+		Query q = QueryFactory.create("" +
+				"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+				"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+				"PREFIX fabula: <http://www.owl-ontologies.com/FabulaKnowledge.owl#> " + 
+				"SELECT ?y " +
+				"WHERE {" +
+				"	<" + n + "> fabula:hasInterpretation ?y . " +
+				"}");
+		QueryExecution qe = QueryExecutionFactory.create(q, model);
+		ResultSet results = qe.execSelect();
+		
+		while(results.hasNext()){
+			tmp = results.nextSolution().get("y").toString();
+		}
+		
+		
+//		try
+//		{
+//			// first check if it is the correct name: if a 'hasinterpretation' has been specified
+//			// the correct name is stored in that rule
+//			ReasoningStepIterator rsi = context.ask("(fabula:hasInterpretation " + n + " ?y)");
+//			ReasoningStep rs = null;				
+//			if ((rs = rsi.next()) != null)
+//			{
+//				Literal lit = SubstUtils.deReferenceLiteral((Literal) rs.getGoal());
+//				tmp = ((Symbol) lit.getArgs().get(1)).getName(); 
+//			}
+//		}
+//		catch (Exception e) 
+//		{
+//			System.out.println("error getting the correct string");
+//			System.out.println(e.getMessage());
+//			e.printStackTrace();
+//		}
+				
+		tmp = tmp.replaceAll("ind_", "");
+		tmp = tmp.replaceAll(".plop", "");
+		
+		if(tmp.indexOf('#')>0)
+			tmp = tmp.substring(tmp.lastIndexOf('#')+1);
+		
+		if (!nr)
+		{
+			int i = tmp.lastIndexOf('.');
+			if (i >= 0)
+				tmp = tmp.substring(0, i);
+		}
+		
+		
+		System.out.println("result getcorrectstring: " + tmp.toLowerCase());
+		return tmp.toLowerCase();
+	}	
+	
+	/**
+	 * Initializes the search for the nodes to be removed from the document plan
+	 */
+	public void removeMessages()
+	{
+		Iterator it = graph.getMVertices();
+		
+		Vector removemess = new Vector();
+		if (it.hasNext())
+			removemess = transformDepthFirst((RSVertex) it.next(), new Vector());
+				
+		for (int i=0; i<removemess.size(); i++)		
+			removeMessage((PlotElement) removemess.elementAt(i));
+	}
+	
+	/**
+	 * Checks the document plan recursively in order to find out which plot elements should be removed.
+	 * Currently this only includes an outcome and the perception and belief that an action has succeeded
+	 * (which can be achieved by checking if three consecutive plot elements represent an action, a perception
+	 * and a belief and removing the perception and the belief).
+	 * This may be extended to remove supergoals as well, in case the subgoal is a specialization of the supergoal
+	 * (e.g. Plop wilde iets eten -> Plop wilde een appel eten, in this case the supergoal may be removed) 
+	 * @param v the document plan
+	 * @param rem the nodes to be removed
+	 * @return a vector containing the names of the nodes to be removed
+	 */	
+	public Vector transformDepthFirst(RSVertex v, Vector rem)
+	{
+		if (v.getType().equals("mess"))
+		{
+			PlotElement pe = (PlotElement) v;
+			String type = pe.getKind();
+			
+			String prevtype = "";
+			if (prevpe != null)
+				prevtype = prevpe.getKind();
+			
+			String prevprevtype = "";
+			if (prevprevpe != null)
+				prevprevtype = prevprevpe.getKind();
+			
+			if (type.equals("outcome"))
+				rem.add(pe);
+			
+			else if (type.equals("belief") && prevtype.equals("perception") && prevprevtype.equals("action"))
+			{
+				rem.add(prevpe);
+				rem.add(pe);
+			}
+			// RZ: deze if-branch door mij toegevoegd
+			// om zinnen zoals: "Zij zag dat ..., dus dacht zij dat..."
+			else if (type.equals("perception") && prevtype.equals("belief") )
+			{
+				rem.add(prevpe);
+				rem.add(pe);
+			}
+			
+				
+			prevprevpe = prevpe;
+			prevpe = pe;
+		}
+		else if (v.getType().equals("text"))
+		{
+		}
+		else if (v.getType().equals("rhetrel"))
+		{
+			RSVertex sat = ((RhetRelation) v).getSatellite();
+			RSVertex nuc = ((RhetRelation) v).getNucleus();
+			
+			if (sat != null)
+				transformDepthFirst(sat, rem);
+			if (nuc != null)
+				transformDepthFirst(nuc, rem);			
+		}
+		
+		return rem;
+	}
+	
+	/**
+	 * Removes the nodes from the document plan (is somewhat strange, but is the same as the function in Backgroundinformationsupplier)
+	 * @param pe the node to be removed 
+	 */	
+	public void removeMessage(PlotElement pe)
+	{
+		// ok is wat vaag, maar variabelen zijn als volgt:
+		// dm: de node (detailedmessage) die verwijderd moet worden
+		// par: de parent (rhetrel) van dm
+		// edge: de pijl tussen par en dm
+		// othernode: het andere kind van par (detailedmessage of rhetrel), dat op de plaats van par moet komen
+		// otheredge: de pijl tussen par en othernode
+		// parpar: de parent van par (rhetrel), een van de kinderen moet othernode worden
+		// paredge: de pijl tussen parpar en par
+		
+		boolean print = false;
+		
+		if (print)
+			System.out.println("remove message: " + pe.getName());
+		
+		RhetRelation par = (RhetRelation) pe.getParent().next();
+			
+		if (print)
+			System.out.println("parent node: " + par.getLabel());
+		
+		MLabeledEdge edge = (MLabeledEdge) pe.getIncidentMEdges().next();
+		String label = edge.getLabel();
+		
+		if (print)
+			System.out.println("edge label: " + label);
+		
+		RSVertex othernode;
+		
+		if (label.equals("nucleus"))
+			othernode = par.getSatellite();
+		else
+			othernode = par.getNucleus();
+		
+		if (print)
+		{
+			if (othernode.getType().equals("rhetrel"))
+				System.out.println("Other node is rr: " + ((RhetRelation) othernode).getLabel());
+			if (othernode.getType().equals("mess"))
+				System.out.println("Other node is dm: " + ((PlotElement) othernode).getName());
+		}
+		
+		MLabeledEdge otheredge = null;
+		MLabeledEdge paredge = null;
+		Iterator it = par.getIncidentMEdges();
+		while (it.hasNext())
+		{
+			MLabeledEdge e = (MLabeledEdge) it.next();
+			RSVertex src = (RSVertex) e.getSource();
+			RSVertex tgt = (RSVertex) e.getTarget();
+			
+			if (print)
+			{
+				System.out.println("nieuwe edge: " + e.getLabel());
+				System.out.println("types src en tgt: " + src.getType() + " " + tgt.getType());
+			}
+			
+			if (src.getType().equals("rhetrel") && tgt.getType().equals("rhetrel"))				
+				paredge = e;
+			if ((src.getType().equals("mess") || tgt.getType().equals("mess")) && !e.equals(edge))
+				otheredge = e;
+		}
+		
+		if (print)
+		{
+			if (otheredge != null)
+				System.out.println("Other edge label: " + otheredge.getLabel());
+			else
+				System.out.println("other edge is null");
+		}
+		
+		if (paredge != null)
+		{				
+			String paredgelabel = paredge.getLabel();
+			
+			if (print)
+				System.out.println("par edge label: " + paredgelabel);
+			
+			if (paredgelabel.equals("nucleus"))
+				paredge.setTarget(othernode);
+			else
+				paredge.setSource(othernode);					
+						
+			graph.removeMVertex(pe);		
+			graph.removeMVertex(par);
+			graph.removeMEdge(edge);
+			graph.removeMEdge(otheredge);
+		}
+	}
+	
+	/**
+	 * Retrieves the relation between two plot elements from the fabula structure
+	 * @param m1 name of the first plot element
+	 * @param m2 name of the second plot element
+	 * @return the relation between m1 and m2
+	 */
+	public String getRelation(RDFNode n1, RDFNode n2)
+	{
+		System.out.println("get relation: " + n1 + " - " + n2);
+		try
+		{
+			Query q = QueryFactory.create("" +
+					"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+					"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " +
+					"PREFIX fabula: <http://www.owl-ontologies.com/FabulaKnowledge.owl#> " + 
+					"SELECT ?rel " +
+					"WHERE {" +
+					"	<"+n1+"> ?rel <"+n2+"> . " +
+					"}");
+			QueryExecution qe = QueryExecutionFactory.create(q, model);
+			ResultSet results = qe.execSelect();
+			
+			while(results.hasNext()){
+				RDFNode n = results.nextSolution().get("rel");
+				String nstring = n.toString();
+				nstring = nstring.substring(nstring.lastIndexOf('#')+1);
+				System.out.println("relatie: " + nstring);
+				
+				if (nstring.equals("psi_causes") || nstring.equals("motivates"))				
+					return "cause-voluntary";
+				else if (nstring.equals("phi_causes") || nstring.equals("enables"))
+					return "cause-nonvoluntary";
+			}
+			
+			
+//			ReasoningStepIterator rsi = context.ask("(holds ?rel " + m1 + " " + m2 + ")");
+//			ReasoningStep rs = null;	
+//			
+//			while ((rs = rsi.next()) != null)
+//			{
+//				Literal lit = SubstUtils.deReferenceLiteral((Literal) rs.getGoal());				
+//				
+//				System.out.println("relatie: " + lit.getArgs().get(0));
+//				Symbol srel = (Symbol) lit.getArgs().get(0);
+//				String rel = srel.getName();
+//				System.out.println(rel);
+//
+//				if (rel.equals("psi_causes") || rel.equals("motivates"))				
+//					return "cause-voluntary";
+//				else if (rel.equals("phi_causes") || rel.equals("enables"))
+//					return "cause-nonvoluntary";
+//			}
+		}
+		catch (Exception e)
+		{
+			System.out.println("error querying knowledge base");
+		}		
+		
+		// if no relation is specified: return temporal
+		System.out.println("no relation specified");
+		return "temporal";
+	}
+		
+	/**
+	 * Checks whether the plot element has already been added to the document plan
+	 * @param n the name of the plot element
+	 * @return true if m has been added to the document plan, false otherwise
+	 */	
+	public boolean alreadyTold(RDFNode n)
+	{
+		for (int i=0; i<toldMessages.size(); i++)
+		{
+			if (n.equals((RDFNode) toldMessages.elementAt(i)))
+				return true;
+		}
+		return false;
+	}
+
+	/**
+	 * Creates RhetRelation node with two child nodes
+	 * @param rel kind of relation
+	 * @param vert1 satellite
+	 * @param vert2 nucleus
+	 * @return the RhetRelation node of type rel and with children vert1 and vert2
+	 */
+	public RhetRelation createRhetRel(String rel, RSVertex vert1, RSVertex vert2)
+	{
+		RhetRelation rhetrel = new RhetRelation(rel);
+		
+		RSEdge sat = new RSEdge("satellite");
+		sat.setTarget(rhetrel);
+		sat.setSource(vert1);
+		
+		RSEdge nuc = new RSEdge("nucleus");
+		nuc.setSource(rhetrel);
+		nuc.setTarget(vert2);
+					
+		edges.addElement(sat);
+		edges.addElement(nuc);
+		
+		return rhetrel;
+	}
+	
+	/**
+	 * Creates RhetRelation node with only one child node
+	 * @param rel kind of relation
+	 * @param vert1 the nucleus
+	 * @return the RhetRelation node of type rel and with child vert1
+	 */
+	public RhetRelation createRhetRel(String rel, RSVertex vert1)
+	{
+		RhetRelation rhetrel = new RhetRelation(rel);
+		
+		RSEdge nuc = new RSEdge("nucleus");
+		nuc.setSource(rhetrel);
+		nuc.setTarget(vert1);
+									
+		edges.addElement(nuc);
+		
+		return rhetrel;
+	}
+	
+	/**
+	 * Returns the document plan
+	 * @return document plan
+	 */
+	public RSGraph getGraph()
+	{
+		return graph;
+	}
+	
+	/**
+	 * Sets the graph (document plan)
+	 * @param g 
+	 */
+	public void setGraph(RSGraph g)
+	{
+		graph = g;
+	}
+	
+	/**
+	 * Resets the document plan 
+	 *
+	 */
+	public void setGraph()
+	{
+		graph = null;
+	}
+}

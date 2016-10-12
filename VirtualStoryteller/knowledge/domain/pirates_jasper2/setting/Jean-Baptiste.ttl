@@ -1,0 +1,43 @@
+@prefix swc:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+@prefix fabula:  <http://www.owl-ontologies.com/FabulaKnowledge.owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix psj2:    <http://www.owl-ontologies.com/StoryWorldSettings/Pirates_Jasper2.owl#> .
+@prefix :        <http://www.owl-ontologies.com/StoryWorldSettings/Pirates_Jasper2.owl#> .
+
+# Description of Jean-Baptiste 
+# Author: Jasper Bragt
+# Date:   June 2009
+
+# A pirate: Jean-Baptiste
+:Jean-Baptiste
+    a   psj2:Pirate;
+    a   fabula:Character;
+    swc:hasRole psj2:Captain;
+	swc:at :oDeck_1 ;
+	swc:hasPersonalityTrait :aggressive_1;
+	swc:hasInterest  :alcohol_1;
+	swc:hasInterest  :alcohol_2;
+	#:hasInterest  :SelfPreservation;
+	.
+	
+:aggressive_1
+    a 	psj2:Aggressive;
+	swc:hasStrength 2;
+    rdfs:label "Jean-Baptiste" ; 
+    .
+
+:alcohol_1
+    a 	psj2:Alcohol;
+	swc:hasStrength 50;
+	swc:hasDesire 0.1;
+    rdfs:label "Jean-Baptiste" ; 
+    .
+    
+:alcohol_2
+    a 	psj2:Alcohol;
+	swc:hasStrength 8;
+	swc:hasDesire 1;
+    rdfs:label "Jean-Baptiste" ; 
+    .

@@ -1,0 +1,46 @@
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="additive">
+		<nucleus>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="ga" morph="3.singular.present" />
+					<node rel="su" pos="nom" root="Amalia" />
+					<node rel="mod" cat="pp">
+						<node rel="hd" pos="prep" root="te" />
+						<node rel="obj1" pos="noun" root="voet" morph="3.singular.present" />
+					</node>
+					<node rel="ld" cat="pp">
+						<node rel="hd" pos="prep" root="naar" />
+						<node rel="obj1" cat="np">
+							<node rel="hd" pos="noun" root="berg" morph="plural" />
+							<node rel="det" pos="det" root="de" morph="plural" />
+						</node>
+					</node>
+				</node>
+			</dt>
+		</nucleus>
+		<satellite>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="ga" morph="3.singular.present" />
+					<node rel="su" cat="np">
+						<node rel="hd" pos="noun" root="prins" morph="singular" />
+						<node rel="det" pos="det" root="de" morph="singular" />
+					</node>
+					<node rel="mod" cat="pp">
+						<node rel="hd" pos="prep" root="te" />
+						<node rel="obj1" pos="noun" root="paard" morph="3.singular.present" />
+					</node>
+					<node rel="ld" cat="pp">
+						<node rel="hd" pos="prep" root="naar" />
+						<node rel="obj1" cat="np">
+							<node rel="hd" pos="noun" root="berg" morph="plural" />
+							<node rel="det" pos="det" root="de" morph="plural" />
+						</node>
+					</node>
+				</node>
+			</dt>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

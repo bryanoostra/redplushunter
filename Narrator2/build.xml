@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Narrator2">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../Program Files/eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Narrator2.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/parlegraph.jar"/>
+        <pathelement location="lib/Narrator/abstractparser.jar"/>
+        <pathelement location="lib/Narrator/antlr.jar"/>
+        <pathelement location="lib/Narrator/antlr-2.7.5.jar"/>
+        <pathelement location="lib/Narrator/api.jar"/>
+        <pathelement location="lib/Narrator/arq.jar"/>
+        <pathelement location="lib/Narrator/arq-extra.jar"/>
+        <pathelement location="lib/Narrator/aterm-java-1.6.jar"/>
+        <pathelement location="lib/Narrator/axis.jar"/>
+        <pathelement location="lib/Narrator/bcpg-jdk14-127.jar"/>
+        <pathelement location="lib/Narrator/bcprov-jdk14-127.jar"/>
+        <pathelement location="lib/Narrator/commons-lang-2.0.jar"/>
+        <pathelement location="lib/Narrator/commons-logging.jar"/>
+        <pathelement location="lib/Narrator/commons-logging-1.1.1.jar"/>
+        <pathelement location="lib/Narrator/concurrent.jar"/>
+        <pathelement location="lib/Narrator/examples.jar"/>
+        <pathelement location="lib/Narrator/grddl.jar"/>
+        <pathelement location="lib/Narrator/hsqldb-1.8.0.7.jar"/>
+        <pathelement location="lib/Narrator/icu4j.jar"/>
+        <pathelement location="lib/Narrator/icu4j_3_4.jar"/>
+        <pathelement location="lib/Narrator/impl.jar"/>
+        <pathelement location="lib/Narrator/inference.jar"/>
+        <pathelement location="lib/Narrator/io.jar"/>
+        <pathelement location="lib/Narrator/iri.jar"/>
+        <pathelement location="lib/Narrator/jakarta-oro-2.0.5.jar"/>
+        <pathelement location="lib/Narrator/jakarta-oro-2.0.8.jar"/>
+        <pathelement location="lib/Narrator/jdom.jar"/>
+        <pathelement location="lib/Narrator/jena.jar"/>
+        <pathelement location="lib/Narrator/jenatest.jar"/>
+        <pathelement location="lib/Narrator/jetty.jar"/>
+        <pathelement location="lib/Narrator/json.jar"/>
+        <pathelement location="lib/Narrator/jtp.jar"/>
+        <pathelement location="lib/Narrator/junit.jar"/>
+        <pathelement location="lib/Narrator/log4j.jar"/>
+        <pathelement location="lib/Narrator/log4j-1.2.12.jar"/>
+        <pathelement location="lib/Narrator/lucene-core-2.2.0.jar"/>
+        <pathelement location="lib/Narrator/mysql-connector-java-3.2.0-alpha-bin.jar"/>
+        <pathelement location="lib/Narrator/nekohtml.jar"/>
+        <pathelement location="lib/Narrator/ng4j.jar"/>
+        <pathelement location="lib/Narrator/OLD_jena.jar"/>
+        <pathelement location="lib/Narrator/owl-servlet.jar"/>
+        <pathelement location="lib/Narrator/owltest.jar"/>
+        <pathelement location="lib/Narrator/pellet.jar"/>
+        <pathelement location="lib/Narrator/rdfapi.jar"/>
+        <pathelement location="lib/Narrator/rdfparser.jar"/>
+        <pathelement location="lib/Narrator/relaxngDatatype.jar"/>
+        <pathelement location="lib/Narrator/rules.jar"/>
+        <pathelement location="lib/Narrator/saxon8.jar"/>
+        <pathelement location="lib/Narrator/servlet.jar"/>
+        <pathelement location="lib/Narrator/stax-1.1.1-dev.jar"/>
+        <pathelement location="lib/Narrator/stax-api-1.0.jar"/>
+        <pathelement location="lib/Narrator/tagsoup-1.0.4.jar"/>
+        <pathelement location="lib/Narrator/validation.jar"/>
+        <pathelement location="lib/Narrator/validation_test.jar"/>
+        <pathelement location="lib/Narrator/wstx-asl-2.8.jar"/>
+        <pathelement location="lib/Narrator/wstx-asl-3.0.0.jar"/>
+        <pathelement location="lib/Narrator/xercesImpl.jar"/>
+        <pathelement location="lib/Narrator/xml-apis.jar"/>
+        <pathelement location="lib/Narrator/xsdlib.jar"/>
+        <pathelement location="lib/JUNG2/collections-generic-4.01.jar"/>
+        <pathelement location="lib/JUNG2/colt-1.2.0.jar"/>
+        <pathelement location="lib/JUNG2/concurrent-1.3.4.jar"/>
+        <pathelement location="lib/JUNG2/j3d-core-1.3.1.jar"/>
+        <pathelement location="lib/JUNG2/jung-3d-2.0.1.jar"/>
+        <pathelement location="lib/JUNG2/jung-3d-demos-2.0.1.jar"/>
+        <pathelement location="lib/JUNG2/jung-algorithms-2.0.1.jar"/>
+        <pathelement location="lib/JUNG2/jung-api-2.0.1.jar"/>
+        <pathelement location="lib/JUNG2/jung-graph-impl-2.0.1.jar"/>
+        <pathelement location="lib/JUNG2/jung-io-2.0.1.jar"/>
+        <pathelement location="lib/JUNG2/jung-jai-2.0.1.jar"/>
+        <pathelement location="lib/JUNG2/jung-jai-samples-2.0.1.jar"/>
+        <pathelement location="lib/JUNG2/jung-samples-2.0.1.jar"/>
+        <pathelement location="lib/JUNG2/jung-visualization-2.0.1.jar"/>
+        <pathelement location="lib/JUNG2/stax-api-1.0.1.jar"/>
+        <pathelement location="lib/JUNG2/vecmath-1.3.1.jar"/>
+        <pathelement location="lib/JUNG2/wstx-asl-3.2.6.jar"/>
+        <pathelement location="lib/swt.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="Narrator2.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Main">
+        <java classname="narrator.Main" failonerror="true" fork="yes">
+            <arg line="simple.graphml"/>
+            <classpath refid="Narrator2.classpath"/>
+        </java>
+    </target>
+    <target name="NarratorGUI">
+        <java classname="narrator.gui.NarratorGUI" failonerror="true" fork="yes">
+            <classpath refid="Narrator2.classpath"/>
+        </java>
+    </target>
+</project>

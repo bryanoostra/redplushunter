@@ -1,0 +1,18 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:swc="http://www.owl-ontologies.com/StoryWorldCore.owl#"
+    xmlns:fabula="http://www.owl-ontologies.com/FabulaKnowledge.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.owl-ontologies.com/StoryWorldSettings/Pirates#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" >
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#leChuck">
+    <rdf:type rdf:resource="StoryWorldCore.owl#Human"/>
+    <rdf:type rdf:resource="FabulaKnowledge.owl#Character"/>
+    <swc:hasAction rdf:resource="FabulaKnowledge.owl#Ambulate"/>
+    <swc:hasAction rdf:resource="FabulaKnowledge.owl#Transfer"/>
+    <swc:hasAction rdf:resource="FabulaKnowledge.owl#Manipulate"/>
+    <swc:controlledBy rdf:resource="StoryWorldSettings/Pirates#leChuck"/>
+    <swc:supportedBy rdf:resource="StoryWorldSettings/Pirates#oHold_1"/>
+    <rdfs:label>le Chuck</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

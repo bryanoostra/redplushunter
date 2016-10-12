@@ -1,0 +1,42 @@
+@prefix ns1:     <http://www.owl-ontologies.com/StoryWorldSettings/Lollipop.owl#> .
+@prefix ns0:     <http://www.owl-ontologies.com/FabulaKnowledge.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<#defaultGraph> {
+    
+	 <#iAction_linda_1>
+          a       ns1:ToddleOffTo ;
+          ns0:agens ns1:linda ;
+          ns0:character ns1:linda ;
+          ns0:endtime "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:motivates <#iAction_linda_4>;
+          ns0:starttime "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns1:oIceCreamTruck ;
+          ns0:time "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+	<#iAction_linda_4>
+          a       ns1:Buy ;
+          ns0:agens ns1:linda ;
+          ns0:character ns1:linda ;
+          ns0:endtime "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:instrument ns1:money_1 ;
+          ns0:patiens ns1:vanilla_ice_1 ;
+	    ns0:phi_causes <#iperception_plot_14> ;
+          ns0:starttime "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns1:otto ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+	<#iperception_plot_14>
+          a       ns0:Perception ;
+          ns0:character ns1:linda ;
+          ns0:hasContent <#iperception_plot_14_contents> ;
+          
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+}
+
+<#iperception_plot_14_contents> {
+    ns1:linda
+          ns1:has ns1:money_1 .
+}
+

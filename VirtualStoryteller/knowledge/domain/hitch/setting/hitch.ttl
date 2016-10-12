@@ -1,0 +1,49 @@
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix :		<http://www.ontology.com/Hitch.owl#> .
+
+# Description of the Hitch domain setting.
+# Authors:	Thomas de Groot & Jeroen Linssen
+# Date:		2012-06-19
+
+# Simplification: Arthur is on Beetlejuice; wants to get to Earth.
+
+:arthur
+	a	:Human ;
+	:at	:beetlejuice ;
+	rdfs:label "Arthur" ;
+	.
+
+:earth
+	a	:Location ;
+	:at	:galaxy ;
+	rdfs:label "Earth" ;
+	.
+	
+:beetlejuice
+	a	:Location ;
+	:at	:galaxy ;
+	rdfs:label "Beetlejuice" ;
+	.
+	
+:ford
+	a	:Alien ;
+	:at	:beetlejuice ;
+	rdfs:label "Ford Prefect" ;
+	.
+	
+:jeltz
+	a	:Vogon ;
+	:at	:vogondestroyer ;
+	rdfs:label "Jeltz" ;
+	.
+
+:vogondestroyer 
+	a	:Location ;
+	:at	:galaxy ;
+	rdfs:label "Vogon Destroyer" ;
+	.
+
+:galaxy
+	a	:Location ;
+	rdfs:label "Galaxy" ;
+	.

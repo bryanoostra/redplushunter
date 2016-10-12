@@ -1,0 +1,897 @@
+<message type="init_world_state_response">
+   <user id="B5iqT1391612165"/>
+   <world scenario_id="0">
+      <world_objects>
+         <items>
+         </items>
+         <characters>
+            <character id="bystander2" control="human" perception="relion">
+               <ic>
+                  <name>
+         Adrie
+                  </name>
+                  <gender>
+         male
+                  </gender>
+                  <at>
+                     <location id="main_street">
+                     </location>
+                  </at>
+                  <role>
+         bystander
+                  </role>
+                  <personality>
+         choleric
+                  </personality>
+                  <emotion>
+         happy
+                  </emotion>
+                  <stances>
+                  </stances>
+                  <actions scenario_id="0">
+                     <action type="say_to" id="say_hello_to">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                           <patiens>
+                              <text>Hoi
+                              </text>
+                           </patiens>
+                           <target>
+                              <character id="bystander1">
+                              </character>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie zegt 'Hoi' tegen Barry
+                              </descriptive>
+                              <imperative lang="NL">
+         Zeg 'Hoi' tegen Barry
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="say_to" id="say_goodbye_to">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                           <patiens>
+                              <text>Doei
+                              </text>
+                           </patiens>
+                           <target>
+                              <character id="bystander1">
+                              </character>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie zegt 'Doei' tegen Barry
+                              </descriptive>
+                              <imperative lang="NL">
+         Zeg 'Doei' tegen Barry
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="walk_to" id="walk_to_alley">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                           <target>
+                              <location id="alley">
+                              </location>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie loopt naar Steegje
+                              </descriptive>
+                              <imperative lang="NL">
+         Loop naar Steegje
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="walk_to" id="walk_to_square">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                           <target>
+                              <location id="square">
+                              </location>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie loopt naar Plein
+                              </descriptive>
+                              <imperative lang="NL">
+         Loop naar Plein
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="walk_to" id="walk_to_main_street">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                           <target>
+                              <location id="main_street">
+                              </location>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie loopt naar Hoofdstraat
+                              </descriptive>
+                              <imperative lang="NL">
+         Loop naar Hoofdstraat
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="walk_to" id="walk_to_main_street">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                           <target>
+                              <location id="main_street">
+                              </location>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie loopt naar Hoofdstraat
+                              </descriptive>
+                              <imperative lang="NL">
+         Loop naar Hoofdstraat
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="wave" id="wave">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie zwaai
+                              </descriptive>
+                              <imperative lang="NL">
+         zwaai
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="shrug" id="shrug">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie schouders ophalen
+                              </descriptive>
+                              <imperative lang="NL">
+         schouders ophalen
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="avert_gaze" id="avert_gaze">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie blik afwenden
+                              </descriptive>
+                              <imperative lang="NL">
+         blik afwenden
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="frown" id="frown">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie frons
+                              </descriptive>
+                              <imperative lang="NL">
+         frons
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="duck_and_cover" id="duck_and_cover">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie buk
+                              </descriptive>
+                              <imperative lang="NL">
+         buk
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="do_nothing" id="do_nothing">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie doe niets
+                              </descriptive>
+                              <imperative lang="NL">
+         doe niets
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="cross_arms" id="cross_arms">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie armen over elkaar
+                              </descriptive>
+                              <imperative lang="NL">
+         armen over elkaar
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="soothing_arms" id="soothing_arms">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie kalmaan gebaar
+                              </descriptive>
+                              <imperative lang="NL">
+         kalmaan gebaar
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="become_dominant" id="become_dominant">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie dominant worden
+                              </descriptive>
+                              <imperative lang="NL">
+         dominant worden
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="become_submissive" id="become_submissive">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie onderdanig worden
+                              </descriptive>
+                              <imperative lang="NL">
+         onderdanig worden
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="become_happy" id="become_happy">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie blij worden
+                              </descriptive>
+                              <imperative lang="NL">
+         blij worden
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="become_sad" id="become_sad">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie verdrietig worden
+                              </descriptive>
+                              <imperative lang="NL">
+         verdrietig worden
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="take_knife" id="take_knife">
+                        <perform>
+                           <agens>
+                              <character id="bystander2">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Adrie trek mes
+                              </descriptive>
+                              <imperative lang="NL">
+         trek mes
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                  </actions>
+                  <current_actions>
+                  </current_actions>
+               </ic>
+               <ooc>
+               </ooc>
+               <presentation>
+                  <narration>
+                     <descriptive lang="NL">
+         een schoffie
+                     </descriptive>
+                  </narration>
+               </presentation>
+            </character>
+            <character id="bystander1" control="AI" perception="relion">
+               <ic>
+                  <name>
+         Barry
+                  </name>
+                  <gender>
+         male
+                  </gender>
+                  <at>
+                     <location id="alley">
+                     </location>
+                  </at>
+                  <role>
+         bystander
+                  </role>
+                  <personality>
+         melancholic
+                  </personality>
+                  <emotion>
+         angry
+                  </emotion>
+                  <stances>
+                  </stances>
+                  <goal>
+         windowshopping
+                  </goal>
+                  <actions scenario_id="0">
+                     <action type="say_to" id="say_hello_to">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                           <patiens>
+                              <text>Hoi
+                              </text>
+                           </patiens>
+                           <target>
+                              <character id="bystander2">
+                              </character>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry zegt 'Hoi' tegen Adrie
+                              </descriptive>
+                              <imperative lang="NL">
+         Zeg 'Hoi' tegen Adrie
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="say_to" id="say_goodbye_to">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                           <patiens>
+                              <text>Doei
+                              </text>
+                           </patiens>
+                           <target>
+                              <character id="bystander2">
+                              </character>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry zegt 'Doei' tegen Adrie
+                              </descriptive>
+                              <imperative lang="NL">
+         Zeg 'Doei' tegen Adrie
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="walk_to" id="walk_to_alley">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                           <target>
+                              <location id="alley">
+                              </location>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry loopt naar Steegje
+                              </descriptive>
+                              <imperative lang="NL">
+         Loop naar Steegje
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="walk_to" id="walk_to_square">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                           <target>
+                              <location id="square">
+                              </location>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry loopt naar Plein
+                              </descriptive>
+                              <imperative lang="NL">
+         Loop naar Plein
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="walk_to" id="walk_to_main_street">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                           <target>
+                              <location id="main_street">
+                              </location>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry loopt naar Hoofdstraat
+                              </descriptive>
+                              <imperative lang="NL">
+         Loop naar Hoofdstraat
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="walk_to" id="walk_to_main_street">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                           <target>
+                              <location id="main_street">
+                              </location>
+                           </target>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry loopt naar Hoofdstraat
+                              </descriptive>
+                              <imperative lang="NL">
+         Loop naar Hoofdstraat
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="wave" id="wave">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry zwaai
+                              </descriptive>
+                              <imperative lang="NL">
+         zwaai
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="shrug" id="shrug">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry schouders ophalen
+                              </descriptive>
+                              <imperative lang="NL">
+         schouders ophalen
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="avert_gaze" id="avert_gaze">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry blik afwenden
+                              </descriptive>
+                              <imperative lang="NL">
+         blik afwenden
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="frown" id="frown">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry frons
+                              </descriptive>
+                              <imperative lang="NL">
+         frons
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="duck_and_cover" id="duck_and_cover">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry buk
+                              </descriptive>
+                              <imperative lang="NL">
+         buk
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="do_nothing" id="do_nothing">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry doe niets
+                              </descriptive>
+                              <imperative lang="NL">
+         doe niets
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="cross_arms" id="cross_arms">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry armen over elkaar
+                              </descriptive>
+                              <imperative lang="NL">
+         armen over elkaar
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="soothing_arms" id="soothing_arms">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry kalmaan gebaar
+                              </descriptive>
+                              <imperative lang="NL">
+         kalmaan gebaar
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="become_dominant" id="become_dominant">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry dominant worden
+                              </descriptive>
+                              <imperative lang="NL">
+         dominant worden
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="become_submissive" id="become_submissive">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry onderdanig worden
+                              </descriptive>
+                              <imperative lang="NL">
+         onderdanig worden
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="become_happy" id="become_happy">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry blij worden
+                              </descriptive>
+                              <imperative lang="NL">
+         blij worden
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="become_sad" id="become_sad">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry verdrietig worden
+                              </descriptive>
+                              <imperative lang="NL">
+         verdrietig worden
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                     <action type="take_knife" id="take_knife">
+                        <perform>
+                           <agens>
+                              <character id="bystander1">
+                              </character>
+                           </agens>
+                        </perform>
+                        <presentation>
+                           <narration>
+                              <descriptive lang="NL">
+         Barry trek mes
+                              </descriptive>
+                              <imperative lang="NL">
+         trek mes
+                              </imperative>
+                           </narration>
+                        </presentation>
+                     </action>
+                  </actions>
+                  <current_actions>
+                  </current_actions>
+               </ic>
+               <ooc>
+               </ooc>
+               <presentation>
+                  <narration>
+                     <descriptive lang="NL">
+         een schoffie
+                     </descriptive>
+                  </narration>
+               </presentation>
+            </character>
+         </characters>
+      </world_objects>
+      <locations>
+         <location id="main_street">
+            <name>
+         Hoofdstraat
+            </name>
+            <path_to>
+               <locations>
+                  <location id="alley">
+                  </location>
+                  <location id="square">
+                  </location>
+               </locations>
+            </path_to>
+            <presentation>
+               <narration>
+                  <descriptive lang="NL">
+         de hoofdstraat
+                  </descriptive>
+               </narration>
+            </presentation>
+         </location>
+         <location id="alley">
+            <name>
+         Steegje
+            </name>
+            <path_to>
+               <locations>
+                  <location id="main_street">
+                  </location>
+               </locations>
+            </path_to>
+            <presentation>
+               <narration>
+                  <descriptive lang="NL">
+         het steegje
+                  </descriptive>
+               </narration>
+            </presentation>
+         </location>
+         <location id="square">
+            <name>
+         Plein
+            </name>
+            <path_to>
+               <locations>
+                  <location id="main_street">
+                  </location>
+               </locations>
+            </path_to>
+            <presentation>
+               <narration>
+                  <descriptive lang="NL">
+         het pleintje
+                  </descriptive>
+               </narration>
+            </presentation>
+         </location>
+      </locations>
+   </world>
+</message>
+

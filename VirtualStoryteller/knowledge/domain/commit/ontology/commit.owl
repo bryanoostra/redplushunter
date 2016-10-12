@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY StoryWorldCore "http://www.owl-ontologies.com/StoryWorldCore.owl#" >
+    <!ENTITY FabulaKnowledge "http://www.owl-ontologies.com/FabulaKnowledge.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontology.com/commit.owl#"
+     xml:base="http://www.ontology.com/commit.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:FabulaKnowledge="http://www.owl-ontologies.com/FabulaKnowledge.owl#"
+     xmlns:StoryWorldCore="http://www.owl-ontologies.com/StoryWorldCore.owl#">
+    <owl:Ontology rdf:about="http://www.ontology.com/commit.owl">
+        <owl:imports rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl"/>
+        <owl:imports rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#hasMatterState -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.com/commit.owl#hasMatterState">
+        <rdfs:range rdf:resource="http://www.ontology.com/commit.owl#MatterState"/>
+        <rdfs:domain rdf:resource="&StoryWorldCore;Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#near -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.com/commit.owl#near">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment>Objects can be near other objects.</rdfs:comment>
+        <rdfs:domain rdf:resource="&StoryWorldCore;Object"/>
+        <rdfs:range rdf:resource="&StoryWorldCore;Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#Alien -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#Alien">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.com/commit.owl#Species"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#BeAtLocation -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#BeAtLocation">
+        <rdfs:subClassOf rdf:resource="&FabulaKnowledge;AttainGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#BeAtObject -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#BeAtObject">
+        <rdfs:subClassOf rdf:resource="&FabulaKnowledge;AttainGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#Cow -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#Cow">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.com/commit.owl#Species"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#ExampleAction -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#ExampleAction">
+        <rdfs:subClassOf rdf:resource="&FabulaKnowledge;Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#FleeFrom -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#FleeFrom">
+        <rdfs:subClassOf rdf:resource="&FabulaKnowledge;AttainGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#FleeFromCharacter -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#FleeFromCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.com/commit.owl#FleeFrom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#FleeFromLocation -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#FleeFromLocation">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.com/commit.owl#FleeFrom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#FleeFromObject -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#FleeFromObject">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.com/commit.owl#FleeFrom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#FleeFromSpecies -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#FleeFromSpecies">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.com/commit.owl#FleeFromCharacter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#Human -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#Human">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.com/commit.owl#Species"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#JustBe -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#JustBe">
+        <rdfs:subClassOf rdf:resource="&FabulaKnowledge;AttainGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#MatterState -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#MatterState">
+        <rdfs:subClassOf rdf:resource="&StoryWorldCore;InternalAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#Species -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#Species">
+        <rdfs:subClassOf rdf:resource="&StoryWorldCore;Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#StillThirst -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#StillThirst">
+        <rdfs:subClassOf rdf:resource="&FabulaKnowledge;AttainGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#Vehicle -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#Vehicle">
+        <rdfs:subClassOf rdf:resource="&StoryWorldCore;Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#Vogon -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#Vogon">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.com/commit.owl#Species"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#WalkThisWay -->
+
+    <owl:Class rdf:about="http://www.ontology.com/commit.owl#WalkThisWay">
+        <rdfs:subClassOf rdf:resource="&FabulaKnowledge;GroundMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/FabulaKnowledge.owl#Action -->
+
+    <owl:Class rdf:about="&FabulaKnowledge;Action"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/FabulaKnowledge.owl#AirMove -->
+
+    <rdf:Description rdf:about="&FabulaKnowledge;AirMove">
+        <rdfs:subClassOf rdf:resource="&FabulaKnowledge;Ambulate"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#drunk -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.com/commit.owl#drunk"/>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#gas -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.com/commit.owl#gas">
+        <rdf:type rdf:resource="http://www.ontology.com/commit.owl#MatterState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#hungry -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.com/commit.owl#hungry">
+        <rdf:type rdf:resource="&FabulaKnowledge;Eat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#liquid -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.com/commit.owl#liquid">
+        <rdf:type rdf:resource="http://www.ontology.com/commit.owl#MatterState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#plasma -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.com/commit.owl#plasma">
+        <rdf:type rdf:resource="http://www.ontology.com/commit.owl#MatterState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#solid -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.com/commit.owl#solid">
+        <rdf:type rdf:resource="http://www.ontology.com/commit.owl#MatterState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology.com/commit.owl#thirsty -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.com/commit.owl#thirsty">
+        <rdf:type rdf:resource="&FabulaKnowledge;Drink"/>
+        <rdf:type rdf:resource="&StoryWorldCore;InternalAttribute"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

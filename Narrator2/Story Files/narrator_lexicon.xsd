@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3schools.com"
+xmlns="http://www.w3schools.com"
+elementFormDefault="qualified">
+
+<xs:element name="lexicon">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="sense" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>	
+</xs:element>
+
+<xs:element name="sense">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="entry" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required" />	
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="entry">
+	<xs:complexType>
+		<xs:sequence>
+			<!-- Elements for all entries -->
+			<xs:element name="root" type="xs:string" minOccurs="1" />
+			<xs:element name="partofspeech" type="enum_partofspeech" minOccurs="1" />
+			
+			<!--  Noun elements -->
+			<xs:element name="determiner" type="enum_article" minOccurs="0" />
+			<xs:element name="plural" type="xs:string" minOccurs="0" />
+			<xs:element name="atpreposition" type="xs:string" minOccurs="0" />
+			
+			<!-- Verb elements -->
+			<xs:element name="sg1" type="xs:string" minOccurs="0" />
+			<xs:element name="sg2" type="xs:string" minOccurs="0" />
+			<xs:element name="sg3" type="xs:string" minOccurs="0" />
+			<xs:element name="plpres" type="xs:string" minOccurs="0" />
+			<xs:element name="sgpast" type="xs:string" minOccurs="0" />
+			<xs:element name="plpast" type="xs:string" minOccurs="0" />
+			<xs:element name="participle" type="xs:string" minOccurs="0" />
+			<xs:element name="preposition" type="xs:string" minOccurs="0" />
+			<xs:element name="dependencylabel" type="enum_deplabel" minOccurs="0" />
+			<xs:element name="auxverb" type="enum_auxverb" minOccurs="0" />
+			<xs:element name="particle" type="xs:string" minOccurs="0" />
+			
+			<!-- Adjective elements -->
+			<xs:element name="adjinflect" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>	
+</xs:element>
+
+<!-- Enumerations -->
+<xs:simpleType name="enum_partofspeech">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="verb" />
+		<xs:enumeration value="noun" />
+		<xs:enumeration value="adj" />
+		<xs:enumeration value="adv" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="enum_deplabel">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="obj1" />
+		<xs:enumeration value="obj2" />
+		<xs:enumeration value="mod" />
+		<xs:enumeration value="ld" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="enum_auxverb">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="be" />
+		<xs:enumeration value="have" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="enum_article">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="de" />
+		<xs:enumeration value="het" />
+	</xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="temp-suddenly">
+		<nucleus>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="ga" morph="3.sing.present" />
+					<node rel="su" pos="nom" root="Brutus" />
+					<node rel="ld" cat="pp">
+						<node rel="hd" pos="prep" root="naar" />
+						<node rel="obj1" cat="np">
+							<node rel="hd" pos="noun" root="woestijn" morph="sing" />
+							<node rel="det" pos="det" root="de" morph="sing" />
+						</node>
+					</node>
+				</node>
+			</dt>
+		</nucleus>
+	</rhetrelation>
+</rhetdepgraph>

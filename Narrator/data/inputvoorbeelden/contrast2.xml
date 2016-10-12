@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation index="r1" cat="contrast-causal">
+		<nucleus>
+			<dt>
+	        	<node rel="top" cat="smain" >
+	        		<node rel="su" pos="nom" root="Amalia" />
+	        		<node rel="hd" pos="verb" root="geef" morph="3.sing.present" />
+	        		<node rel="obj2" pos="nom" root="Brutus" />
+	        		<node rel="obj1" cat="np">
+	        			<node rel="hd" pos="noun" root="lel" morph="sing" />
+	        			<node rel="det" pos="det" root="een" morph="sing" />
+	        		</node>
+	        	</node>
+        	</dt>       
+		</nucleus>
+    	<satellite>
+    		<dt>
+     			<node rel="top" cat="smain" >
+     				<node rel="su" pos="nom" root="Amalia" />
+     				<node rel="hd" pos="verb" root="denk" morph="3.sing.present" />
+     				<node rel="vc" cat="cp">
+     					<node rel="cmp" pos="comp" root="dat" />
+     					<node rel="body" cat="ssub">
+     						<node rel="hd" pos="verb" root="heb" morph="3.sing.present" />
+     						<node rel="su" index="B" pos="nom" root="Brutus" />
+     						<node rel="vc" cat="ppart">
+     							<node rel="obj1" cat="np">
+     								<node rel="hd" pos="noun" root="jeugd" morph="singular" />
+     								<node rel="det" pos="det" root="een" morph="singular" />
+     								<node rel="mod" pos="adj" root="ongelukkige" />
+     							</node>
+     							<node rel="su" index="B" />
+     							<node rel="hd" pos="verb" root="heb" morph="present perfect" />
+     						</node>
+     					</node>
+     				</node>
+     			</node>
+     		</dt>
+	    </satellite>
+	</rhetrelation>
+</rhetdepgraph>

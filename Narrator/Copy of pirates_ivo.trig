@@ -1,0 +1,800 @@
+@prefix ns2:     <http://www.owl-ontologies.com/StoryWorldSettings/Pirates#> .
+@prefix ns1:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+@prefix ns0:     <http://www.owl-ontologies.com/FabulaKnowledge.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<#defaultGraph> {
+    <#iBelief_leChuck_31>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_31_contents> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_32>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_32_contents> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_30>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_30_contents> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_11_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_leChuck_33>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_33_contents> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_45_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_leChuck_38>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_38_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_9_contents>
+          a       ns0:TruthGraph .
+
+    <#iSetting_plotagent_2_contents>
+          a       ns0:TruthGraph .
+
+    <#iGoal_leChuck_14>
+          a       ns2:AnnounceRum ;
+          ns0:character ns2:leChuck ;
+          ns0:motivates <#iAction_leChuck_23> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_41>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_41_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_42>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_42_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_73_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_leChuck_45>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_45_contents> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_46>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_46_contents> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_47>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_47_contents> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_60_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_leChuck_48>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_48_contents> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_49>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_49_contents> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_4_contents>
+          a       ns0:TruthGraph .
+
+    <#iSetting_plotagent_9>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_leChuck_38> ;
+          ns0:hasContent <#iSetting_plotagent_9_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_27_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iSetting_plotagent_2>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_leChuck_12> ;
+          ns0:hasContent <#iSetting_plotagent_2_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_10>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_leChuck_41> ;
+          ns0:hasContent <#iSetting_plotagent_10_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_3>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_leChuck_16> ;
+          ns0:hasContent <#iSetting_plotagent_3_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_16>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_16_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_12>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_12_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_leChuck_3>
+          a       ns2:GetBottle ;
+          ns0:character ns2:leChuck ;
+          ns0:agens ns2:leChuck ;
+          ns0:patiens ns2:oRumBottle_1;
+          ns0:motivates <#iAction_leChuck_27> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_leChuck_2>
+          a       ns2:GetTreasure ;
+          ns0:character ns2:leChuck ;
+          ns0:agens ns2:leChuck ;
+          ns0:patiens ns2:treasure1;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_11>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_leChuck_42> ;
+          ns0:hasContent <#iSetting_plotagent_11_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_56_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iAction_leChuck_63>
+          a       ns2:SailToLand ;
+          ns0:agens ns2:leChuck ;
+          ns0:character ns2:leChuck ;
+          ns0:endtime "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:instrument ns2:oShip_1 ;
+          ns0:phi_causes <#iperception_plot_26> , <#iperception_plot_23> ;
+          ns0:starttime "13"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns2:oTreasureIsland_1 ;
+          ns0:time "13"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_4>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_4_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_29> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_5>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_5_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_30> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iAction_leChuck_68>
+          a       ns2:GetOffBoat ;
+          ns0:agens ns2:leChuck ;
+          ns0:character ns2:leChuck ;
+          ns0:endtime "16"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:phi_causes <#iperception_plot_27> , <#iperception_plot_25> , <#iperception_plot_29> ;
+          ns0:starttime "15"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns2:oTreasureIsland_1 ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_6>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_6_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_31> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_7>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_7_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_32> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_8>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_8_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_33> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_3_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_leChuck_29>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_29_contents> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_17_contents>
+          a       ns0:TruthGraph .
+
+    <#iOutcome_leChuck_77>
+          a       ns0:Success ;
+          ns0:character ns2:leChuck ;
+          ns0:resolves <#iGoal_leChuck_50> ;
+          ns0:time "19"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_22_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_leChuck_66_contents>
+          a       ns0:TruthGraph .
+
+    <#iAction_leChuck_74>
+          a       ns2:FillBoatWithWater ;
+          ns0:agens ns2:leChuck ;
+          ns0:character ns2:leChuck ;
+          ns0:endtime "18"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:instrument ns2:oPond_1 ;
+          ns0:patiens ns2:oShip_1 ;
+          ns0:phi_causes <#iperception_plot_28> ;
+          ns0:starttime "17"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "17"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_20_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_16_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_leChuck_62_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_leChuck_42_contents>
+          a       ns0:TruthGraph .
+
+    <#iFraming_leChuck_7>
+          ns0:phi_causes <#iperception_plot_5> .
+
+    <#iFraming_leChuck_8>
+          ns0:phi_causes <#iperception_plot_6> .
+
+    <#iperception_plot_19_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_leChuck_72>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_72_contents> ;
+          ns0:time "17"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_71>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_71_contents> ;
+          ns0:time "17"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iFraming_leChuck_35>
+          ns0:phi_causes <#iperception_plot_14> .
+
+    <#iBelief_leChuck_73>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_73_contents> ;
+          ns0:time "17"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_76>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_76_contents> ;
+          ns0:time "19"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_75>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_75_contents> ;
+          ns0:time "19"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iFraming_leChuck_36>
+          ns0:phi_causes <#iperception_plot_15> .
+
+    <#iGoal_leChuck_50>
+          a       ns2:RefillWaterSupply ;
+          ns0:character ns2:leChuck ;
+          ns0:agens ns2:leChuck ;
+          ns0:patiens ns2:oWaterSupply_1 ;
+          ns0:motivates <#iAction_leChuck_57> , <#iAction_leChuck_52> , <#iAction_leChuck_63> , <#iAction_leChuck_74> , <#iAction_leChuck_68> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_10_contents>
+          a       ns0:TruthGraph .
+
+    <#iOutcome_leChuck_26>
+          a       ns0:Failure ;
+          ns0:character ns2:leChuck ;
+          ns0:resolves <#iGoal_leChuck_2> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_leChuck_25>
+          a       ns0:Success ;
+          ns0:character ns2:leChuck ;
+          ns0:resolves <#iGoal_leChuck_14> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_16_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_leChuck_49_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iAction_leChuck_57>
+          a       ns0:WalkFromToDoor ;
+          ns0:agens ns2:leChuck ;
+          ns0:character ns2:leChuck ;
+          ns0:endtime "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:instrument ns2:oLadder_up ;
+          ns0:phi_causes <#iperception_plot_24> , <#iperception_plot_22> , <#iperception_plot_20> ;
+          ns0:starttime "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns2:oDeck_1 ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iAction_leChuck_52>
+          a       ns0:OpenDoor ;
+          ns0:agens ns2:leChuck ;
+          ns0:character ns2:leChuck ;
+          ns0:endtime "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:patiens ns2:oHatch_1 ;
+          ns0:phi_causes <#iperception_plot_21> , <#iperception_plot_17> , <#iperception_plot_19> ;
+          ns0:starttime "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "9"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_8_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_26>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_26_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_72> ;
+          ns0:time "17"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_27>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_27_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_73> ;
+          ns0:time "17"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_24>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_24_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_67> ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_71_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_25>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_25_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_71> ;
+          ns0:time "17"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_22>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_22_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_62> ;
+          ns0:time "13"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_23>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_23_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_66> ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_20>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_20_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_60> ;
+          ns0:time "13"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_21>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_21_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_61> ;
+          ns0:time "13"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_leChuck_34>
+          a       ns0:Success ;
+          ns0:character ns2:leChuck ;
+          ns0:resolves <#iGoal_leChuck_3> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_33_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_leChuck_54_contents>
+          a       ns0:TruthGraph .
+
+    <#iAction_leChuck_23>
+          a       ns2:SayLetsGetSomeRum ;
+          ns0:agens ns2:leChuck ;
+          ns0:character ns2:leChuck ;
+          ns0:endtime "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:phi_causes <#iperception_plot_7> ;
+          ns0:starttime "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_56>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_56_contents> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_55>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_55_contents> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iAction_leChuck_27>
+          a       ns0:TakeOut ;
+          ns0:agens ns2:leChuck ;
+          ns0:character ns2:leChuck ;
+          ns0:endtime "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:patiens ns2:oRumBottle_1 ;
+          ns0:phi_causes <#iperception_plot_13> , <#iperception_plot_4> , <#iperception_plot_8> ;
+          ns0:starttime "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns2:oCrate_1 ;
+          ns0:time "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_75_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_leChuck_54>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_54_contents> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iEvent_leChuck_37>
+          a       ns2:OutOfWater ;
+          ns0:character ns2:leChuck ;
+          ns0:agens ns2:oWater_1 ;
+          ns0:endtime "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:phi_causes <#iperception_plot_16> , <#iperception_plot_12> , <#iperception_plot_18> ;
+          ns0:starttime "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_29>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_29_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_76> ;
+          ns0:time "19"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_28>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_28_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_75> ;
+          ns0:time "19"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_13>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_13_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_46> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_14>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_14_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_47> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_15>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_15_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_48> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_16>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_16_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_49> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_29_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_23_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_28_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_12>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_12_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_45> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_41_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_12_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_leChuck_67>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_67_contents> ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_66>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_66_contents> ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_12_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_leChuck_38_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_leChuck_62>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_62_contents> ;
+          ns0:time "13"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_leChuck_61>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_61_contents> ;
+          ns0:time "13"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_18>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_18_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_55> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_25_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_leChuck_60>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iBelief_leChuck_60_contents> ;
+          ns0:time "13"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_17>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_17_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_54> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_19>
+          a       ns0:Perception ;
+          ns0:character ns2:leChuck ;
+          ns0:hasContent <#iperception_plot_19_contents> ;
+          ns0:psi_causes <#iBelief_leChuck_56> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+}
+
+<#iBelief_leChuck_12_contents> {
+    ns2:oCrate_1
+          ns1:supportedBy ns2:oHold_1 .
+}
+
+<#iBelief_leChuck_16_contents> {
+    ns2:oRumBottle_1
+          ns1:containedBy ns2:oCrate_1 .
+}
+
+<#iBelief_leChuck_29_contents> {
+    ns2:oRumBottle_1
+          ns1:heldBy ns2:leChuck .
+}
+
+<#iBelief_leChuck_33_contents> {
+    ns2:oRumBottle_1
+          ns1:containedBy ns2:oCrate_1 .
+}
+
+<#iBelief_leChuck_38_contents> {
+    ns2:oShip_1
+          ns2:hasWaterSupply ns2:oWaterSupply_1 .
+}
+
+<#iBelief_leChuck_41_contents> {
+    ns2:leChuck
+          a       ns2:Captain .
+}
+
+<#iBelief_leChuck_42_contents> {
+    ns2:leChuck
+          ns2:owns ns2:oShip_1 .
+}
+
+<#iBelief_leChuck_45_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:empty .
+}
+
+<#iBelief_leChuck_49_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iBelief_leChuck_54_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:open .
+}
+
+<#iBelief_leChuck_56_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:closed .
+}
+
+<#iBelief_leChuck_60_contents> {
+    ns2:leChuck
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iBelief_leChuck_62_contents> {
+    ns2:leChuck
+          ns1:supportedBy ns2:oHold_1 .
+}
+
+<#iBelief_leChuck_66_contents> {
+    ns2:oShip_1
+          ns2:mooredAt ns2:oTreasureIsland_1 .
+}
+
+<#iBelief_leChuck_71_contents> {
+    ns2:leChuck
+          ns1:supportedBy ns2:oTreasureIsland_1 .
+}
+
+<#iBelief_leChuck_73_contents> {
+    ns2:leChuck
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iBelief_leChuck_75_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iSetting_plotagent_10_contents> {
+    ns2:leChuck
+          a       ns2:Captain .
+}
+
+<#iSetting_plotagent_11_contents> {
+    ns2:leChuck
+          ns2:owns ns2:oShip_1 .
+}
+
+<#iSetting_plotagent_2_contents> {
+    ns2:oCrate_1
+          ns1:supportedBy ns2:oHold_1 .
+}
+
+<#iSetting_plotagent_3_contents> {
+    ns2:oRumBottle_1
+          ns1:containedBy ns2:oCrate_1 .
+}
+
+<#iSetting_plotagent_9_contents> {
+    ns2:oShip_1
+          ns2:hasWaterSupply ns2:oWaterSupply_1 .
+}
+
+<#iperception_plot_12_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:empty .
+}
+
+<#iperception_plot_16_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iperception_plot_17_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:open .
+}
+
+<#iperception_plot_19_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:closed .
+}
+
+<#iperception_plot_20_contents> {
+    ns2:leChuck
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iperception_plot_22_contents> {
+    ns2:leChuck
+          ns1:supportedBy ns2:oHold_1 .
+}
+
+<#iperception_plot_23_contents> {
+    ns2:oShip_1
+          ns2:mooredAt ns2:oTreasureIsland_1 .
+}
+
+<#iperception_plot_25_contents> {
+    ns2:leChuck
+          ns1:supportedBy ns2:oTreasureIsland_1 .
+}
+
+<#iperception_plot_27_contents> {
+    ns2:leChuck
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iperception_plot_28_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iperception_plot_4_contents> {
+    ns2:oRumBottle_1
+          ns1:heldBy ns2:leChuck .
+}
+
+<#iperception_plot_8_contents> {
+    ns2:oRumBottle_1
+          ns1:containedBy ns2:oCrate_1 .
+}
+

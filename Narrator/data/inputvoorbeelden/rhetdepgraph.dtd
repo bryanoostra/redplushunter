@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph [
+<-- Rhetorical Dependency Graph, contains rhetorical relations and/or single dependency trees -->
+<!Element rhetdepgraph (rhetrelation*, dt*, rhetrelation*)>
+
+<-- Rhetorical relation, has a nucleus and a satellite -->
+<!Element rhetrelation (nucleus, satellite)>
+
+<-- Nucleus of the rhetorical relation, has a dependency tree -->
+<!Element nucleus (dt|rhetrelation)>
+
+<-- Satellite, has either a dependency tree or the nucleus and satellite of another rhetorical relation -->
+<!Element satellite (dt|rhetrelation)>
+
+<-- Dependency Tree, has several nodes and an optional sentence (containing the surface form) -->
+<!Element dt (node+, sentence?)>
+
+<-- * Node, has a syntactic category or a part-of-speech tag, a relation to its parent, a root and optionally a word, 
+    * begin, end, morph and id -->
+<!Element node (node*)>
+
+<-- contains the surface form -->
+<!Element sentence (#CDATA)>
+
+
+<-- relation to parent -->
+<!ATTLIST node rel CDATA #REQUIRED>
+<-- syntactic category -->
+<!ATTLIST node cat CDATA #IMPLIED>
+<-- part-of-speech tag -->
+<!ATTLIST node pos CDATA #IMPLIED>
+<-- begin text governed by of node -->
+<!ATTLIST node begin CDATA #IMPLIED>
+<-- end of text governed by node -->
+<!ATTLIST node end CDATA #IMPLIED>
+<-- root of the word contained in node -->
+<!ATTLIST node root CDATA #IMPLIED>
+<-- word, with proper inflection -->
+<!ATTLIST node word CDATA #IMPLIED>
+<-- morphological information
+<!ATTLIST node morph CDATA #IMPLIED>
+<-- type of relation (cause, purpose, temporal, contrast)
+<!ATTLIST rhetrelation cat CDATA #REQUIRED>
+
+<-- indexes -->
+<!ATTLIST node index CDATA #IMPLIED>
+<!ATTLIST rhetrelation index CDATA #REQUIRED>
+<!ATTLIST dt index CDATA #REQUIRED>
+<!ATTLIST nucleus index CDATA #IMPLIED>
+<!ATTLIST satellite index CDATA #IMPLIED>
+
+]>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="additive">
+		<nucleus>
+			<rhetrelation cat="additive">
+				<nucleus>
+					<dt>
+						<node rel="top" cat="smain">
+							<node rel="hd" pos="verb" root="ga" morph="3.sing.present" />
+							<node rel="su" pos="nom" root="Willem-Alexander"  />
+							<node rel="ld" cat="pp">
+								<node rel="hd" pos="prep" root="naar" />
+								<node rel="obj1" cat="np">
+									<node rel="hd" pos="noun" root="moeras" morph="sing" />
+									<node rel="det" pos="det" root="het" morph="sing" />
+								</node>
+							</node>
+						</node>
+					</dt>
+				</nucleus>
+				<satellite>
+					<dt>
+						<node rel="top" cat="smain">
+							<node rel="hd" pos="verb" root="ga" morph="3.sing.present" />
+							<node rel="su" pos="nom" root="Brutus"  />
+							<node rel="ld" cat="pp">
+								<node rel="hd" pos="prep" root="naar" />
+								<node rel="obj1" cat="np">
+									<node rel="hd" pos="noun" root="woestijn" morph="sing" />
+									<node rel="det" pos="det" root="de" morph="sing" />
+								</node>
+							</node>
+						</node>
+					</dt>
+				</satellite>
+			</rhetrelation>
+		</nucleus>
+		<satellite>
+			<dt index="d1">
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="ga" morph="3.sing.present" />
+					<node rel="su" pos="nom" root="Amalia" />
+					<node rel="ld" cat="pp">
+						<node rel="hd" pos="prep" root="naar" />
+						<node rel="obj1" cat="np">
+							<node rel="hd" pos="noun" root="bos" morph="sing" />
+							<node rel="det" pos="det" root="het" morph="sing" />
+						</node>
+					</node>
+				</node>
+			</dt>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

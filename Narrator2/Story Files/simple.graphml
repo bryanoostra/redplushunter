@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <!--World Setting file: world.xml-->
+  <!--Lexicon file lang="NL": lexicon_NL.xml-->
+  <key id="EventType" for="node" attr.name="EventType" attr.type="string">
+    <default>NoType</default>
+  </key>
+  
+  <key id="Type" for="node" attr.name="Type" attr.type="string">
+    <default>NoType</default>
+  </key>
+  
+  <key id="Agens" for="node" attr.name="Agens" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Patiens" for="node" attr.name="Patiens" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Target" for="node" attr.name="Target" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Instrument" for="node" attr.name="Instrument" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Time" for="node" attr.name="Time" attr.type="integer">
+    <default>-1</default>
+  </key>
+  
+  <key id="RelType" for="edge" attr.name="RelType" attr.type="string">
+	<default>NoType</default>
+  </key>
+  
+  <graph id="Fabula" edgedefault="directed">
+  	<node id="Insult01">
+	  <data key="EventType">action</data>
+	  <data key="Type">insult</data>
+	  <data key="Agens">policeofficer</data>
+	  <data key="Patiens">bystander1</data>
+	  <data key="Time">1</data>
+	</node>
+	
+	<node id="BecomeAngry01">
+	  <data key="EventType">state</data>
+	  <data key="Agens">bystander1</data>
+	  <data key="Type">angry</data>
+	  <data key="Time">2</data>
+	</node>
+	
+	<node id="BecomeAngry02">
+	  <data key="EventType">state</data>
+	  <data key="Agens">policeofficer</data>
+	  <data key="Type">sad</data>
+	  <data key="Time">4</data>
+	</node>
+	
+	<node id="Kick01">
+	  <data key="EventType">action</data>
+	  <data key="Type">hit_with</data>
+	  <data key="Agens">bystander1</data>
+	  <data key="Patiens">policeofficer</data>
+	  <data key="Instrument">schoen1</data>
+	  <data key="Time">3</data>
+	</node>
+	
+	<edge id="Psychological01" source="Insult01" target="BecomeAngry01">
+      <data key="RelType">psi-causes</data>
+    </edge>
+	
+	<edge id="Psychological02" source="Kick01" target="BecomeAngry02">
+      <data key="RelType">psi-causes</data>
+    </edge>
+	
+	<edge id="Motivation01" source="BecomeAngry01" target="Kick01">
+      <data key="RelType">motivates</data>
+    </edge>
+  </graph> 
+</graphml>

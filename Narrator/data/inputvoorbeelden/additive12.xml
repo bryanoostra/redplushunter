@@ -1,0 +1,38 @@
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="additive">
+		<nucleus>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="drink" morph="3.singular.present" />
+					<node rel="su" cat="np">
+						<node rel="det" pos="det" root="de" morph="singular" />
+						<node rel="hd" pos="noun" root="prins" morph="singular" />
+					</node>
+					<node rel="obj1" cat="np">
+						<node rel="det" pos="det" root="een" morph="singular" />
+						<node rel="hd" pos="noun" root="biertje" morph="singular" />
+					</node>
+				</node>
+			</dt>
+		</nucleus>
+		<satellite>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="zit" morph="3.singular.present" />
+					<node rel="su" cat="np">
+						<node rel="det" pos="det" root="de" morph="singular" />
+						<node rel="hd" pos="noun" root="prins" morph="singular" />
+					</node>
+					<node rel="ld" cat="pp">
+						<node rel="obj1" cat="np">
+							<node rel="det" pos="det" root="een" morph="singular" />
+							<node rel="hd" pos="noun" root="terrasje" morph="singular" />
+						</node>
+						<node rel="hd" pos="prep" root="op" />
+					</node>
+				</node>
+			</dt>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

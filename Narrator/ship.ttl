@@ -1,0 +1,73 @@
+@prefix swc:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix ps:      <http://www.owl-ontologies.com/StoryWorldSettings/Pirates#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix :        <http://www.owl-ontologies.com/StoryWorldSettings/Pirates#> .
+
+# Description of the ship for the sword-fighting domain.
+# Author: Ivo Swartjes
+# Date:   12 feb 2008
+
+# A ship
+:oShip_1
+    a   :Ship ;
+    swc:hasRegion :oDeck_1 ; 
+    swc:hasRegion :oHold_1 ;
+    swc:hasPart :oLadder_up ;
+    swc:hasPart :oWaterSupply_1 ;
+    rdfs:label "the Bloody Rage" ;
+    .
+
+# The deck
+:oDeck_1
+    a   :Deck ;
+    rdfs:label "the deck" ;
+    .
+
+# The hold
+:oHold_1
+    a   :Hold ;
+ 	swc:hasPart :oHatch_1 ;
+    rdfs:label "the hold" ;
+    .
+
+# The hatch
+:oHatch_1
+	a 	:Hatch ;
+	rdfs:label "the hatch" ;
+	.
+
+# The ladder
+:oLadder_up
+    a   :Ladder ;
+    rdfs:label "the hold" ;
+    .
+
+# The water supply
+:oWaterSupply_1
+    a   :WaterSupply ;
+    rdfs:label "the hold" ;
+    .
+    
+:oRum_1
+    a   :Rum ;
+    .   
+
+:oRumBottle_1
+    a   :Rum ;
+    . 
+ 
+:annesRapier
+    a   :Rapier ;
+    .
+    
+:annesBelt 
+    a   :Belt ;
+    .        
+    
+:oCrate_1
+	a	:Crate ;
+	.
+ 

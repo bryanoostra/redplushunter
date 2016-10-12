@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/abstractparser.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/antlr-2.7.5.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/antlr.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/api.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/arq-extra.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/arq.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/aterm-java-1.6.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/axis.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/bcpg-jdk14-127.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/bcprov-jdk14-127.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/commons-lang-2.0.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/concurrent.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/examples.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/grddl.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/hsqldb-1.8.0.7.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/icu4j_3_4.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/icu4j.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/impl.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/inference.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/io.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/iri.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/jakarta-oro-2.0.5.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/jakarta-oro-2.0.8.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/jena.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/jenatest.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/jetty.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/json.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/jtp.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/junit.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/log4j-1.2.12.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/lucene-core-2.2.0.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/mysql-connector-java-3.2.0-alpha-bin.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/nekohtml.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/ng4j.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/OLD_jena.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/owl-servlet.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/owltest.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/pellet.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/rdfapi.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/rdfparser.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/relaxngDatatype.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/rules.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/saxon8.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/servlet.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/stax-1.1.1-dev.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/stax-api-1.0.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/tagsoup-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/validation_test.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/validation.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/wstx-asl-2.8.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/wstx-asl-3.0.0.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="/Narrator/lib/xsdlib.jar"/>
+	<classpathentry kind="lib" path="lib/stompj-0.5.jar"/>
+	<classpathentry kind="lib" path="lib/narrator2_32.jar"/>
+	<classpathentry kind="lib" path="lib/xstream-1.4.7.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

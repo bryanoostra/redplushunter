@@ -1,0 +1,328 @@
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix :		<http://www.ontology.com/commit.owl#> .
+
+# Description of the commit domain setting.
+# Authors:	Thomas de Groot & Jeroen Linssen
+# Date:		2012-07-17
+
+# Simplification: Policemen interacting with juvenile delinquents
+
+################################################
+# characters
+################################################ 
+
+:policeOfficer
+	a :Role ;
+	#rdfs:label "een politie agent" ;
+	.
+	
+:henk
+	a	     :Human ;
+	:at	     :policeStation ;
+	:near	 :atm ;
+	:hasRole :policeOfficer ;
+	:has     :walterPK5 ;
+	rdfs:label "Henk" ;
+	.
+
+:ingrid
+	a	     :Human ;
+	:at	     :alley ;
+	:hasRole :policeOfficer ;
+	:has	 :alcoholTester ;
+	rdfs:label "Ingrid" ;
+	.
+
+:juvi
+	a :Role ;
+	.
+	
+:juvi1
+	a	     :Human ;
+	:at	     :square ;
+	:hasRole :juvi ;
+	#:has     :beer1 ;
+	#:hasAttribute	:thirsty ;
+	rdfs:label "Richard Batsbak" ;
+	.
+	
+:juvi2
+	a	     :Human ;
+	:at	     :square ;
+	:hasRole :juvi ;
+	rdfs:label "Gerrie van Boven" ;
+	.
+	
+# Commented out, as they are not yet used in the scenario
+#:juvi3
+#	a	     :Human ;
+#	:at	     :square ;
+#	:hasRole :juvi ;
+#	rdfs:label "Barrie Butsers" ;
+#	.
+
+#:juvi4
+#	a	     :Human ;
+#	:at	     :atm ;
+#	:hasRole :juvi ;
+#	rdfs:label "Sjon 'de alleenstaande vandaal'" ;
+#	.
+
+################################################
+# locations, paths and doors
+################################################ 
+
+:city
+	a	:Location ;
+	rdfs:label "Oostdorp" ;
+	.
+	
+:mainStreet
+	a   :Location ;
+	:at :city ;
+	rdfs:label "de Hoofdstraat" ;
+	.
+	
+:sideStreet
+	a   :Location ;
+	:at :city ;
+	rdfs:label "de Parkweg" ;
+	.
+
+:alley
+	a   :Location ;
+	:at :city ;
+	rdfs:label "het Steegje" ;
+	.
+
+:square 
+	a   :Location ;
+	:at :city ;
+	rdfs:label "het Kerkplein" ;
+	.
+		
+:bar
+	a   :Location ;
+	:at :square ;
+	rdfs:label "Hotel de Haas" ;
+	.
+	
+:house
+	a   :Location ;
+	:at :mainStreet ;
+	rdfs:label "het Huis" ;
+	.
+
+:policeStation
+	a   :Location ;
+	:at :sideStreet ;
+	rdfs:label "het Politieburo" ;
+	.	
+	
+:car1
+	a   :Vehicle ;
+	:at :mainStreet ;
+	rdfs:label "de Volvo" ;
+	.	
+	
+:car2
+	a   :Vehicle ;
+	:at :mainStreet ;
+	rdfs:label "de Golf" ;
+	.	
+
+# paths (ALERT! : paths are oneway in the action)
+
+:pathSMS
+	a     :Path ;
+	:from :square ;
+	:to   :mainStreet ;
+	.
+:pathMSS
+	a     :Path ;
+	:from :mainStreet ;
+	:to   :square ;
+	.
+		
+:pathMSSS
+	a     :Path ;
+	:from :mainStreet ;
+	:to   :sideStreet ;
+	.
+:pathSSMS
+	a     :Path ;
+	:from :sideStreet ;
+	:to   :mainStreet ;
+	.
+			
+:pathMSA
+	a     :Path ;
+	:from :mainStreet ;
+	:to   :alley ;
+	.
+:pathAMS
+	a     :Path ;
+	:from :alley ;
+	:to   :mainStreet ;
+	.
+
+# a path can have a door
+:pathDoorWayMainStreetHouse
+	a        :Path ;
+	:from    :mainStreet ;
+	:to      :house ;
+	:hasDoor :doorMainStreetHouse ;
+	.	
+	
+:pathDoorWayHouseMainStreet
+	a        :Path ;
+	:from    :house ;
+	:to      :mainStreet ;
+	:hasDoor :doorMainStreetHouse ;
+	.
+
+:doorMainStreetHouse
+	a		:Door ;
+	.
+
+
+:pathDoorWaySideStreetPoliceStation
+	a        :Path ;
+	:from    :sideStreet ;
+	:to      :policeStation ;
+	:hasDoor :doorSideStreetPoliceStation ;
+	.	
+:pathDoorWayPoliceStationSideStreet
+	a        :Path ;
+	:from    :policeStation ;
+	:to      :sideStreet ;
+	:hasDoor :doorSideStreetPoliceStation ;
+	.	
+	
+:doorSideStreetPoliceStation
+	a		:Door ;
+	.
+	
+	
+:pathDoorWaySquareBar
+	a        :Path ;
+	:from    :square ;
+	:to      :bar ;
+	:hasDoor :doorSquareBar ;
+	.	
+
+:pathDoorWayBarSquare
+	a        :Path ;
+	:from    :bar ;
+	:to      :square ;
+	:hasDoor :doorSquareBar ;
+	.
+	
+:doorSquareBar
+	a		:Door ;
+	.	
+	
+	
+################################################ 
+# objects
+################################################ 
+
+:atm
+	a   :Object ;
+	:at :mainStreet ;
+	rdfs:label "de Pinautomaat" ;
+	.
+
+:statue
+	a	:Object ;
+	:at	:square ;
+	rdfs:label	"standbeeld van de burgemeester" ;
+	.
+
+:walterPK5
+	a :Object ;
+	rdfs:label "pistol" ;
+	.
+
+:alcoholTester
+	a :Object ;
+	rdfs:label "alcohol tester" ;
+	.
+
+:policeStationDoorkey
+	a :Object ;
+	:at :policeStation ;
+	rdfs:label "de sleutel van het politieburo" ;
+	.
+		
+:sixPack1
+	a        :Container ;
+	:contains :beerCan1 ;
+	:contains :beerCan2 ;
+	:contains :beerCan3 ;
+	:contains :beerCan4 ;
+	:contains :beerCan5 ;
+	:contains :beerCan6 ;
+	rdfs:label "een six pack" ;
+	.
+
+:beerCan1
+	a :Container ;
+	:contains :beer1;
+	rdfs:label "een bierblikje" ;
+	.
+:beer1
+	a    :Object ;
+	:hasMatterState :liquid ;
+	rdfs:label "het bier" ;
+	.	
+
+:beerCan2
+	a :Container ;
+	:contains :beer2;
+	rdfs:label "een bierblikje" ;
+	.
+:beer2
+	a    :Object ;
+	rdfs:label "het bier" ;
+	.
+		
+:beerCan3
+	a :Container ;
+	:contains :beer3;
+	rdfs:label "een bierblikje" ;
+	.
+:beer3
+	a    :Object ;
+	rdfs:label "het bier" ;
+	.	
+	
+:beerCan4
+	a :Container ;
+	:contains :beer4;
+	rdfs:label "een bierblikje" ;
+	.
+:beer4
+	a    :Object ;
+	rdfs:label "het bier" ;
+	.
+		
+:beerCan5
+	a :Container ;
+	:contains :beer5;
+	rdfs:label "een bierblikje" ;
+	.
+:beer5
+	a    :Object ;
+	rdfs:label "het bier" ;
+	.		
+	
+:beerCan6
+	a :Container ;
+	:contains :beer6;
+	rdfs:label "een bierblikje" ;
+	.
+:beer6
+	a    :Object ;
+	rdfs:label "het bier" ;
+	.	

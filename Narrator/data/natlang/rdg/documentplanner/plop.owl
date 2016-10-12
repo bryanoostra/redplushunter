@@ -1,0 +1,642 @@
+<rdf:RDF xmlns:swc="http://www.owl-ontologies.com/StoryWorldCore.owl#" xmlns:fabula="http://www.owl-ontologies.com/FabulaKnowledge.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <owl:Ontology rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl">
+    <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/protege"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Dress">
+    <rdfs:comment>Putting on WearableProducts, like Bracelets or Jeans.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Put"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Insert">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Put"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>The action of inserting an Object into another object.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Event">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#FabulaElement"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Any change in the world that is not a direct and planned result of a character action</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Make">
+    <rdfs:comment>[SUMO] The subclass of Creation in which an individual Artifact or a type of
+Artifact is made.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Creation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Sail">
+    <rdfs:comment>Movement through water by means of transportation device. Can be
+split in movement needing wind and movement using an engine.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#WaterMove"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#InternalAttribute">
+    <rdfs:comment>Property made into a class</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Taste">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Perception"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TakeFrom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Take"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>The action of taking an object which is supported by another
+object.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>The general action of changing the location of an object other
+than the acting object.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#BeliefElement">
+    <rdfs:comment>An Internal Element representing a belief of a character</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#InternalElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Emotion">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#InternalElement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Extract">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Take"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>The action of extracting an Object from another Object</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMoveChanges">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#WorldChanges"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#FutureBeliefElement">
+    <rdfs:comment>Describes a belief about the future, this could be a hope or a worry, for instance</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#BeliefElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove">
+    <rdfs:comment>The general class of actions in which the acting object changes
+its location.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#WaterMove">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove"/>
+    <rdfs:comment>All movement that is done over a WaterWay.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Put">
+    <rdfs:comment>The action of changing the location of an object which has an isLocated
+relation with the hands (or hand-like object) of the actor. After the
+action the actor does not hold the object anymore.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TakeControl">
+    <rdfs:comment>Take control of a device.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ControlAct"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Ambulate">
+    <rdfs:comment>Movement over ground using legs.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#GroundMove"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#FabulaElement">
+    <rdfs:comment>An element that represents a part of fabula, being that what happens in a story, the actual events and processes</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Smell">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Perception"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#InternalElement">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#FabulaElement"/>
+    <rdfs:comment>Anything internal to a character, like a belief, or an emotion, feeling, etc.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Creation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Class of actions dealing with creation and uncreation.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Inject">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Insert"/>
+    <rdfs:comment>Inserting a BiologicallyActiveSubstance into an Animal or Human
+with a syringe. This is SUMO and will not be implemented in our first
+world.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Attack">
+    <rdfs:comment>Try to hurt/damage an object.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Kick">
+    <rdfs:comment>Kick an object using ones legs.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Attack"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Strike">
+    <rdfs:comment>Attack an object while holding another object to hit with. (i.e. use that object as weapon).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Attack"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#LeaveGoal">
+    <rdfs:comment>A goal to leave a certain situation / state, i.e. being hungry</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Goal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMoveInterEffects">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMoveChanges"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#delete"/>
+        </owl:onProperty>
+        <owl:hasValue>(swc:supportedBy ?AGENS ?currLoc)</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#SwitchOn">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Manipulate"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Turn a device with a power source on.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#PutOn">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Put"/>
+    <rdfs:comment>The action of placing an Object from ones Hands atop of another
+object.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Manipulate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>General class of actions that change one property of an object.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ForcefulDetach">
+    <rdfs:comment>Detaching an object using force. This can be done on
+glued and tied objects. There is the risk of breaking one of the objects,
+however.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Detach"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Drain">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Extract"/>
+    <rdfs:comment>Using a syringe to extract a Substance from an Object. Inverse (more or less) of Inject.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Hear">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Perception"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ControlAct">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Actions involving control</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Lock">
+    <rdfs:comment>Lock a securityDevice 'Lock'</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Manipulate"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Fold">
+    <rdfs:comment>Fold a foldable item into its folded or original state.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Manipulate"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#AttainGoal">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Goal"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>A goal to attain a certain situation / state, i.e. being rich</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Drive">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#GroundMove"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Movement over ground by means of Wheels.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Climb">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#GroundMove"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Movement over ground using arms and legs. Used for crossing a
+very steep hill or for crossing a path which is blocked by some large
+object (like a Wall).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Glue">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Attach"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Attach one object to another using a sticky substance. The substance will be removed from the storyworld after use.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#WorldChanges">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#InternalAttribute"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#SustainGoal">
+    <rdfs:comment>A goal to sustain a certain situation or state, i.e. being healthy</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Goal"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Undress">
+    <rdfs:comment>The act of taking off WearableProducts.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Take"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Goal">
+    <rdfs:comment>A goal of a character</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#FabulaElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Consume">
+    <rdfs:comment>Ingesting food</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Swim">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#WaterMove"/>
+    <rdfs:comment>Movement through water by using arms or fins.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Disassemble">
+    <rdfs:comment>Disassemble the object into its parts.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Creation"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Perception">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#FabulaElement"/>
+    <rdfs:comment>Describing what a character perceives</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Fly">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#AirMove"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Movement through the air using wings. Is not yet different from Air-
+Move. Note that AirMove is included because of consistency, and Fly is
+added because it is a more intuitive term to use. One can split AirMove
+in movement using moving wings and movement using a jet-engine, if
+it proves to be a useful distinction.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Unlock">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Manipulate"/>
+    <rdfs:comment>Unlock a lock with a key.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Cognition">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#InternalElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#PutIn">
+    <rdfs:comment>The action of placing an Object inside a Container.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Insert"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#GroundMove">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove"/>
+    <rdfs:comment>All move actions that are done over the ground (i.e. a GroundWay) fall in this
+category.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Run">
+    <rdfs:comment>Fast movement over ground. Consumes more energy per distance
+measure.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Ambulate"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Close">
+    <rdfs:comment>Close a device which is open and can be closed using the object itself. This excludes closing a frying pan with its cover, assuming that the cover is not a part of the pan.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Manipulate"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Character"/>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#DropControl">
+    <rdfs:comment>Drop control over a device.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#ControlAct"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Walk">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Ambulate"/>
+    <rdfs:comment>Normal movement over ground.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#FabulaElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Punch">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Attack"/>
+    <rdfs:comment>Attack an object using bare hands.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Untie">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Detach"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Detaching an object which is fastened by a rope-like device.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transform">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Make"/>
+    <rdfs:comment>Creating an artifact from its substances. (i.e. create a WineGlass from Sand or a Key from Metal). Action is irreversible.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Detach">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Attaching"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#AvoidGoal">
+    <rdfs:comment>A goal to avoid a certain situation / state, i.e. that the vilain escapes</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Goal"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#StitchOff">
+    <rdfs:comment>Turn off a device which 'on'.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Manipulate"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Drink">
+    <rdfs:comment>Ingesting substance food.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Consume"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Eat">
+    <rdfs:comment>Ingesting corpuscular food. (i.e. food which is not a substance).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Consume"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    <rdfs:subClassOf>
+      <owl:Restriction
+         owl:hasValue="4">
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#duration"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment>A testing move. Should be removed if everything is working properly.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue>(swc:supportedBy ?AGENS ?currLoc)</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#preconditions"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction
+         owl:hasValue="2">
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#interruptableDuration"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue>(rdf:type ?currLoc swc:GeographicArea)</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#preconditions"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction
+         owl:hasValue="100">
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#chanceOfSuccess"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Open">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Manipulate"/>
+    <rdfs:comment>Open a device which is closed.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TakeOut">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Extract"/>
+    <rdfs:comment>The action of taking an object out of a Container.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Take">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer"/>
+    <rdfs:comment>The action of changing the location of an object to the grabbing device
+of the acting object.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Attaching">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    <rdfs:comment>General class of actions that deal with attaching and detaching objects.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Assemble">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Make"/>
+    <rdfs:comment>Creating an artifact from its parts. Action is reversible by Disassemble.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#See">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Perception"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Tie">
+    <rdfs:comment>Attach one object to another using a rope-like device.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Attach"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Attach">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Attaching"/>
+    <rdfs:comment>Attach one object to another using a AttachingDevice.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Feel">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Perception"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMoveEffects">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMoveChanges"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue>(swc:supportedBy ?AGENS ?TARGET)</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#add"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#CurrentBeliefElement">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#BeliefElement"/>
+    <rdfs:comment>Describes a belief about the now...e.g. what is believed to be true now.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Outcome">
+    <rdfs:comment>Describes what happened to a Goal</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#FabulaElement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#AirMove">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove"/>
+    <rdfs:comment>Transit movement through the air. Note that one can fly through
+corridors.</rdfs:comment>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#enables">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#causes"
+       rdf:type="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#character"
+     rdf:type="http://www.w3.org/2002/07/owl#FunctionalProperty">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#FabulaElement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#motivates">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#causes"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#psi_causes">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#causes"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#effects"
+     rdf:type="http://www.w3.org/2002/07/owl#FunctionalProperty">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#WorldChanges"/>
+    <rdfs:comment>effects of an succesfully performed action</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#phi_causes">
+    <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#causes"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#isNonPerception"
+     rdf:type="http://www.w3.org/2002/07/owl#FunctionalProperty">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Perception"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#preconditions">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    <rdfs:comment>Conditions which must hold for an action to be performed</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#delete">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>list of facts to be deleted upon a world change.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#WorldChanges"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#add">
+    <rdfs:comment>List of facts to be added upon a world change.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#WorldChanges"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#interruptableDuration"
+     rdf:type="http://www.w3.org/2002/07/owl#DatatypeProperty">
+    <rdfs:comment>Duration of an action in which it can be interrupted. Only used for TransitMoves.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#resolves"
+     rdf:type="http://www.w3.org/2002/07/owl#ObjectProperty">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Outcome"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Goal"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#duration"
+     rdf:type="http://www.w3.org/2002/07/owl#DatatypeProperty">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    <rdfs:comment>total duration of an action</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#chanceOfSuccess"
+     rdf:type="http://www.w3.org/2002/07/owl#DatatypeProperty">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Chance of success for an action</rdfs:comment>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#interEffects"
+     rdf:type="http://www.w3.org/2002/07/owl#ObjectProperty">
+    <rdfs:comment>Changes of the world after interDuration time has passed, and therefore making the action uninterruptable. Only used in TransitMoves.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#WorldChanges"/>
+  </owl:FunctionalProperty>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_BeliefElement.plop.3">
+    <fabula:psi_causes>
+      <swc:AttainGoal rdf:about="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_AttainGoal.plop.8">
+        <fabula:motivates>
+          <fabula:Eat rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Eat.plop.11">
+            <fabula:phi_causes>
+              <fabula:See rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_See.plop.12">
+                <fabula:psi_causes>
+                  <fabula:BeliefElement rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_BeliefElement.plop.14">
+                    <fabula:psi_causes>
+                      <fabula:Outcome rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Outcome.plop.16">
+                        <fabula:character rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1"
+                           rdf:type="http://www.owl-ontologies.com/StoryWorldCore.owl#Humanoid"/>
+                        <fabula:resolves rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_AttainGoal.plop.8"/>
+                      </fabula:Outcome>
+                    </fabula:psi_causes>
+                    <fabula:character rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1"/>
+                  </fabula:BeliefElement>
+                </fabula:psi_causes>
+                <fabula:character rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1"/>
+              </fabula:See>
+            </fabula:phi_causes>
+            <fabula:agens rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1"/>
+            <fabula:patiens>
+              <swc:FruitOrVegetable rdf:about="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.6">
+                <fabula:hasContext rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_BeliefElement.plop.3"/>
+                <swc:isLocated>
+                  <swc:GeographicArea rdf:about="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_GeographicArea.plop.7">
+                    <fabula:hasContext rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_BeliefElement.plop.3"/>
+                    <fabula:hasInterpretation rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_GeographicArea.plop.5"
+                       rdf:type="http://www.owl-ontologies.com/StoryWorldCore.owl#GeographicArea"/>
+                  </swc:GeographicArea>
+                </swc:isLocated>
+                <fabula:hasInterpretation rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.4"
+                   rdf:type="http://www.owl-ontologies.com/StoryWorldCore.owl#FruitOrVegetable"/>
+              </swc:FruitOrVegetable>
+            </fabula:patiens>
+          </fabula:Eat>
+        </fabula:motivates>
+        <fabula:motivates>
+          <fabula:TakeFrom rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_TakeFrom.plop.10">
+            <fabula:agens rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1"/>
+            <fabula:patiens rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.6"/>
+          </fabula:TakeFrom>
+        </fabula:motivates>
+        <fabula:character rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1"/>
+      </swc:AttainGoal>
+    </fabula:psi_causes>
+    <fabula:character rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1"/>
+  </rdf:Description>
+  <fabula:TestMoveEffects rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove1Effects">
+    <fabula:delete>(swc:isMovingOnTransitWay ?AGENS ?path)</fabula:delete>
+  </fabula:TestMoveEffects>
+  <fabula:TestMoveInterEffects rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove1InterEffects">
+    <fabula:add>(swc:isMovingOnTransitWay ?AGENS ?path)</fabula:add>
+  </fabula:TestMoveInterEffects>
+  <fabula:Eat rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Eat.plop.9">
+    <fabula:agens rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1"/>
+    <fabula:patiens rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.6"/>
+    <fabula:hasContext rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_AttainGoal.plop.8"/>
+  </fabula:Eat>
+  <fabula:TestMove rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove4">
+    <fabula:preconditions>(swc:isLocated ?TARGET ?multipleAnswers)</fabula:preconditions>
+    <fabula:interEffects rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove1InterEffects"/>
+    <fabula:effects rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove1Effects"/>
+    <fabula:preconditions>(swc:fromGeographicArea ?path ?currLoc)</fabula:preconditions>
+    <fabula:preconditions>(swc:toGeographicArea ?path ?TARGET)</fabula:preconditions>
+  </fabula:TestMove>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Hunger.plop.2">
+    <fabula:psi_causes rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_AttainGoal.plop.8"/>
+    <fabula:character rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1"/>
+  </rdf:Description>
+  <fabula:TestMove rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove2">
+    <fabula:effects rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove1Effects"/>
+    <fabula:interEffects rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove1InterEffects"/>
+    <fabula:preconditions>(swc:fromGeographicArea ?path ?TARGET)</fabula:preconditions>
+    <fabula:preconditions>(swc:toGeographicArea ?path ?currLoc)</fabula:preconditions>
+  </fabula:TestMove>
+  <fabula:TestMove rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove3">
+    <fabula:preconditions>(not(swc:attachedBy ?AGENS ?AttachingObject))</fabula:preconditions>
+    <fabula:effects rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove1Effects"/>
+    <fabula:interEffects rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove1InterEffects"/>
+    <fabula:preconditions>(swc:fromGeographicArea ?path ?currloc)</fabula:preconditions>
+    <fabula:preconditions>(swc:toGeographicArea ?path ?TARGET)</fabula:preconditions>
+  </fabula:TestMove>
+  <fabula:TestMove rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove1">
+    <fabula:interEffects rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove1InterEffects"/>
+    <fabula:preconditions>(swc:toGeographicArea ?path ?TARGET)</fabula:preconditions>
+    <fabula:preconditions>(swc:fromGeographicArea ?path ?currLoc)</fabula:preconditions>
+    <fabula:effects rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TestMove1Effects"/>
+  </fabula:TestMove>
+  <fabula:Eat rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Eat.plop.13"
+     fabula:isSuccessful="true">
+    <fabula:hasContext rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_See.plop.12"/>
+    <fabula:agens rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1"/>
+    <fabula:patiens rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.4"/>
+  </fabula:Eat>
+  <fabula:Eat rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Eat.plop.15">
+    <fabula:hasContext rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_BeliefElement.plop.14"/>
+    <fabula:agens rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_Humanoid.plop.1"/>
+    <fabula:patiens rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#ind_FruitOrVegetable.plop.6"/>
+    <fabula:sameConcept rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#ind_Eat.plop.13"/>
+  </fabula:Eat>
+</rdf:RDF>

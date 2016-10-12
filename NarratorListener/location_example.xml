@@ -1,0 +1,15 @@
+<location id="main_street">
+  <name>Hoofdstraat</name>
+  <path_to>
+    <locations>
+      <location id="alley"></location>
+      <location id="square"></location>
+    </locations>
+  </path_to>
+  <presentation>
+    <narration>
+      <sense>main_street</sense>
+      <descriptive lang="NL">de hoofdstraat</descriptive>
+    </narration>
+  </presentation>
+</location>

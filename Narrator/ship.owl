@@ -1,0 +1,46 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:swc="http://www.owl-ontologies.com/StoryWorldCore.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://www.owl-ontologies.com/StoryWorldSettings/Pirates#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" >
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oWaterSupply_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#WaterSupply"/>
+    <rdfs:label>the hold</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oRum_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Rum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oLadder_up">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Ladder"/>
+    <rdfs:label>the hold</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oHatch_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Hatch"/>
+    <rdfs:label>the hatch</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#annesBelt">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Belt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oShip_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Ship"/>
+    <swc:hasRegion rdf:resource="StoryWorldSettings/Pirates#oDeck_1"/>
+    <swc:hasRegion rdf:resource="StoryWorldSettings/Pirates#oHold_1"/>
+    <swc:hasPart rdf:resource="StoryWorldSettings/Pirates#oLadder_up"/>
+    <swc:hasPart rdf:resource="StoryWorldSettings/Pirates#oWaterSupply_1"/>
+    <rdfs:label>the Bloody Rage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oHold_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Hold"/>
+    <swc:hasPart rdf:resource="StoryWorldSettings/Pirates#oHatch_1"/>
+    <rdfs:label>the hold</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#oDeck_1">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Deck"/>
+    <rdfs:label>the deck</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="StoryWorldSettings/Pirates#annesRapier">
+    <rdf:type rdf:resource="StoryWorldSettings/Pirates#Rapier"/>
+  </rdf:Description>
+</rdf:RDF>

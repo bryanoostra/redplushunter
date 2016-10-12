@@ -1,0 +1,10 @@
+Amalia female
+Brutus male
+prins male
+woestijn place
+bos place
+berg place
+moeras place
+zwaard neutral
+paard neutral
+poes female

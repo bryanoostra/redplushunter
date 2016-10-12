@@ -1,0 +1,33 @@
+@prefix swc:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+@prefix fabula:  <http://www.owl-ontologies.com/FabulaKnowledge.owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix psj2:    <http://www.owl-ontologies.com/StoryWorldSettings/Pirates_Jasper2.owl#> .
+@prefix :        <http://www.owl-ontologies.com/StoryWorldSettings/Pirates_Jasper2.owl#> .
+
+# Description of Erik
+# Author: Jasper Bragt
+# Date:   June 2009
+
+# A pirate: Erik
+:Erik
+    a   psj2:Pirate ;
+    a   fabula:Character ;
+    swc:hasRole :Pirate;
+    swc:at :oDeck_1 ;
+    swc:hasPersonalityTrait :loyal_1;
+    swc:hasInterest  :likes_animals_1;   
+	.
+
+:loyal_1
+    a 	psj2:Loyal;
+	swc:hasStrength 10;
+    rdfs:label "Erik" ; 
+    .
+    
+:likes_animals_1
+    a 	psj2:LikesAnimals;
+	swc:hasStrength 25;
+    rdfs:label "Erik" ; 
+    .

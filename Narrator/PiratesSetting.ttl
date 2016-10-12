@@ -1,0 +1,168 @@
+@prefix :        <#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fabula:  <http://www.owl-ontologies.com/FabulaKnowledge.owl#> .
+@prefix p1:      <http://www.owl-ontologies.com/StoryWorldSettings/Pirates#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swc:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+
+p1:Rum
+      rdf:type owl:Class ;
+      rdfs:comment "The famous pirate drink"^^xsd:string ;
+      rdfs:subClassOf swc:Beverage , swc:Substance .
+
+p1:owns
+      rdf:type owl:ObjectProperty .
+
+p1:BottleCrateInHold
+      rdf:type owl:Class ;
+      rdfs:subClassOf p1:FramingOperator .
+
+p1:BecomeCaptain
+      rdf:type owl:Class ;
+      rdfs:subClassOf p1:FramingOperator .
+
+p1:Hold
+      rdf:type owl:Class ;
+      rdfs:comment "The storage hold (ruim) of a ship"^^xsd:string ;
+      rdfs:subClassOf swc:GeographicArea .
+
+p1:Ship
+      rdf:type owl:Class ;
+      rdfs:comment "A ship"^^xsd:string ;
+      rdfs:subClassOf swc:GeographicArea .
+
+<http://www.owl-ontologies.com/StoryWorldSettings/Pirates>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.owl-ontologies.com/FabulaKnowledge.owl> , <http://www.owl-ontologies.com/StoryWorldCore.owl> .
+
+p1:Shovel
+      rdf:type owl:Class ;
+      rdfs:subClassOf swc:Substance .
+
+p1:OutOfWater
+      rdf:type owl:Class ;
+      rdfs:subClassOf fabula:Event .
+
+p1:GetTreasure
+      rdf:type owl:Class ;
+      rdfs:comment "Goal for getting a treasure"^^xsd:string ;
+      rdfs:subClassOf fabula:AttainGoal .
+
+p1:FullEmptyProperties
+      rdf:type owl:Class ;
+      rdfs:subClassOf swc:InternalAttribute .
+
+p1:TreasureChest
+      rdf:type owl:Class ;
+      rdfs:subClassOf swc:Container .
+
+p1:hasFullEmptyProperty
+      rdf:type owl:ObjectProperty .
+
+p1:Captain
+      rdf:type owl:Class ;
+      rdfs:subClassOf p1:Pirate .
+
+p1:Gold
+      rdf:type owl:Class ;
+      rdfs:subClassOf swc:Substance .
+
+p1:Deck
+      rdf:type owl:Class ;
+      rdfs:comment "The deck of a ship"^^xsd:string ;
+      rdfs:subClassOf swc:GeographicArea .
+
+p1:AnnounceRum
+      rdf:type owl:Class ;
+      rdfs:subClassOf fabula:AttainGoal .
+
+p1:SailToLand
+      rdf:type owl:Class ;
+      rdfs:comment "Action for sailing to land"^^xsd:string ;
+      rdfs:subClassOf fabula:Action .
+
+p1:CreateRumBottle
+      rdf:type owl:Class ;
+      rdfs:subClassOf p1:FramingOperator .
+
+p1:GetBottle
+      rdf:type owl:Class ;
+      rdfs:comment "Goal for getting a bottle"^^xsd:string ;
+      rdfs:subClassOf fabula:AttainGoal .
+
+p1:empty
+      rdf:type p1:FullEmptyProperties .
+
+p1:WaterSupply
+      rdf:type owl:Class ;
+      rdfs:comment "Supply of water for the ship"^^xsd:string ;
+      rdfs:subClassOf swc:Beverage .
+
+p1:full
+      rdf:type p1:FullEmptyProperties .
+
+p1:Island
+      rdf:type owl:Class ;
+      rdfs:subClassOf p1:LandArea .
+
+p1:Ladder
+      rdf:type owl:Class ;
+      rdfs:comment "A ladder, connecting two areas"^^xsd:string ;
+      rdfs:subClassOf swc:GroundWay .
+
+p1:Sea
+      rdf:type owl:Class ;
+      rdfs:subClassOf swc:GeographicArea .
+
+p1:ObjectProperty_1
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain p1:GetTreasure .
+
+p1:ShipHasWaterSupply
+      rdf:type owl:Class ;
+      rdfs:subClassOf p1:FramingOperator .
+
+p1:Stab
+      rdf:type owl:Class ;
+      rdfs:comment "Action for stabbing someone"^^xsd:string ;
+      rdfs:subClassOf fabula:Action .
+
+p1:WoundEnemy
+      rdf:type owl:Class ;
+      rdfs:comment "Goal for wounding an enemy"^^xsd:string ;
+      rdfs:subClassOf fabula:AttainGoal .
+
+p1:GetOffBoat
+      rdf:type owl:Class ;
+      rdfs:comment "Action for getting off the boat"^^xsd:string ;
+      rdfs:subClassOf fabula:Action .
+
+p1:RefillWaterSupply
+      rdf:type owl:Class ;
+      rdfs:subClassOf fabula:AttainGoal .
+
+p1:FramingOperator
+      rdf:type owl:Class ;
+      rdfs:subClassOf fabula:FabulaElement .
+
+p1:Bar
+      rdf:type owl:Class ;
+      rdfs:subClassOf swc:StationaryArtifact , swc:GeographicArea .
+
+p1:Drunk
+      rdf:type owl:Class ;
+      rdfs:subClassOf fabula:PhysicalElement .
+
+p1:Bottle
+      rdf:type owl:Class ;
+      rdfs:subClassOf swc:SubstanceContainer .
+
+p1:Pirate
+      rdf:type owl:Class ;
+      rdfs:subClassOf swc:Role .
+
+p1:LandArea
+      rdf:type owl:Class ;
+      rdfs:subClassOf swc:GeographicArea .

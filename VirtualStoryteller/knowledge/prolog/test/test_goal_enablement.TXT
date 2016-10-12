@@ -1,0 +1,20 @@
+assert_goal_and_belief_that_enables_it :- 
+assert_knowledge(fabula(fabula:goal_1, rdf:type, lolli:'SellIceGeneral')),
+assert_knowledge(fabula(fabula:goal_1, fabula:agens, lolli:otto)),
+assert_knowledge(fabula(fabula:goal_1, fabula:patiens, lolli:vanilla_ice_1)),
+assert_knowledge(fabula(fabula:act_1, rdf:type, lolli:'AskFor')),
+assert_knowledge(fabula(fabula:act_1, fabula:agens, lolli:linda)),
+assert_knowledge(fabula(fabula:act_1, fabula:patiens, lolli:vanilla_ice_1)),
+assert_knowledge(fabula(fabula:act_1, fabula:target, lolli:otto)),
+ assert_knowledge(fabula(fabula:be_1, rdf:type, fabula:'BeliefElement')),
+ assert_knowledge(fabula(fabula:be_1, fabula:character, lolli:otto)),
+ assert_knowledge(fabula(fabula:be_1, fabula:hasContent, fabula:be_1_cont)),
+ assert_knowledge(fabula(fabula:be_1_cont, rdf:type, fabula:'TruthGraph')),
+ assert_knowledge(fabula(fabula:be_1, fabula:time, '10')),
+assert_knowledge(fabula(fabula:act_1, rdf:type, lolli:'AskFor', fabula:be_1_cont)),
+assert_knowledge(fabula(fabula:act_1, fabula:agens, lolli:linda, fabula:be_1_cont)),
+assert_knowledge(fabula(fabula:act_1, fabula:patiens, lolli:vanilla_ice_1, fabula:be_1_cont)),
+assert_knowledge(fabula(fabula:act_1, fabula:target, lolli:otto, fabula:be_1_cont)).
+ 
+ 
+goal_schema(S), schema_type(S, lolli:'GetMoney'), validate_schema(S, []), !, schema_agens(S, A), schema_preconditions(S, PC), causal_link(PC, A, I). 

@@ -1,0 +1,122 @@
+@prefix swc:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix psj2:    <http://www.owl-ontologies.com/StoryWorldSettings/Pirates_Jasper2.owl#> .
+@prefix :        <http://www.owl-ontologies.com/StoryWorldSettings/Pirates_Jasper2.owl#> .
+
+# Description of the ship
+# Author: Jasper Bragt
+# Date:   Oct 2009
+
+#The ship
+#:oShip_1
+#	a psj2:Ship;
+#	rdfs:label "the ship" ;
+#    .
+
+# The deck
+:oDeck_1
+    a   psj2:Deck ;
+#    swc:at :oShip_1;
+    rdfs:label "the deck" ;
+    .
+
+# The hold
+:oHold_1
+    a   psj2:Hold ;
+#    swc:at :oShip_1;
+    rdfs:label "the hold" ;
+    .
+
+# The ladder from the deck to the hold
+:oLadder_down
+    a   psj2:Ladder ;
+    swc:from :oDeck_1 ;
+    swc:to :oHold_1 ;
+    swc:hasDoor :oHatch_1 ;
+    rdfs:label "the ladder down" ;
+    .
+    
+# The ladder from the hold to the deck
+:oLadder_up
+    a   psj2:Ladder ;
+    swc:from :oHold_1 ;
+    swc:to :oDeck_1 ;
+    swc:hasDoor :oHatch_1 ;
+    rdfs:label "the ladder up" ;
+    .    
+        
+# And let's add a closed hatch connecting the deck with the hold
+:oHatch_1
+    a   swc:Door ; 
+    swc:hasAttribute swc:closed ; 
+    rdfs:label "the hatch to the hold" ;
+    .
+
+# A torch on the deck
+:oTorch_1
+    a   psj2:Torch;
+    swc:at :oDeck_1;
+    swc:hasAttribute psj2:lit;
+    rdfs:label "the torch";
+    .
+
+:oRum_1
+    a   psj2:Rum ;
+    . 
+    
+:oRum_2
+    a   psj2:Rum ;
+    . 
+    
+:oRum_3
+    a   psj2:Rum ;
+    . 
+    
+# A full rumbottle on the deck
+:oRumBottle_1
+    a   psj2:RumBottle;
+    swc:at :oDeck_1;
+    swc:contains :oRum_1;
+#    swc:hasAttribute psj2:full;
+    rdfs:label "a full rumbottle";
+    .
+
+    
+# A canonball in the hold
+:oCanonBall_1
+    a   psj2:CanonBall;
+    swc:at :oHold_1;
+    rdfs:label "the canonball";
+    .
+
+# A canon in the hold
+:oCanon_1
+	a   psj2:Canon;
+    swc:at :oHold_1;
+    swc:contains :oRum_3;
+    rdfs:label "the canon";
+    .
+   
+# A rumbarrel in the hold
+:oRumBarrel_1
+	a   psj2:RumBarrel;
+	swc:at :oHold_1;
+	swc:contains :oRum_2;
+    rdfs:label "the rumbarrel";
+    .
+
+# A rat in the barrel
+#:oRat_2
+#    a   psj2:Rat;
+#    rdfs:label "the rat";
+#    .
+    
+# A rat on the deck
+:oRat_1
+    a   psj2:Rat;
+    swc:at :oDeck_1;
+    rdfs:label "the rat";
+    .
+    

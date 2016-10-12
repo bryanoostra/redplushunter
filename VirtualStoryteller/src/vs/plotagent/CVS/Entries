@@ -1,0 +1,21 @@
+/BasicCharacterManager.java/1.31/Mon Aug 23 14:22:32 2010//
+/BasicInspirationModule.java/1.20/Mon Dec  1 16:32:42 2008//
+/BasicPerceptionManager.java/1.26/Tue Feb 24 11:06:54 2009//
+/BasicPlotAgent.java/1.117/Tue Nov 13 12:15:36 2012//
+/BasicPlotGoalManager.java/1.8/Mon Mar 16 18:00:26 2009//
+/BasicThreadManager.java/1.5/Mon Dec  1 16:32:43 2008//
+/BetterPerceptionManager.java/1.10/Mon Mar  2 12:27:20 2009//
+/BroadcastingFabulaBuilder.java/1.6/Wed Feb 25 16:38:46 2009//
+/Goal.java/1.2/Mon Dec  1 16:32:42 2008//
+/ICharacterManager.java/1.12/Mon Aug 23 13:33:51 2010//
+/IInspirationModule.java/1.6/Mon Dec  1 16:32:42 2008//
+/IPerceptionManager.java/1.17/Tue Feb 24 11:06:54 2009//
+/IPlotAgent.java/1.33/Mon Dec  1 16:32:43 2008//
+/IPlotGoalManager.java/1.5/Mon Dec  1 16:32:43 2008//
+/IThreadManager.java/1.5/Wed Dec  3 10:37:37 2008//
+/PlotThread.java/1.2/Mon Dec  1 16:32:43 2008//
+D/behaviour////
+D/conflict////
+D/inspiration////
+/package.html/1.1/Fri Jan 18 17:38:11 2008//
+D/ui////

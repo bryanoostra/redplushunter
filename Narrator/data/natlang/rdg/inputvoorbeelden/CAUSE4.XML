@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation index="r1" cat="cause-voluntary">
+		<nucleus>
+			<dt>
+	        	<node rel="top" cat="smain" >
+	        		<node rel="su" pos="nom" index="A" root="Amalia" />
+	        		<node rel="hd" pos="verb" root="geef" morph="3.sing.present" />
+	        		<node rel="obj2" pos="nom" root="Brutus" />
+	        		<node rel="obj1" cat="np">
+	        			<node rel="det" pos="det" root="een" morph="sing" />
+	     				<node rel="hd" pos="noun" root="lel" morph="sing" />
+	        		</node>
+	        	</node>
+        	</dt>       
+		</nucleus>
+    	<satellite>
+    		<dt>
+     			<node rel="top" cat="smain" >
+     				<node rel="su" pos="nom" root="Amalia" />
+     				<node rel="hd" pos="verb" root="vind" morph="3.sing.present" />
+     				<node rel="obj1" pos="nom" root="Brutus" />
+     				<node rel="predc" cat="np">
+     					<node rel="det" pos="det" root="een" morph="sing" />
+     					<node rel="hd" pos="noun" root="schurk" morph="sing" />
+     				</node>
+     			</node>
+     		</dt>
+	    </satellite>
+	</rhetrelation>
+</rhetdepgraph>

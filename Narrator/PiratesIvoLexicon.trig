@@ -1,0 +1,262 @@
+# Base: http://www.owl-ontologies.com/Pirates_Ivo.owl#
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix protege:  <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix default:  <http://www.owl-ontologies.com/Pirates_Ivo.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nk:      <http://www.owl-ontologies.com/NarratorKnowledge.owl#> .
+
+default:Stab
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:root "steek"^^xsd:string ;
+      nk:svp  "neer"^^xsd:string .
+
+default:OpenContainer
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:root "open"^^xsd:string .
+
+default:RumBottle
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:de ;
+      nk:gender nk:neutral ;
+      nk:pos  nk:noun ;
+      nk:root "rumfles"^^xsd:string .
+
+default:supportedBy
+      rdf:type nk:LexiconEntry ;
+      nk:deplabel nk:ld ;
+      nk:pos  nk:verb ;
+      nk:prep "op"^^xsd:string ;
+      nk:root "steun"^^xsd:string .
+
+default:Treasure
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:de ;
+      nk:gender nk:neutral ;
+      nk:pos  nk:noun ;
+      nk:root "schatkist"^^xsd:string .
+
+default:Deck
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:het ;
+      nk:gender nk:place ;
+      nk:pos  nk:noun ;
+      nk:root "dek"^^xsd:string .
+
+default:type
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:root "ben"^^xsd:string .
+
+default:Lord
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:het ;
+      nk:gender nk:male ;
+      nk:pos  nk:noun ;
+      nk:root "heerschap"^^xsd:string .
+
+default:Ship
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:het ;
+      nk:gender nk:place ;
+      nk:pos  nk:noun ;
+      nk:root "schip"^^xsd:string .
+
+default:WoundEnemy
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:root "verwond"^^xsd:string .
+
+default:Captain
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:de ;
+      nk:pos  nk:noun ;
+      nk:root "kapitein"^^xsd:string .
+
+default:owns
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:root "bezit"^^xsd:string .
+
+default:Hold
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:het ;
+      nk:gender nk:place ;
+      nk:pos  nk:noun ;
+      nk:root "ruim"^^xsd:string .
+
+default:heldBy
+      rdf:type nk:LexiconEntry ;
+      nk:deplabel nk:ld ;
+      nk:pos  nk:verb ;
+      nk:prep "vast"^^xsd:string ;
+      nk:root "houdt"^^xsd:string .
+
+default:TreasureIsland
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:het ;
+      nk:gender nk:place ;
+      nk:pos  nk:noun ;
+      nk:root "schateiland"^^xsd:string .
+
+default:FillBoatWithWater
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:prep "bij"^^xsd:string ;
+      nk:root "vul"^^xsd:string .
+
+default:rapier
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:het ;
+      nk:gender nk:neutral ;
+      nk:pos  nk:noun ;
+      nk:root "zwaard"^^xsd:string .
+
+default:Run
+      rdf:type nk:LexiconEntry ;
+      nk:deplabel nk:ld ;
+      nk:pos  nk:verb ;
+      nk:prep "naar"^^xsd:string ;
+      nk:root "ren"^^xsd:string .
+
+default:WaterSupply
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:de ;
+      nk:gender nk:neutral ;
+      nk:pos  nk:noun ;
+      nk:root "watervoorraad"^^xsd:string .
+
+default:wornBy
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:prep "door"^^xsd:string ;
+      nk:root "draag"^^xsd:string .
+
+default:GetOffBoat
+      rdf:type nk:LexiconEntry ;
+      nk:deplabel nk:ld ;
+      nk:pos  nk:verb ;
+      nk:prep "bij"^^xsd:string ;
+      nk:root "ga"^^xsd:string ;
+      nk:svp  "aan land"^^xsd:string .
+
+default:Pond
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:de ;
+      nk:gender nk:place ;
+      nk:pos  nk:noun ;
+      nk:root "vijver"^^xsd:string .
+
+default:GetTreasure
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:root "heb"^^xsd:string .
+
+default:hasWaterSupply
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:root "heb"^^xsd:string .
+
+default:belt
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:de ;
+      nk:gender nk:neutral ;
+      nk:pos  nk:noun ;
+      nk:root "riem"^^xsd:string .
+
+default:OpenDoor
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:root "open"^^xsd:string .
+
+default:OutOfWater
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:root "ben"^^xsd:string ;
+      nk:svp  "leeg"^^xsd:string .
+
+default:Crate
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:het ;
+      nk:gender nk:neutral ;
+      nk:pos  nk:noun ;
+      nk:root "krat"^^xsd:string .
+
+default:Pirate
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:de ;
+      nk:pos  nk:noun ;
+      nk:root "piraat"^^xsd:string .
+
+default:SailToLand
+      rdf:type nk:LexiconEntry ;
+      nk:deplabel nk:ld ;
+      nk:pos  nk:verb ;
+      nk:prep "naar"^^xsd:string ;
+      nk:root "vaar"^^xsd:string .
+
+default:Ladder
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:de ;
+      nk:gender nk:neutral ;
+      nk:pos  nk:noun ;
+      nk:root "ladder"^^xsd:string .
+
+<http://www.owl-ontologies.com/Pirates_Ivo.owl>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.owl-ontologies.com/NarratorKnowledge.owl> .
+
+default:containedBy
+      rdf:type nk:LexiconEntry ;
+      nk:deplabel nk:ld ;
+      nk:pos  nk:verb ;
+      nk:prep "in"^^xsd:string ;
+      nk:root "zit"^^xsd:string .
+
+default:WalkFromToDoor
+      rdf:type nk:LexiconEntry ;
+      nk:deplabel nk:ld ;
+      nk:pos  nk:verb ;
+      nk:root "loop"^^xsd:string ;
+      nk:svp  "naar"^^xsd:string .
+
+default:TakeOut
+      rdf:type nk:LexiconEntry ;
+      nk:deplabel nk:ld ;
+      nk:pos  nk:verb ;
+      nk:prep "uit"^^xsd:string ;
+      nk:root "pak"^^xsd:string .
+
+default:RefillWaterSupply
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:prep "bij"^^xsd:string ;
+      nk:root "vul"^^xsd:string .
+
+default:GetBottle
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:root "heb"^^xsd:string .
+
+default:mooredAt
+      rdf:type nk:LexiconEntry ;
+      nk:pos  nk:verb ;
+      nk:root "land"^^xsd:string .
+
+default:Hatch
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:het ;
+      nk:gender nk:neutral ;
+      nk:pos  nk:noun ;
+      nk:root "luik"^^xsd:string .
+
+default:Water
+      rdf:type nk:LexiconEntry ;
+      nk:determiner nk:het ;
+      nk:gender nk:neutral ;
+      nk:isMassNoun "true"^^xsd:boolean ;
+      nk:pos  nk:noun ;
+      nk:root "water"^^xsd:string .

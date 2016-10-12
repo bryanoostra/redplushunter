@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<top>
+  <node rel="top" cat="smain" begin="0" end="25">
+    <node rel="su" cat="np" begin="0" end="9">
+      <node rel="Qtopic" pos="Qtopic" begin="0" end="9" root="Qtopic" word="factoren verantwoordelijk voor RSI " />
+    </node>
+    <node rel="hd" pos="verb" begin="9" end="10" root="ben" word="zijn" />
+    <node rel="predc" cat="conj" begin="10" end="25">
+      <node rel="cnj" cat="np" begin="10" end="13">
+        <node rel="det" pos="det" begin="10" end="11" root="een" word="een" />
+        <node rel="mod" pos="adj" begin="11" end="12" root="hoog" word="hoge" />
+        <node rel="hd" pos="noun" begin="12" end="13" root="werkdruk" word="werkdruk" />
+      </node>
+      <node rel="cnj" pos="noun" begin="14" end="15" root="stress" word="stress" />
+      <node rel="crd" pos="vg" begin="15" end="16" root="en" word="en" />
+      <node rel="cnj" cat="np" begin="16" end="25">
+        <node rel="det" pos="det" begin="16" end="17" root="het" word="het" />
+        <node rel="vc" cat="inf" begin="17" end="25">
+          <node rel="obj1" cat="np" begin="17" end="20">
+            <node rel="det" cat="detp" begin="17" end="19">
+              <node rel="mod" pos="adj" begin="17" end="18" root="langdurig" word="langdurig" />
+              <node rel="hd" pos="det" begin="18" end="19" root="dezelfde" word="dezelfde" />
+            </node>
+            <node rel="hd" pos="noun" begin="19" end="20" root="handeling" word="handelingen" />
+          </node>
+          <node rel="svp" pos="part" begin="20" end="21" root="uit" word="uit" />
+          <node rel="hd" pos="verb" begin="24" end="25" root="voer_uit" word="voeren" />
+        </node>
+        <node rel="hd" pos="verb" begin="22" end="23" root="moet" word="moeten" />
+      </node>
+    </node>
+  </node>
+  <sentence>factoren verantwoordelijk voor RSI  zijn een hoge werkdruk stress, en het langdurig dezelfde handelingen uit moeten voeren .</sentence>
+</top>
+

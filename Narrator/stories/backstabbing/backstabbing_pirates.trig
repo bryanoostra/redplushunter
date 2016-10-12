@@ -1,0 +1,1697 @@
+@prefix ns2:     <http://www.owl-ontologies.com/StoryWorldSettings/Pirates#> .
+@prefix ns1:     <http://www.owl-ontologies.com/StoryWorldCore.owl#> .
+@prefix ns0:     <http://www.owl-ontologies.com/FabulaKnowledge.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<#defaultGraph> {
+    <#iBelief_anne_bonney_55_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iOutcome_anne_bonney_71>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_3> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_4>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_4_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_10_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_billyBones_24>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_24_contents> ;
+          ns0:time "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_8>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_8_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_25>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_25_contents> ;
+          ns0:time "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_38_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_68_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_31_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_billyBones_34_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_12_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_40_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_37_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_19>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_19_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_62_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_29_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_10>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_10_contents> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_13>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_13_contents> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_18_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#isettingelement_plot_26_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_19_contents>
+          a       ns0:TruthGraph .
+
+    <#iAction_billyBones_22>
+          a       ns2:SayLetsGetSomeRum ;
+          ns0:agens ns2:billyBones ;
+          ns0:character ns2:billyBones ;
+          ns0:endtime "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:starttime "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iAction_billyBones_28>
+          a       ns2:DrawWeapon ;
+          ns0:agens ns2:billyBones ;
+          ns0:character ns2:billyBones ;
+          ns0:endtime "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:patiens ns2:rapier_1 ;
+          ns0:phi_causes <#iperception_plot_16> , <#iperception_plot_18> , <#iperception_plot_17> , <#iperception_plot_19> ;
+          ns0:starttime "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_3>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_anne_bonney_4> ;
+          ns0:hasContent <#iSetting_plotagent_3_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iSetting_plotagent_1>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_billyBones_4> ;
+          ns0:hasContent <#iSetting_plotagent_1_contents> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_44_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_10_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_8>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_8_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_24> ;
+          ns0:time "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_9>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_9_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_25> ;
+          ns0:time "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_13_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#isettingelement_plot_32>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_anne_bonney_57> , <#iBelief_billyBones_64> ;
+          ns0:hasContent <#isettingelement_plot_32_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iAction_billyBones_35>
+          a       ns2:Stab ;
+          ns0:agens ns2:billyBones ;
+          ns0:character ns2:billyBones ;
+          ns0:endtime "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:instrument ns2:rapier_1 ;
+          ns0:patiens ns2:anne_bonney ;
+          ns0:phi_causes <#iperception_plot_20> , <#iperception_plot_21> ;
+          ns0:starttime "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#isettingelement_plot_33>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_billyBones_65> , <#iBelief_anne_bonney_60> ;
+          ns0:hasContent <#isettingelement_plot_33_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_30_contents>
+          a       ns0:TruthGraph .
+
+    <#isettingelement_plot_34>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_billyBones_67> , <#iBelief_anne_bonney_62> ;
+          ns0:hasContent <#isettingelement_plot_34_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_41_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_35_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_anne_bonney_72>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_72_contents> ;
+          ns0:time "17"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_16_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_anne_bonney_70>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_70_contents> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_23_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_45_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iOutcome_anne_bonney_39>
+          a       ns0:Success ;
+          ns0:character ns2:anne_bonney ;
+          ns0:resolves <#iGoal_anne_bonney_1> ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_67_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_64_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_anne_bonney_8_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_63>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_63_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_62>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_62_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_65_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_67>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_67_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_65>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_65_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_64>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_64_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iOutcome_billyBones_78>
+          a       ns0:Success ;
+          ns0:character ns2:billyBones ;
+          ns0:resolves <#iGoal_billyBones_66> ;
+          ns0:time "18"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_69>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_69_contents> ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_billyBones_66>
+          a       ns2:RefillWaterSupply ;
+          ns0:agens ns2:billyBones ;
+          ns0:character ns2:billyBones ;
+          ns0:motivates <#iAction_billyBones_76> , <#iAction_billyBones_72> , <#iAction_billyBones_68> ;
+          ns0:patiens ns2:oWaterSupply_1 ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_43_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_20_contents>
+          a       ns0:TruthGraph .
+
+    <#isettingelement_plot_6_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_24_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_55>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_55_contents> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iEvent_billyBones_45>
+          a       ns2:OutOfWater ;
+          ns0:agens ns2:oWaterSupply_1 ;
+          ns0:character ns2:billyBones ;
+          ns0:endtime "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:phi_causes <#iperception_plot_30> , <#iperception_plot_31> , <#iperception_plot_29> , <#iperception_plot_28> ;
+          ns0:starttime "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_38_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_24>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_24_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_37> ;
+          ns0:time "9"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_71_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_25>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_25_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_38> ;
+          ns0:time "9"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_22>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_22_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_39> ;
+          ns0:time "9"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_23>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_23_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_40> ;
+          ns0:time "9"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_20>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_20_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_38> ;
+          ns0:time "9"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_24_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_21>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_21_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_36> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_28_contents>
+          a       ns0:TruthGraph .
+
+    <#iAction_billyBones_68>
+          a       ns2:SailToLand ;
+          ns0:agens ns2:billyBones ;
+          ns0:character ns2:billyBones ;
+          ns0:endtime "13"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:instrument ns2:oShip_1 ;
+          ns0:phi_causes <#iperception_plot_39> , <#iperception_plot_40> ;
+          ns0:starttime "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns2:oTreasureIsland_1 ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iAction_billyBones_76>
+          a       ns2:FillBoatWithWater ;
+          ns0:agens ns2:billyBones ;
+          ns0:character ns2:billyBones ;
+          ns0:endtime "17"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:instrument ns2:oPond_1 ;
+          ns0:patiens ns2:oShip_1 ;
+          ns0:phi_causes <#iperception_plot_48> , <#iperception_plot_47> ;
+          ns0:starttime "16"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_40>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_40_contents> ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_42_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_46_contents>
+          a       ns0:TruthGraph .
+
+    <#iAction_billyBones_72>
+          a       ns2:GetOffBoat ;
+          ns0:agens ns2:billyBones ;
+          ns0:character ns2:billyBones ;
+          ns0:endtime "15"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:phi_causes <#iperception_plot_44> , <#iperception_plot_45> , <#iperception_plot_43> , <#iperception_plot_46> ;
+          ns0:starttime "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns2:oTreasureIsland_1 ;
+          ns0:time "14"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_56_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_39_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_46>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_46_contents> ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#isettingelement_plot_32_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_29>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_29_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_63> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#isettingelement_plot_34_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_28>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_28_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_62> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_69_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_13>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_13_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_31> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_14>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_14_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_28> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_15>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_15_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_29> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_16>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_16_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_33> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_64_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_39>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_39_contents> ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_23_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_10>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_10_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_23> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_11>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_11_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_24> ;
+          ns0:time "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_12>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_12_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_30> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_24_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_12_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_30>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_30_contents> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_17_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_15_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_billyBones_38>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_38_contents> ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_18>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_18_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_31> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_17>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_17_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_34> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_31>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_31_contents> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_29_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_billyBones_34>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_34_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_19>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_19_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_32> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_33>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_33_contents> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_billyBones_20>
+          a       ns2:AnnounceRum ;
+          ns0:agens ns2:billyBones ;
+          ns0:character ns2:billyBones ;
+          ns0:motivates <#iAction_billyBones_22> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_40>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_40_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_66> ;
+          ns0:time "14"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_41>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_41_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_73> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_44>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_44_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_75> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_45>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_45_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_69> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_28>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_28_contents> ;
+          ns0:time "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_77_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_42>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_42_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_68> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_29>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_29_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_43>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_43_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_74> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_48>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_48_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_72> ;
+          ns0:time "17"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_70_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_46>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_46_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_70> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_36_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_47>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_47_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_77> ;
+          ns0:time "18"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_31>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_31_contents> ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_32>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_32_contents> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_37>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_37_contents> ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_36>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_36_contents> ;
+          ns0:time "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#isettingelement_plot_5_contents>
+          a       ns0:TruthGraph .
+
+    <#iOutcome_billyBones_27>
+          a       ns0:Success ;
+          ns0:character ns2:billyBones ;
+          ns0:resolves <#iGoal_billyBones_20> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_31_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_57_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_30>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_30_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_55> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_31>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_31_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_56> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_billyBones_1>
+          a       ns2:GetBottle ;
+          ns0:agens ns2:billyBones ;
+          ns0:character ns2:billyBones ;
+          ns0:patiens ns2:oRumBottle_1 ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_billyBones_2>
+          a       ns2:GetTreasure ;
+          ns0:agens ns2:billyBones ;
+          ns0:character ns2:billyBones ;
+          ns0:patiens ns2:oTreasureChest_1 ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_38>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_38_contents> ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_billyBones_3>
+          a       ns2:WoundEnemy ;
+          ns0:agens ns2:billyBones ;
+          ns0:character ns2:billyBones ;
+          ns0:motivates <#iAction_billyBones_28> , <#iAction_billyBones_35> ;
+          ns0:patiens ns2:anne_bonney ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_14_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_35>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_35_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_69> ;
+          ns0:time "14"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_36>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_36_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_70> ;
+          ns0:time "14"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_37>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_37_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_64> ;
+          ns0:time "14"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_38>
+          a       ns0:Perception ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iperception_plot_38_contents> ;
+          ns0:psi_causes <#iBelief_anne_bonney_65> ;
+          ns0:time "14"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_43>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_43_contents> ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_39>
+          a       ns0:Perception ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iperception_plot_39_contents> ;
+          ns0:psi_causes <#iBelief_billyBones_71> ;
+          ns0:time "14"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_11_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_65_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_77>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_77_contents> ;
+          ns0:time "18"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_75>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_75_contents> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_21_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_30_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iAction_anne_bonney_63>
+          a       ns2:DrawWeapon ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:character ns2:anne_bonney ;
+          ns0:endtime "13"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:patiens ns2:rapier_1 ;
+          ns0:phi_causes <#iperception_plot_35> , <#iperception_plot_36> , <#iperception_plot_37> , <#iperception_plot_38> ;
+          ns0:starttime "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_70>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_70_contents> ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_63_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_73>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_73_contents> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_74>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_74_contents> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iAction_anne_bonney_67>
+          a       ns2:Stab ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:character ns2:anne_bonney ;
+          ns0:endtime "15"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:instrument ns2:rapier_1 ;
+          ns0:patiens ns2:billyBones ;
+          ns0:phi_causes <#iperception_plot_41> , <#iperception_plot_42> ;
+          ns0:starttime "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "14"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_71>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_71_contents> ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_57>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_57_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_56>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_56_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_55>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_55_contents> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_50>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_50_contents> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_38_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_48_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_47_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_40_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_36_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_43_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#isettingelement_plot_4_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_69>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_69_contents> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_68>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_68_contents> ;
+          ns0:time "16"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_17_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_66>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_66_contents> ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_65>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_65_contents> ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_13_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_64>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_64_contents> ;
+          ns0:time "15"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_62>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_62_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_22_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_60>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_60_contents> ;
+          ns0:time "12"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_20_contents>
+          a       ns0:TruthGraph .
+
+    <#iOutcome_billyBones_41>
+          a       ns0:Success ;
+          ns0:character ns2:billyBones ;
+          ns0:resolves <#iGoal_billyBones_3> ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#isettingelement_plot_33_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_32_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_62_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_19_contents>
+          a       ns0:TruthGraph .
+
+    <#isettingelement_plot_27_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_37_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_anne_bonney_72_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_55_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_75_contents>
+          a       ns0:TruthGraph .
+
+    <#iAction_anne_bonney_15>
+          a       ns0:OpenDoor ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:character ns2:anne_bonney ;
+          ns0:endtime "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:patiens ns2:oHatch_1 ;
+          ns0:phi_causes <#iperception_plot_10> , <#iperception_plot_11> , <#iperception_plot_8> , <#iperception_plot_9> ;
+          ns0:starttime "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_74_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_billyBones_73_contents>
+          a       ns0:TruthGraph .
+
+    <#isettingelement_plot_7_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_70_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_50_contents>
+          a       ns0:TruthGraph .
+
+    <#iperception_plot_8_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_anne_bonney_66_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_69_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_billyBones_46_contents>
+          a       ns0:TruthGraph .
+
+    <#iGoal_anne_bonney_1>
+          a       ns2:GetBottle ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:character ns2:anne_bonney ;
+          ns0:motivates <#iAction_anne_bonney_33> , <#iAction_anne_bonney_25> , <#iAction_anne_bonney_15> ;
+          ns0:patiens ns2:oRumBottle_1 ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_2>
+          a       ns2:GetTreasure ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:character ns2:anne_bonney ;
+          ns0:patiens ns2:oTreasureChest_1 ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iGoal_anne_bonney_3>
+          a       ns2:WoundEnemy ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:character ns2:anne_bonney ;
+          ns0:motivates <#iAction_anne_bonney_63> , <#iAction_anne_bonney_67> ;
+          ns0:patiens ns2:billyBones ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_7>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_7_contents> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iAction_anne_bonney_25>
+          a       ns0:WalkFromToDoor ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:character ns2:anne_bonney ;
+          ns0:endtime "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:instrument ns2:oLadder_down ;
+          ns0:phi_causes <#iperception_plot_13> , <#iperception_plot_14> , <#iperception_plot_15> , <#iperception_plot_12> ;
+          ns0:starttime "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns2:oHold_1 ;
+          ns0:time "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_4>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:billyBones ;
+          ns0:hasContent <#iBelief_billyBones_4_contents> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_7_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_31_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iperception_plot_39_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_anne_bonney_12>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_12_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_billyBones_25_contents>
+          a       ns0:TruthGraph .
+
+    <#isettingelement_plot_7>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_billyBones_19> , <#iBelief_anne_bonney_20> ;
+          ns0:hasContent <#isettingelement_plot_7_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#isettingelement_plot_6>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_billyBones_13> , <#iBelief_anne_bonney_17> ;
+          ns0:hasContent <#isettingelement_plot_6_contents> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#isettingelement_plot_5>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_billyBones_10> , <#iBelief_anne_bonney_12> ;
+          ns0:hasContent <#isettingelement_plot_5_contents> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#isettingelement_plot_4>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_anne_bonney_8> , <#iBelief_billyBones_7> ;
+          ns0:hasContent <#isettingelement_plot_4_contents> ;
+          ns0:time "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_17>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_17_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_28_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iAction_anne_bonney_33>
+          a       ns0:TakeOut ;
+          ns0:agens ns2:anne_bonney ;
+          ns0:character ns2:anne_bonney ;
+          ns0:endtime "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:patiens ns2:oRumBottle_1 ;
+          ns0:phi_causes <#iperception_plot_24> , <#iperception_plot_25> , <#iperception_plot_22> , <#iperception_plot_23> ;
+          ns0:starttime "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+          ns0:target ns2:oCrate_1 ;
+          ns0:time "7"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#isettingelement_plot_26>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_anne_bonney_43> , <#iBelief_billyBones_46> ;
+          ns0:hasContent <#isettingelement_plot_26_contents> ;
+          ns0:time "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_60_contents>
+          a       ns0:TruthGraph .
+
+    <#isettingelement_plot_27>
+          a       ns0:SettingElement ;
+          ns0:character <plotagent> ;
+          ns0:enables <#iBelief_billyBones_55> , <#iBelief_anne_bonney_50> ;
+          ns0:hasContent <#isettingelement_plot_27_contents> ;
+          ns0:time "11"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_9_contents>
+          a       ns0:TruthGraph .
+
+    <#iBelief_billyBones_33_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_anne_bonney_23>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_23_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iBelief_anne_bonney_24>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_24_contents> ;
+          ns0:time "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+    <#iperception_plot_25_contents>
+          a       ns0:FalsehoodGraph .
+
+    <#iBelief_anne_bonney_20>
+          a       ns0:BeliefElement ;
+          ns0:character ns2:anne_bonney ;
+          ns0:hasContent <#iBelief_anne_bonney_20_contents> ;
+          ns0:time "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+}
+
+<#iBelief_anne_bonney_12_contents> {
+    ns2:oCrate_1
+          ns1:supportedBy ns2:oHold_1 .
+}
+
+<#iBelief_anne_bonney_17_contents> {
+    ns2:oRumBottle_1
+          ns1:containedBy ns2:oCrate_1 .
+}
+
+<#iBelief_anne_bonney_20_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:billyBones .
+}
+
+<#iBelief_anne_bonney_23_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:closed .
+}
+
+<#iBelief_anne_bonney_24_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:open .
+}
+
+<#iBelief_anne_bonney_28_contents> {
+    ns2:anne_bonney
+          ns1:supportedBy ns2:oHold_1 .
+}
+
+<#iBelief_anne_bonney_29_contents> {
+    ns2:anne_bonney
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iBelief_anne_bonney_31_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:billyBones .
+}
+
+<#iBelief_anne_bonney_32_contents> {
+    ns2:rapier_1
+          ns1:heldBy ns2:billyBones .
+}
+
+<#iBelief_anne_bonney_36_contents> {
+    ns2:anne_bonney
+          ns2:health ns2:wounded .
+}
+
+<#iBelief_anne_bonney_37_contents> {
+    ns2:oRumBottle_1
+          ns1:heldBy ns2:anne_bonney .
+}
+
+<#iBelief_anne_bonney_38_contents> {
+    ns2:oRumBottle_1
+          ns1:containedBy ns2:oCrate_1 .
+}
+
+<#iBelief_anne_bonney_43_contents> {
+    ns2:belt_2
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_anne_bonney_50_contents> {
+    ns2:oShip_1
+          ns2:hasWaterSupply ns2:oWaterSupply_1 .
+}
+
+<#iBelief_anne_bonney_55_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iBelief_anne_bonney_56_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:empty .
+}
+
+<#iBelief_anne_bonney_57_contents> {
+    ns2:billyBones
+          a       ns2:Captain .
+}
+
+<#iBelief_anne_bonney_60_contents> {
+    ns2:billyBones
+          ns2:owns ns2:oShip_1 .
+}
+
+<#iBelief_anne_bonney_62_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_anne_bonney_64_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_anne_bonney_65_contents> {
+    ns2:rapier_1
+          ns1:heldBy ns2:anne_bonney .
+}
+
+<#iBelief_anne_bonney_66_contents> {
+    ns2:oShip_1
+          ns2:mooredAt ns2:oTreasureIsland_1 .
+}
+
+<#iBelief_anne_bonney_68_contents> {
+    ns2:billyBones
+          ns2:health ns2:wounded .
+}
+
+<#iBelief_anne_bonney_69_contents> {
+    ns2:billyBones
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iBelief_anne_bonney_70_contents> {
+    ns2:billyBones
+          ns1:supportedBy ns2:oTreasureIsland_1 .
+}
+
+<#iBelief_anne_bonney_72_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iBelief_anne_bonney_8_contents> {
+    ns2:belt_1
+          ns1:wornBy ns2:billyBones .
+}
+
+<#iBelief_billyBones_10_contents> {
+    ns2:oCrate_1
+          ns1:supportedBy ns2:oHold_1 .
+}
+
+<#iBelief_billyBones_13_contents> {
+    ns2:oRumBottle_1
+          ns1:containedBy ns2:oCrate_1 .
+}
+
+<#iBelief_billyBones_19_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:billyBones .
+}
+
+<#iBelief_billyBones_24_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:closed .
+}
+
+<#iBelief_billyBones_25_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:open .
+}
+
+<#iBelief_billyBones_30_contents> {
+    ns2:anne_bonney
+          ns1:supportedBy ns2:oHold_1 .
+}
+
+<#iBelief_billyBones_31_contents> {
+    ns2:anne_bonney
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iBelief_billyBones_33_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:billyBones .
+}
+
+<#iBelief_billyBones_34_contents> {
+    ns2:rapier_1
+          ns1:heldBy ns2:billyBones .
+}
+
+<#iBelief_billyBones_38_contents> {
+    ns2:anne_bonney
+          ns2:health ns2:wounded .
+}
+
+<#iBelief_billyBones_39_contents> {
+    ns2:oRumBottle_1
+          ns1:heldBy ns2:anne_bonney .
+}
+
+<#iBelief_billyBones_40_contents> {
+    ns2:oRumBottle_1
+          ns1:containedBy ns2:oCrate_1 .
+}
+
+<#iBelief_billyBones_46_contents> {
+    ns2:belt_2
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_billyBones_55_contents> {
+    ns2:oShip_1
+          ns2:hasWaterSupply ns2:oWaterSupply_1 .
+}
+
+<#iBelief_billyBones_62_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iBelief_billyBones_63_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:empty .
+}
+
+<#iBelief_billyBones_64_contents> {
+    ns2:billyBones
+          a       ns2:Captain .
+}
+
+<#iBelief_billyBones_65_contents> {
+    ns2:billyBones
+          ns2:owns ns2:oShip_1 .
+}
+
+<#iBelief_billyBones_67_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_billyBones_69_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iBelief_billyBones_70_contents> {
+    ns2:rapier_1
+          ns1:heldBy ns2:anne_bonney .
+}
+
+<#iBelief_billyBones_71_contents> {
+    ns2:oShip_1
+          ns2:mooredAt ns2:oTreasureIsland_1 .
+}
+
+<#iBelief_billyBones_73_contents> {
+    ns2:billyBones
+          ns2:health ns2:wounded .
+}
+
+<#iBelief_billyBones_74_contents> {
+    ns2:billyBones
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iBelief_billyBones_75_contents> {
+    ns2:billyBones
+          ns1:supportedBy ns2:oTreasureIsland_1 .
+}
+
+<#iBelief_billyBones_77_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iBelief_billyBones_7_contents> {
+    ns2:belt_1
+          ns1:wornBy ns2:billyBones .
+}
+
+<#iperception_plot_10_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:closed .
+}
+
+<#iperception_plot_11_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:open .
+}
+
+<#iperception_plot_12_contents> {
+    ns2:anne_bonney
+          ns1:supportedBy ns2:oHold_1 .
+}
+
+<#iperception_plot_13_contents> {
+    ns2:anne_bonney
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iperception_plot_14_contents> {
+    ns2:anne_bonney
+          ns1:supportedBy ns2:oHold_1 .
+}
+
+<#iperception_plot_15_contents> {
+    ns2:anne_bonney
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iperception_plot_16_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:billyBones .
+}
+
+<#iperception_plot_17_contents> {
+    ns2:rapier_1
+          ns1:heldBy ns2:billyBones .
+}
+
+<#iperception_plot_18_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:billyBones .
+}
+
+<#iperception_plot_19_contents> {
+    ns2:rapier_1
+          ns1:heldBy ns2:billyBones .
+}
+
+<#iperception_plot_20_contents> {
+    ns2:anne_bonney
+          ns2:health ns2:wounded .
+}
+
+<#iperception_plot_21_contents> {
+    ns2:anne_bonney
+          ns2:health ns2:wounded .
+}
+
+<#iperception_plot_22_contents> {
+    ns2:oRumBottle_1
+          ns1:heldBy ns2:anne_bonney .
+}
+
+<#iperception_plot_23_contents> {
+    ns2:oRumBottle_1
+          ns1:containedBy ns2:oCrate_1 .
+}
+
+<#iperception_plot_24_contents> {
+    ns2:oRumBottle_1
+          ns1:heldBy ns2:anne_bonney .
+}
+
+<#iperception_plot_25_contents> {
+    ns2:oRumBottle_1
+          ns1:containedBy ns2:oCrate_1 .
+}
+
+<#iperception_plot_28_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iperception_plot_29_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:empty .
+}
+
+<#iperception_plot_30_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iperception_plot_31_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:empty .
+}
+
+<#iperception_plot_35_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iperception_plot_36_contents> {
+    ns2:rapier_1
+          ns1:heldBy ns2:anne_bonney .
+}
+
+<#iperception_plot_37_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#iperception_plot_38_contents> {
+    ns2:rapier_1
+          ns1:heldBy ns2:anne_bonney .
+}
+
+<#iperception_plot_39_contents> {
+    ns2:oShip_1
+          ns2:mooredAt ns2:oTreasureIsland_1 .
+}
+
+<#iperception_plot_40_contents> {
+    ns2:oShip_1
+          ns2:mooredAt ns2:oTreasureIsland_1 .
+}
+
+<#iperception_plot_41_contents> {
+    ns2:billyBones
+          ns2:health ns2:wounded .
+}
+
+<#iperception_plot_42_contents> {
+    ns2:billyBones
+          ns2:health ns2:wounded .
+}
+
+<#iperception_plot_43_contents> {
+    ns2:billyBones
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iperception_plot_44_contents> {
+    ns2:billyBones
+          ns1:supportedBy ns2:oTreasureIsland_1 .
+}
+
+<#iperception_plot_45_contents> {
+    ns2:billyBones
+          ns1:supportedBy ns2:oDeck_1 .
+}
+
+<#iperception_plot_46_contents> {
+    ns2:billyBones
+          ns1:supportedBy ns2:oTreasureIsland_1 .
+}
+
+<#iperception_plot_47_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iperception_plot_48_contents> {
+    ns2:oWaterSupply_1
+          ns2:hasFullEmptyProperty
+                  ns2:full .
+}
+
+<#iperception_plot_8_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:closed .
+}
+
+<#iperception_plot_9_contents> {
+    ns2:oHatch_1
+          ns1:hasOpenCloseProperty
+                  ns1:open .
+}
+
+<#isettingelement_plot_26_contents> {
+    ns2:belt_2
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#isettingelement_plot_27_contents> {
+    ns2:oShip_1
+          ns2:hasWaterSupply ns2:oWaterSupply_1 .
+}
+
+<#isettingelement_plot_32_contents> {
+    ns2:billyBones
+          a       ns2:Captain .
+}
+
+<#isettingelement_plot_33_contents> {
+    ns2:billyBones
+          ns2:owns ns2:oShip_1 .
+}
+
+<#isettingelement_plot_34_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:anne_bonney .
+}
+
+<#isettingelement_plot_4_contents> {
+    ns2:belt_1
+          ns1:wornBy ns2:billyBones .
+}
+
+<#isettingelement_plot_5_contents> {
+    ns2:oCrate_1
+          ns1:supportedBy ns2:oHold_1 .
+}
+
+<#isettingelement_plot_6_contents> {
+    ns2:oRumBottle_1
+          ns1:containedBy ns2:oCrate_1 .
+}
+
+<#isettingelement_plot_7_contents> {
+    ns2:rapier_1
+          ns1:wornBy ns2:billyBones .
+}
+

@@ -1,0 +1,14 @@
+Stories:
+ 1. flashback Barry en Adrie 	(beide flashback)
+ 2. flashback Adrie en Manuela 	(alleen Adrie)
+ 3. flashback Barry en Richard	(alleen Barry)
+
+F = flashback G = geen flashbacks N = geen flashback van toepassing
+A = Adrie, B = Barry, G = geen focalizatie
+
+Optie A: 1GF 2AG 3BF
+Optie B: 1AN 2BN 3GG
+Optie C: 1BF 2GG 3AN
+Optie D: 1GG 2AF 3BG
+Optie E: 1AN 2BN 3GF
+Optie F: 1BG 2GF 3AN

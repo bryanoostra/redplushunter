@@ -1,0 +1,8 @@
+2015-11-18 VST wouldn't run
+
+- JRE 8 update 66 doesn't work with old code (deprecated/revised functions)
+  -> Forced project to use JRE 7 update 80
+     JRE System Library > properties > Alternate JRE > JRE 7 path
+
+- 64-bit Swipl is loaded (java.lang.UnsatisfiedLinkError: C:\Program Files\swipl\bin\jpl.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform)
+  -> Remove 'C:\Program Files\swipl\bin\' from Environment Variables path > Restart Eclipse

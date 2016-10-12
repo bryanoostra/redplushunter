@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <!--World Setting file: world.xml-->
+  <!--Lexicon file lang="NL": lexicon_NL.xml-->
+  <key id="EventType" for="node" attr.name="EventType" attr.type="string">
+    <default>NoType</default>
+  </key>
+  
+  <key id="Type" for="node" attr.name="Type" attr.type="string">
+    <default>NoType</default>
+  </key>
+  
+  <key id="Agens" for="node" attr.name="Agens" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Patiens" for="node" attr.name="Patiens" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Target" for="node" attr.name="Target" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Instrument" for="node" attr.name="Instrument" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="SubPlotElement" for="node" attr.name="SubPlotElement" attr.type="string">
+    <default></default>
+  </key>
+  
+  <key id="Successful" for="node" attr.name="Successful" attr.type="string">
+    <default>true</default>
+  </key>
+  
+  <key id="Time" for="node" attr.name="Time" attr.type="integer">
+    <default>-1</default>
+  </key>
+  
+  <key id="RelType" for="edge" attr.name="RelType" attr.type="string">
+	<default>NoType</default>
+  </key>
+  
+  <graph id="Fabula" edgedefault="directed">
+    <node id="Goal01">
+	  <data key="EventType">goal</data>
+	  <data key="Type">attaingoal</data>
+	  <data key="Agens">policeofficer</data>
+  	  <data key="Time">2</data>
+	</node>
+	
+	<node id="Goal01sub">
+	  <data key="EventType">action</data>
+	  <data key="Type">speak_to</data>
+	  <data key="Agens">policeofficer</data>
+	  <data key="Patiens">bystander1</data>
+	  <data key="Time">2</data>
+	</node>
+    
+	<node id="Goto01">
+	  <data key="EventType">action</data>
+	  <data key="Type">go_to</data>
+	  <data key="Agens">policeofficer</data>
+	  <data key="Target">main_street</data>
+  	  <data key="Time">3</data>
+	</node>
+  
+  	<node id="Insult01">
+	  <data key="EventType">action</data>
+	  <data key="Type">insult</data>
+	  <data key="Agens">policeofficer</data>
+	  <data key="Patiens">bystander1</data>
+	  <data key="Time">5</data>
+	</node>
+	
+	<node id="BecomeAngry01">
+	  <data key="EventType">state</data>
+	  <data key="Agens">bystander1</data>
+	  <data key="Type">angry</data>
+	  <data key="Time">6</data>
+	</node>
+
+	<node id="Goto02">
+	  <data key="EventType">action</data>
+	  <data key="Type">go_to</data>
+	  <data key="Agens">bystander3</data>
+	  <data key="Target">main_street</data>
+  	  <data key="Time">8</data>
+	</node>
+	
+	<node id="Hit01">
+	  <data key="EventType">action</data>
+	  <data key="Type">hit_with</data>
+	  <data key="Agens">bystander1</data>
+	  <data key="Patiens">policeofficer</data>
+	  <data key="Instrument">shoe1</data>
+	  <data key="Time">10</data>
+	</node>
+	
+	<node id="Perception01">
+	  <data key="EventType">perception</data>
+	  <data key="Type">see</data>
+	  <data key="Agens">bystander3</data>
+	  <data key="Time">10</data>
+	</node>
+	
+	<node id="Perception01sub">
+	  <data key="EventType">action</data>
+	  <data key="Type">hit_with</data>
+	  <data key="Agens">bystander1</data>
+	  <data key="Patiens">policeofficer</data>
+	  <data key="Instrument">shoe1</data>
+	  <data key="Time">10</data>
+	</node>
+	
+	<node id="BecomeSad01">
+	  <data key="EventType">state</data>
+	  <data key="Agens">policeofficer</data>
+	  <data key="Type">sad</data>
+	  <data key="Time">11</data>
+	</node>	
+	
+	<edge id="Motivation00" source="Goal01" target="Goto01">
+      <data key="RelType">motivates</data>
+    </edge>
+	
+	<edge id="Enables01" source = "Goto01" target="Insult01">
+		<data key="RelType">enables</data>
+	</edge>	
+	
+	<edge id="Psychological01" source="Insult01" target="BecomeAngry01">
+      <data key="RelType">phi-causes</data>
+    </edge>
+		
+	<edge id="Motivation01" source="BecomeAngry01" target="Hit01">
+      <data key="RelType">psi-causes</data>
+    </edge>
+
+	<edge id="Psychological02" source="Hit01" target="BecomeSad01">
+      <data key="RelType">phi-causes</data>
+    </edge>
+	
+	<edge id="Enables02" source = "Goto02" target="Perception01">
+		<data key="RelType">enables</data>
+	</edge>	
+	
+	<edge id="Physical04" source="Hit01" target="Perception01">
+      <data key="RelType">phi-causes</data>
+    </edge>
+	
+	<edge id="SubPlotElement01" source="Goal01sub" target="Goal01">
+	      <data key="RelType">subplotelement</data>
+	</edge>
+	
+	<edge id="SubPlotElement02" source="Perception01sub" target="Perception01">
+	      <data key="RelType">subplotelement</data>
+	</edge>
+  </graph>
+</graphml>

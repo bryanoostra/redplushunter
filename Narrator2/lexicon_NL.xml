@@ -1,0 +1,239 @@
+<lexicon lang="NL">
+	<!-- LOCATIONS -->
+	<sense id="main_street">
+		<entry>
+			<root>hoofdstraat</root>
+			<plural>hoofdstraten</plural>
+			<partofspeech>noun</partofspeech>
+			<determiner>de</determiner>
+		</entry>
+	</sense>
+			
+	<sense id="alley">
+		<entry>
+			<root>steegje</root>
+			<plural>steegjes</plural>
+			<partofspeech>noun</partofspeech>
+			<determiner>het</determiner>
+		</entry>
+	</sense>
+		
+	<sense id="square">
+		<entry>
+			<root>plein</root>
+			<partofspeech>noun</partofspeech>
+			<determiner>het</determiner>
+			<atpreposition>op</atpreposition>
+		</entry>
+	</sense>
+	
+	<!-- ITEMS -->
+	<sense id="shoe">
+		<entry>
+			<root>schoen</root>
+			<plural>schoenen</plural>
+			<partofspeech>noun</partofspeech>
+			<determiner>de</determiner>
+		</entry>
+	</sense>
+	
+	<!-- CHARACTERS -->
+	
+	<!-- ACTIONS -->
+	<!-- N.B.: THE ACTIONS "be", "be_at", "have", "want" AND "call" HAVE TO BE DEFINED IN THE LEXICON! -->
+	<sense id="be">
+		<entry>
+			<root>zij</root>
+			<sg1>ben</sg1>
+			<sg2>bent</sg2>
+			<sg3>is</sg3>
+			<plpres>zijn</plpres>
+			<participle>geweest</participle>
+			<sgpast>was</sgpast>
+			<plpast>waren</plpast>
+			<partofspeech>verb</partofspeech>
+			<transitive />
+			<auxverb>be</auxverb>
+		</entry>
+	</sense>
+		
+	<sense id="be_at">
+		<entry>
+			<root>zij</root>
+			<sg1>ben</sg1>
+			<sg2>bent</sg2>
+			<sg3>is</sg3>
+			<plpres>zijn</plpres>
+			<participle>geweest</participle>
+			<sgpast>was</sgpast>
+			<plpast>waren</plpast>
+			<partofspeech>verb</partofspeech>
+			<preposition>in</preposition>
+			<dependencylabel>ld</dependencylabel>
+			<auxverb>be</auxverb>
+		</entry>
+	</sense>
+		
+	<sense id="have">
+		<entry>
+			<root>heb</root>
+			<sg2>hebt</sg2>
+			<sg3>heeft</sg3>
+			<plpres>hebben</plpres>
+			<participle>gehad</participle>
+			<sgpast>had</sgpast>
+			<plpast>hadden</plpast>
+			<partofspeech>verb</partofspeech>
+			<auxverb>have</auxverb>
+		</entry>
+	</sense>
+	
+	<sense id="call">
+		<entry>
+			<root>heet</root>
+			<partofspeech>verb</partofspeech>
+			<auxverb>have</auxverb>
+		</entry>
+	</sense>
+	
+	<sense id="want">
+		<entry>
+			<root>wil</root>
+			<sg2>wilt</sg2>
+			<sg3>wil</sg3>
+			<partofspeech>verb</partofspeech>
+			<auxverb>have</auxverb>
+		</entry>
+	</sense>
+	
+	<sense id="hit_with">
+		<entry>
+			<root>sla</root>
+			<sg2>sla</sg2>
+			<sg3>slaat</sg3>
+			<plpres>slaan</plpres>
+			<participle>geslagen</participle>
+			<sgpast>sloeg</sgpast>
+			<partofspeech>verb</partofspeech>
+			<preposition>met</preposition>
+			<dependencylabel>mod</dependencylabel>
+		</entry>
+		<entry>
+			<root>mep</root>
+			<partofspeech>verb</partofspeech>
+			<preposition>met</preposition>
+			<dependencylabel>mod</dependencylabel>
+		</entry>
+	</sense>
+	
+	<sense id="insult">
+		<entry>
+			<root>beledig</root>
+			<partofspeech>verb</partofspeech>
+			<plpres>beledigen</plpres>
+		</entry>
+	</sense>
+	
+	<sense id="see">
+		<entry>
+			<root>zie</root>
+			<participle>gezien</participle>
+			<sgpast>zag</sgpast>
+			<partofspeech>verb</partofspeech>
+			<plpres>zien</plpres>
+		</entry>
+	</sense>
+
+	<sense id="speak_to">
+		<entry>
+			<root>praat</root>
+			<partofspeech>verb</partofspeech>
+			<preposition>met</preposition>
+			<dependencylabel>obj1</dependencylabel>
+		</entry>
+		<entry>
+			<root>spreek</root>
+			<partofspeech>verb</partofspeech>
+			<preposition>met</preposition>
+			<dependencylabel>obj1</dependencylabel>
+		</entry>
+	</sense>
+	
+	<sense id="go_to">
+		<entry>
+			<root>ga</root>
+			<partofspeech>verb</partofspeech>
+			<sg3>gaat</sg3>
+			<plpres>gaan</plpres>
+			<participle>gegaan</participle>
+			<sgpast>ging</sgpast>
+			<plpast>gingen</plpast>
+			<preposition>naar</preposition>
+			<dependencylabel>ld</dependencylabel>
+		</entry>
+	</sense>
+	
+
+	
+	<!-- EMOTIONS -->
+	<sense id="angry">
+		<entry>
+			<root>boos</root>
+			<partofspeech>adj</partofspeech>
+		</entry>
+		<entry>
+			<root>kwaad</root>
+			<partofspeech>adj</partofspeech>
+		</entry>
+	</sense>
+		
+	<sense id="sad">
+		<entry>
+			<root>verdrietig</root>
+			<partofspeech>adj</partofspeech>
+		</entry>
+	</sense>
+	
+	<!-- ROLES -->
+	<sense id="policeofficer">
+		<entry>
+			<root>politieman</root>
+			<plural>politiemannen</plural>
+			<partofspeech>noun</partofspeech>
+			<determiner>de</determiner>
+		</entry>
+	</sense>
+		
+	<sense id="bystander">
+		<entry>
+			<root>omstander</root>
+			<plural>omstanders</plural>
+			<partofspeech>noun</partofspeech>
+			<determiner>de</determiner>
+		</entry>
+	</sense>
+
+	<sense id="loiteringyouth">
+		<entry>
+			<root>hangjongere</root>
+			<plural>hangjongeren</plural>
+			<partofspeech>noun</partofspeech>
+			<determiner>de</determiner>
+		</entry>
+	</sense>
+
+	<!-- ADJECTIVES -->
+	<sense id="beautiful">
+		<entry>
+			<root>mooi</root>
+			<partofspeech>adj</partofspeech>
+		</entry>
+	</sense>
+	
+	<sense id="tough">
+		<entry>
+			<root>stoer</root>
+			<partofspeech>adj</partofspeech>
+		</entry>	
+	</sense>
+</lexicon>

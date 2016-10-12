@@ -1,0 +1,51 @@
+<!DOCTYPE rhetdepgraph>
+<rhetdepgraph>
+	<rhetrelation cat="cause-voluntary">
+		<nucleus>
+			<dt>
+				<node rel="top" cat="smain">
+					<node rel="hd" pos="verb" root="denk" morph="1.singular.present" />
+					<node rel="su" pos="pron" root="ik" />
+					<node rel="vc" cat="cp">
+						<node rel="cmp" pos="comp" root="dat" />
+						<node rel="body" cat="ssub">
+							<node rel="hd" pos="verb" root="zeur" morph="3.singular.present" />
+							<node rel="su" cat="np">
+								<node rel="det" pos="det" root="de" morph="singular" />
+								<node rel="hd" pos="noun" root="poes" morph="singular" />
+							</node>
+						</node>
+					</node>
+				</node>
+			</dt>
+		</nucleus>
+		<satellite>
+			<rhetrelation cat="contrast-causal">
+				<nucleus>
+					<dt>
+						<node rel="top" cat="smain">
+							<node rel="hd" pos="verb" root="mauw" morph="3.singular.present" />
+							<node rel="su" cat="np" index="P">
+								<node rel="det" pos="det" root="de" morph="singular" />
+								<node rel="hd" pos="noun" root="poes" morph="singular" />
+							</node>
+						</node>
+					</dt>
+				</nucleus>
+				<satellite>				
+					<dt>
+						<node rel="top" cat="smain">
+							<node rel="hd" pos="verb" root="heb" morph="3.singular.present" />
+							<node rel="su" cat="np">
+								<node rel="det" pos="det" root="de" morph="singular" />
+								<node rel="hd" pos="noun" root="poes" morph="singular" />
+							</node>
+							<node rel="mod" pos="adv" root="nog" />
+							<node rel="obj1" pos="noun" root="voer" morph="singular" />
+						</node>
+					</dt>
+				</satellite>
+			</rhetrelation>
+		</satellite>
+	</rhetrelation>
+</rhetdepgraph>

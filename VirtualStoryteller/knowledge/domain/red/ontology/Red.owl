@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.owl-ontologies.com/Red.owl#"
+     xml:base="http://www.owl-ontologies.com/Red.owl"
+     xmlns:fabula="http://www.owl-ontologies.com/FabulaKnowledge.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swc="http://www.owl-ontologies.com/StoryWorldCore.owl#">
+    <owl:Ontology rdf:about="http://www.owl-ontologies.com/Red.owl">
+        <owl:imports rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl"/>
+        <owl:imports rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#greeted -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Red.owl#greeted"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#told_about_poison_plan -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Red.owl#told_about_poison_plan"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#told_what_happened -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/Red.owl#told_what_happened"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/FabulaKnowledge.owl#Action -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/FabulaKnowledge.owl#AttainGoal -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#AttainGoal"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/FabulaKnowledge.owl#Event -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Event"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#BakeCake -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#BakeCake">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#BecomeHungry -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#BecomeHungry">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#BringCake -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#BringCake">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#AttainGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#BuildSandCastle -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#BuildSandCastle">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Cake -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Cake">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Red.owl#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Cry -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Cry">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Die -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Die">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Dive -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Dive">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Dust -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Dust">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Eat -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Eat">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#EatSomething -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#EatSomething">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#AttainGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#EnjoySun -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#EnjoySun">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#ExpressAnger -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#ExpressAnger">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#ExpressSympathy -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#ExpressSympathy">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Fart -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Fart">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Fart2 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Fart2">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Fart3 -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Fart3">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Food -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Food">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Give -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Give">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Greet -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Greet">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#GreetAgain -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#GreetAgain">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#GreetBack -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#GreetBack">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Laugh -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Laugh">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#LittleGirl -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#LittleGirl">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Poison -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Poison">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#AttainGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#PoisonFood -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#PoisonFood">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#RollSand -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#RollSand">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#SeekSupport -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#SeekSupport">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#AttainGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#ShuffleTo -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#ShuffleTo">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Sing -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Sing">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#SkipTo -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#SkipTo">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#SneakTo -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#SneakTo">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#TransitMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#TakeAgain -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#TakeAgain">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#TakeBack -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#TakeBack">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#TakeFrom -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#TakeFrom">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Transfer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#TakeNap -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#TakeNap">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#TellAboutPoisonPlan -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#TellAboutPoisonPlan">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#TellSomeoneTookSomething -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#TellSomeoneTookSomething">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#Thank -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#Thank">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#TreadWater -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#TreadWater">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#WashDishes -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#WashDishes">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#WatchBirds -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#WatchBirds">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#WatchClouds -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#WatchClouds">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#WhatToDo -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Red.owl#WhatToDo">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/FabulaKnowledge.owl#SpeechAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/StoryWorldCore.owl#InternalAttribute -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/StoryWorldCore.owl#InternalAttribute"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/StoryWorldCore.owl#Object -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/StoryWorldCore.owl#Object"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/StoryWorldCore.owl#Role -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/StoryWorldCore.owl#Role"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#farted1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Red.owl#farted1">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#InternalAttribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#farted2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Red.owl#farted2">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#InternalAttribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#farted3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Red.owl#farted3">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#InternalAttribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#hungry -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Red.owl#hungry">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#InternalAttribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#mean -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Red.owl#mean">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#InternalAttribute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Red.owl#poisoned -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/Red.owl#poisoned">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/StoryWorldCore.owl#InternalAttribute"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
